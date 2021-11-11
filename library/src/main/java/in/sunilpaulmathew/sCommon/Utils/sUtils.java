@@ -110,13 +110,14 @@ public class sUtils {
                 Configuration.ORIENTATION_PORTRAIT : activity.getResources().getConfiguration().orientation;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
     public static Intent filePickerIntent(boolean multipleFiles, int requestCode,
                                           String fileType, Activity activity) {
         Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
         intent.setType(fileType != null ? fileType : "*/*");
         intent.addCategory(Intent.CATEGORY_OPENABLE);
-        intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, multipleFiles);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
+            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, multipleFiles);
+        }
         activity.startActivityForResult(intent, requestCode);
         return intent;
     }
