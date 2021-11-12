@@ -64,7 +64,7 @@ public class sPackageUtils {
     }
 
     public static int getVersionCode(String packageName, Context context) {
-        return Objects.requireNonNull(getPackageManager(context).getPackageArchiveInfo(packageName, 0)).versionCode;
+        return Objects.requireNonNull(getPackageManager(context).getPackageArchiveInfo(getSourceDir(packageName, context), 0)).versionCode;
     }
 
     private static PackageInfo getPackageInfo(String packageName, Context context) {
@@ -108,7 +108,7 @@ public class sPackageUtils {
     }
 
     public static String getVersionName(String packageName, Context context) {
-        return Objects.requireNonNull(getPackageManager(context).getPackageArchiveInfo(packageName, 0)).versionName;
+        return Objects.requireNonNull(getPackageManager(context).getPackageArchiveInfo(getSourceDir(packageName, context), 0)).versionName;
     }
 
 }
