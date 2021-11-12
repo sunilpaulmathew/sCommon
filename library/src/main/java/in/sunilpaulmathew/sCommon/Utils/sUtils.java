@@ -68,16 +68,6 @@ public class sUtils {
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
-    public static boolean isPackageInstalled(String packageName, Context context) {
-        try {
-            context.getPackageManager().getApplicationInfo(packageName, 0);
-            return true;
-        } catch (PackageManager.NameNotFoundException ignored) {
-        }
-        return false;
-    }
-
     @RequiresApi(api = Build.VERSION_CODES.DONUT)
     public static boolean isPermissionDenied(Context context) {
         return (context.checkCallingOrSelfPermission(permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED);
@@ -223,9 +213,6 @@ public class sUtils {
 
     // Make sure permission to write to the destination available
     public static void copy(File source, File dest) {
-        if (!exist(dest.getParentFile())) {
-            mkdir(dest.getParentFile());
-        }
         try {
             FileInputStream inputStream = new FileInputStream(source);
             FileOutputStream outputStream = new FileOutputStream(dest);
@@ -238,6 +225,18 @@ public class sUtils {
 
             inputStream.close();
             outputStream.close();
+        } catch (IOException ignored) {}
+    }
+
+    // Make sure permission to write to the destination available
+    public static void copy(Uri uri, File dest, Context context) {
+        try (FileOutputStream outputStream = new FileOutputStream(dest, false)) {
+            InputStream inputStream = context.getContentResolver().openInputStream(uri);
+            int read;
+            byte[] bytes = new byte[8192];
+            while ((read = inputStream.read(bytes)) != -1) {
+                outputStream.write(bytes, 0, read);
+            }
         } catch (IOException ignored) {}
     }
 
