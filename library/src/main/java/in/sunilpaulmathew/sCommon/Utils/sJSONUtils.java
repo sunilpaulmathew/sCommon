@@ -17,7 +17,7 @@ public class sJSONUtils {
         }
     }
 
-    public static JSONArray getJSONObject(JSONObject object, String arrayName) {
+    public static JSONArray getJSONArray(JSONObject object, String arrayName) {
         try {
             return object.getJSONArray(arrayName);
         } catch (JSONException ignored) {
