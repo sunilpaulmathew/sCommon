@@ -119,6 +119,18 @@ public class sUtils {
         return snackbar;
     }
 
+    public static String getAppTheme(Context context) {
+        int appTheme = getInt("appTheme", 0, context);
+        switch (appTheme) {
+            case 2:
+                return context.getString(R.string.app_theme_light);
+            case 1:
+                return context.getString(R.string.app_theme_dark);
+            default:
+                return context.getString(R.string.app_theme_auto);
+        }
+    }
+
     public static String getLanguage(Context context) {
         return getString("appLanguage", java.util.Locale.getDefault().getLanguage(),
                 context);

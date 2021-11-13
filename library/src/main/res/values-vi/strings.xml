@@ -1,3 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <string name="dismiss">BỎ QUA</string>
+    <string name="app_theme_auto">"Tự động"</string>
+    <string name="app_theme_dark">"Tối"</string>
+    <string name="app_theme_light">"Sáng"</string>
 </resources>

@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="dismiss">"رفض"</string>
+    <string name="app_theme_auto">"آلي"</string>
+    <string name="app_theme_dark">"مظلم"</string>
+    <string name="app_theme_light">"منير"</string>
+</resources>
