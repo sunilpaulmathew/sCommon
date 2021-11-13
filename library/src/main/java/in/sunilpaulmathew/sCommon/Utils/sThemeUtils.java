@@ -67,12 +67,15 @@ public class sThemeUtils {
                     case 2:
                         sUtils.saveInt("appTheme", 2, context);
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                        break;
                     case 1:
                         sUtils.saveInt("appTheme", 1, context);
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                        break;
                     default:
                         sUtils.saveInt("appTheme", 0, context);
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+                        break;
                 }
             }
         }.show();
