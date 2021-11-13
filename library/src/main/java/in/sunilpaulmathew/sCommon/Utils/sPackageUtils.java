@@ -63,10 +63,6 @@ public class sPackageUtils {
         return getPackageManager(context).getApplicationIcon(Objects.requireNonNull(getApplicationInfo(packageName, context)));
     }
 
-    public static int getVersionCode(String packageName, Context context) {
-        return Objects.requireNonNull(getPackageManager(context).getPackageArchiveInfo(getSourceDir(packageName, context), 0)).versionCode;
-    }
-
     private static PackageInfo getPackageInfo(String packageName, Context context) {
         try {
             return getPackageManager(context).getPackageInfo(packageName, PackageManager.GET_PERMISSIONS);
@@ -105,10 +101,6 @@ public class sPackageUtils {
     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static String getUpdatedDate(String packageName, Context context) {
         return DateFormat.getDateTimeInstance().format(Objects.requireNonNull(getPackageInfo(packageName, context)).lastUpdateTime);
-    }
-
-    public static String getVersionName(String packageName, Context context) {
-        return Objects.requireNonNull(getPackageManager(context).getPackageArchiveInfo(getSourceDir(packageName, context), 0)).versionName;
     }
 
 }
