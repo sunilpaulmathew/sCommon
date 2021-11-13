@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
+
+import androidx.annotation.RequiresApi;
 
 import java.io.File;
 import java.util.Objects;
@@ -23,11 +26,14 @@ public class sAPKUtils {
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static Drawable getAPKIcon(String apkPath, Context context) {
         if (getPackageInfo(apkPath, context) != null) {
             return Objects.requireNonNull(getPackageInfo(apkPath, context)).applicationInfo.loadIcon(getPackageManager(context));
         } else {
-            return sUtils.getDrawable(R.drawable.ic_android, context);
+            Drawable drawable = sUtils.getDrawable(R.drawable.ic_android, context);
+            drawable.setTint(sUtils.getColor(sUtils.isDarkTheme(context) ? R.color.colorWhite : R.color.colorBlack, context));
+            return drawable;
         }
     }
 
