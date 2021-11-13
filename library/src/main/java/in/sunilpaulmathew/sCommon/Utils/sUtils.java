@@ -1,7 +1,5 @@
 package in.sunilpaulmathew.sCommon.Utils;
 
-import static android.Manifest.permission;
-
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -68,9 +66,8 @@ public class sUtils {
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.DONUT)
-    public static boolean isPermissionDenied(Context context) {
-        return (context.checkCallingOrSelfPermission(permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED);
+    public static boolean isPermissionDenied(String permission, Context context) {
+        return (context.checkCallingOrSelfPermission(permission) != PackageManager.PERMISSION_GRANTED);
     }
 
     public static boolean mkdir(File folderPath) {
@@ -268,10 +265,8 @@ public class sUtils {
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.DONUT)
-    public static void requestPermission(Activity activity) {
-        ActivityCompat.requestPermissions(activity, new String[] {
-                permission.WRITE_EXTERNAL_STORAGE}, 0);
+    public static void requestPermission(String[] permissions, Activity activity) {
+        ActivityCompat.requestPermissions(activity, permissions, 0);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
