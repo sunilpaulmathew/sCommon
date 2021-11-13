@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="dismiss">Yok say</string>
+    <string name="app_theme">"App teması"</string>
     <string name="app_theme_auto">"Otomatik"</string>
     <string name="app_theme_dark">"Koyu"</string>
     <string name="app_theme_light">"Açık"</string>
+    <string name="dismiss">Yok say</string>
 </resources>

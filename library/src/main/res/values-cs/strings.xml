@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="dismiss">"Zavrhnout"</string>
+    <string name="app_theme">"App Motiv"</string>
     <string name="app_theme_auto">"Auto"</string>
     <string name="app_theme_dark">"Tmavý"</string>
     <string name="app_theme_light">"Světlý"</string>
+    <string name="dismiss">"Zavrhnout"</string>
 </resources>

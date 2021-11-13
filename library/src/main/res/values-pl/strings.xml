@@ -1,6 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="dismiss">Zamknij</string>
+    <string name="app_theme">"Kompozycje"</string>
     <string name="app_theme_auto">"Automatycznie"</string>
     <string name="app_theme_dark">"Ciemny"</string>
     <string name="app_theme_light">"Jasny"</string>
+    <string name="dismiss">Zamknij</string>
 </resources>

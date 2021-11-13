@@ -16,7 +16,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
@@ -117,18 +116,6 @@ public class sUtils {
         Snackbar snackbar = Snackbar.make(view, message, Snackbar.LENGTH_LONG);
         snackbar.setAction(R.string.dismiss, v -> snackbar.dismiss());
         return snackbar;
-    }
-
-    public static String getAppTheme(Context context) {
-        int appTheme = getInt("appTheme", 0, context);
-        switch (appTheme) {
-            case 2:
-                return context.getString(R.string.app_theme_light);
-            case 1:
-                return context.getString(R.string.app_theme_dark);
-            default:
-                return context.getString(R.string.app_theme_auto);
-        }
     }
 
     public static String getLanguage(Context context) {
@@ -247,25 +234,6 @@ public class sUtils {
                 outputStream.write(bytes, 0, read);
             }
         } catch (IOException ignored) {}
-    }
-
-    /*
-     * Values: 0 - Auto; 1 - Dark; 2 - Light
-     * Should be called before setContentView of launcher activity
-     */
-    public static void initializeAppTheme(Context context) {
-        int appTheme = getInt("appTheme", 0, context);
-        switch (appTheme) {
-            case 1:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                break;
-            case 2:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-                break;
-            default:
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
-                break;
-        }
     }
 
     public static void launchUrl(String url, Activity activity) {
