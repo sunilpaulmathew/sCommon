@@ -57,7 +57,7 @@ public class sAPKUtils {
         }
     }
 
-    private static String getPackageName(String apkPath, Context context) {
+    public static String getPackageName(String apkPath, Context context) {
         if (getPackageInfo(apkPath, context) != null) {
             return Objects.requireNonNull(getPackageInfo(apkPath, context)).packageName;
         } else {
