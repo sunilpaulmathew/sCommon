@@ -31,6 +31,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.util.Locale;
 import java.util.Objects;
@@ -213,11 +214,7 @@ public class sUtils {
             FileInputStream inputStream = new FileInputStream(source);
             FileOutputStream outputStream = new FileOutputStream(dest);
 
-            byte[] buf = new byte[1024 * 1024];
-            int len;
-            while ((len = inputStream.read(buf)) > 0) {
-                outputStream.write(buf, 0, len);
-            }
+            copyStream(inputStream, outputStream);
 
             inputStream.close();
             outputStream.close();
@@ -228,12 +225,41 @@ public class sUtils {
     public static void copy(Uri uri, File dest, Context context) {
         try (FileOutputStream outputStream = new FileOutputStream(dest, false)) {
             InputStream inputStream = context.getContentResolver().openInputStream(uri);
-            int read;
-            byte[] bytes = new byte[8192];
-            while ((read = inputStream.read(bytes)) != -1) {
-                outputStream.write(bytes, 0, read);
-            }
+            
+            copyStream(inputStream, outputStream);
+            
+            inputStream.close();
         } catch (IOException ignored) {}
+    }
+
+    public static void copyAssetFile(String assetName, File dest, Context context) {
+        try {
+            InputStream inputStream = context.getAssets().open(assetName);
+            FileOutputStream outputStream = new FileOutputStream(dest);
+
+            copyStream(inputStream, outputStream);
+
+            inputStream.close();
+            outputStream.close();
+        } catch (IOException ignored) {}
+    }
+
+    public static void copyDir(File sourceDir, File destDir) {
+        for (File mFile : Objects.requireNonNull(sourceDir.listFiles())) {
+            if (mFile.isDirectory()) {
+                copyDir(mFile, new File(destDir, mFile.getName()));
+            } else {
+                copy(mFile, new File(destDir, mFile.getName()));
+            }
+        }
+    }
+
+    public static void copyStream(InputStream from, OutputStream to) throws IOException {
+        byte[] buf = new byte[1024 * 1024];
+        int len;
+        while ((len = from.read(buf)) > 0) {
+            to.write(buf, 0, len);
+        }
     }
 
     public static void launchUrl(String url, Activity activity) {
