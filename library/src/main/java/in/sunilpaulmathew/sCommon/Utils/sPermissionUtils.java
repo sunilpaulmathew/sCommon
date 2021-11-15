@@ -19,7 +19,7 @@ public class sPermissionUtils {
         return (context.checkCallingOrSelfPermission(permission) != PackageManager.PERMISSION_GRANTED);
     }
 
-    private static String getDescription(String permission, Context context) {
+    public static String getDescription(String permission, Context context) {
         switch (permission) {
             case "COARSE_LOCATION":
                 return context.getString(R.string.permission_coarse_location);
