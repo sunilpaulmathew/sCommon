@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+import in.sunilpaulmathew.sCommon.R;
+
 /*
  * Created by sunilpaulmathew <sunil.kde@gmail.com> on November 13, 2021
  * Based on the original work of nkalra0123 (Ref: https://github.com/nkalra0123/splitapkinstall)
@@ -110,6 +112,47 @@ public class sInstallerUtils {
         long sizeBytes;
         sizeBytes = size;
         doWriteSession(sessionId, path, sizeBytes, splitName, context);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public static void setStatus(int status, Intent intent, Context context) {
+        switch (status) {
+            case PackageInstaller.STATUS_PENDING_USER_ACTION:
+                sUtils.saveString("installationStatus", "waiting", context);
+                Intent confirmationIntent = intent.getParcelableExtra(Intent.EXTRA_INTENT);
+                if (confirmationIntent != null) {
+                    confirmationIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    try {
+                        context.startActivity(confirmationIntent);
+                    } catch (Exception ignored) {
+                    }
+                }
+                break;
+            case PackageInstaller.STATUS_SUCCESS:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_success), context);
+                break;
+            case PackageInstaller.STATUS_FAILURE_ABORTED:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_aborted), context);
+                break;
+            case PackageInstaller.STATUS_FAILURE_BLOCKED:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_blocked), context);
+                break;
+            case PackageInstaller.STATUS_FAILURE_CONFLICT:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_conflict), context);
+                break;
+            case PackageInstaller.STATUS_FAILURE_INCOMPATIBLE:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_incompatible), context);
+                break;
+            case PackageInstaller.STATUS_FAILURE_INVALID:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_bad_apks), context);
+                break;
+            case PackageInstaller.STATUS_FAILURE_STORAGE:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_storage), context);
+                break;
+            default:
+                sUtils.saveString("installationStatus", context.getString(R.string.installation_status_failed), context);
+                break;
+        }
     }
 
 }

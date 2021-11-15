@@ -1,7 +1,75 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
     <string name="app_theme">"App teması"</string>
     <string name="app_theme_auto">"Otomatik"</string>
     <string name="app_theme_dark">"Koyu"</string>
     <string name="app_theme_light">"Açık"</string>
+
     <string name="dismiss">Yok say</string>
+
+    <!--Installer-->
+    <string name="installation_cancel_message">"Kurulum iptal edilsin mi?"</string>
+    <string name="installation_status_aborted">"Kurulum kullanıcı tarafından iptal edildi"</string>
+    <string name="installation_status_bad_apks">"Hatalı APK dosyaları seçildi"</string>
+    <string name="installation_status_blocked">"Kurulum engellendi"</string>
+    <string name="installation_status_conflict">"App kurulumu yapılamıyor, aynı adla kurulu başka bir app ile çakışıyor"</string>
+    <string name="installation_status_failed">"Kurulum Başarısız!"</string>
+    <string name="installation_status_incompatible">"App bu cihazla uyumlu değil"</string>
+    <string name="installation_status_storage">"App kurulumu için yeterli alan yok"</string>
+    <string name="installation_status_success">"Kurulum Başarılı!"</string>
+
+    <!--Permissions-->
+    <string name="permission_access_notification">"Bir sistem uygulamasının bildirimlere erişmesine izin verir"</string>
+    <string name="permission_accessibility_service">"Sadece sistemin bağlanabileceğinden emin olmak için Erişilebilirlik Hizmeti tarafından ihtiyaç duyuluyor"</string>
+    <string name="permission_audio_notification">"Bildirim ses seviyesini değiştir"</string>
+    <string name="permission_boot_completed">"Sistemin açılışı tamamladığını gösteren bir bildirim al"</string>
+    <string name="permission_body_sensors">"Kalp atışı gibi bedende gerçekleşen olayları ölçen sensörlerin verilerine erişir"</string>
+    <string name="permission_call_phone">"Bir uygulamanın Telefon kullanıcı arayüzünü kullanmadan kullanıcının cevaplayabileceği bir arama başlatmasına izin verir"</string>
+    <string name="permission_camera">"Kamera cihazına erişebilmek için gerekli"</string>
+    <string name="permission_change_wifi">"Uygulamaların kablosuz bağlantı durumunu değiştirmesine izin verir"</string>
+    <string name="permission_coarse_location">"Bir uygulamanın yaklaşık konuma erişmesine izin verir"</string>
+    <string name="permission_delete_packages">"Bir uygulamanın paket silme isteğinde bulunmasına izin verir"</string>
+    <string name="permission_fine_location">"Bir uygulamanın kesin konuma erişmesine izin verir"</string>
+    <string name="permission_get_accounts">"Hesap Hizmetindeki hesapların listesine erişmesine izin verir"</string>
+    <string name="permission_gps">"Bir uygulamanın GPS'e erişmesine izin verir"</string>
+    <string name="permission_install_packages">"Bir uygulamanın paket yüklemesine izin verir"</string>
+    <string name="permission_mute_microphone">"Bir uygulamanın mikrofonu susturabilmesine izin verir"</string>
+    <string name="permission_neighbouring_cells">"Bir uygulamanın alınan Sinyal Gücüne ve Hücre Kimliği konumuna erişmesine izin verir"</string>
+    <string name="permission_post_notification">"Bir uygulamanın bildirim göndermesine izin verir"</string>
+    <string name="permission_process_outgoing_calls">"Bir uygulamanın çağrıyı başka bir numaraya yönlendirme veya sonlandırma seçenekleriyle birlikte yapılan aramalardaki numarayı görmesine izin verir"</string>
+    <string name="permission_read_calender">"Bir uygulamanın kullanıcıya ait takvim verilerini okumasına izin verir"</string>
+    <string name="permission_read_call_log">"Bir uygulamanın kullanıcıya ait arama geçmişini okumasına izin verir"</string>
+    <string name="permission_read_clipboard">"Pano Hizmetine ait içerikleri okumasına izin verir"</string>
+    <string name="permission_read_contacts">"Bir uygulamanın kullanıcıya ait telefon rehberi verilerini okumasına izin verir"</string>
+    <string name="permission_read_storage">"Bir uygulamanın harici depolamadan okumasına izin verir"</string>
+    <string name="permission_read_phone_numbers">"Cihazın telefon numaralarını okumasına izin verir. READ_PHONE_STATE izninin verdiği yetkileri de kapsar fakat anında yüklenip açılan uygulamalar içindir"</string>
+    <string name="permission_read_phone_state">"Cihazın telefon numarası, mevcut mobil veri bilgileri, yapılan aramaların durumları ve cihazda kayıtlı olan telefon hesapları dahil olmak üzere telefon durumuna sadece-okuma taraflı izin verir"</string>
+    <string name="permission_read_sms">"Bir uygulamanın SMS mesajlarını okumasına izin verir"</string>
+    <string name="permission_receive_mms">"Bir uygulamanın gelen MMS mesajlarını izlemesine izin verir"</string>
+    <string name="permission_receive_sms">"Bir uygulamanın SMS mesajı almasına izin verir"</string>
+    <string name="permission_receive_emergency_sms">"Bir uygulamanın Acil Durum SMS mesajı almasına izin verir"</string>
+    <string name="permission_receive_wap_push">"Bir uygulamanın WAP bildirimleri almasına izin verir"</string>
+    <string name="permission_record_audio">"Bir uygulamanın ses kaydetmesine izin verir"</string>
+    <string name="permission_ring_volume">"Zil sesi seviyesini değiştirir"</string>
+    <string name="permission_run_background">"Bir uygulamanın arka planda çalışmasına izin verir"</string>
+    <string name="permission_start_foreground">"Ön plan hizmetlerini başlat. FOREGROUND_SERVICE izni gerektirir"</string>
+    <string name="permission_system_alert_window">"Pencere oluşturur ve diğer bütün uygulamaların üzerinde gösterir"</string>
+    <string name="permission_take_audio_focus">"Bir uygulamanın ses odağını elinde tutan tek uygulama olmasına izin verir"</string>
+    <string name="permission_toast_window">"Ekranda kısa süreli mesajlar gösterir"</string>
+    <string name="permission_unavailable">"'%s' için herhangi bir açıklama bulunmuyor"</string>
+    <string name="permission_usage_status">"Bir uygulamanın kullanım istatistiklerini toplamasına izin verir"</string>
+    <string name="permission_use_biometric">"Cihaz destekli biyometrik yöntemleri kullanır"</string>
+    <string name="permission_use_fingerprint">"Bir uygulamanın parmak izi donanımını kullanmasına verir"</string>
+    <string name="permission_vibrate">"Titreşim cihazına erişmesine izin verir"</string>
+    <string name="permission_wake_lock">"İşlemcinin uyumasını veya ekranın kararmasını engellemek için Güç Yönetici Uyandırma Kilidini kullanır"</string>
+    <string name="permission_wifi_scan">"Bir uygulamanın kablosuz ağları taramasına izin verir"</string>
+    <string name="permission_write_calender">"Bir uygulamanın kullanıcıya ait takvim verilerine yazmasına izin verir"</string>
+    <string name="permission_write_call_log">"Bir uygulamanın kullanıcıya ait çağrı geçmişi verilerine yazmasına izin verir (fakat okuyamaz)"</string>
+    <string name="permission_write_clipboard">"Panoya veri yazar"</string>
+    <string name="permission_write_contacts">"Bir uygulamanın kullanıcıya ait telefon rehberi verilerine yazmasına izin verir"</string>
+    <string name="permission_write_settings">"Sistem ayarlarını okur veya yazar (bazı kısıtlamalar bulunmaktadır)"</string>
+    <string name="permission_write_sms">"Bir uygulamanın SMS mesajı göndermesine izin verir"</string>
+    <string name="permission_write_storage">"Bir uygulamanın harici depolamaya yazmasına izin verir"</string>
+    <string name="permission_write_wallpaper">"Bir uygulamanın duvar kağıdını değiştirmesine izin verir"</string>
 </resources>

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
@@ -16,7 +15,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
-import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import com.google.android.material.snackbar.Snackbar;
@@ -64,10 +62,6 @@ public class sUtils {
     public static boolean isDarkTheme(Context context) {
         int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
-    }
-
-    public static boolean isPermissionDenied(String permission, Context context) {
-        return (context.checkCallingOrSelfPermission(permission) != PackageManager.PERMISSION_GRANTED);
     }
 
     public static boolean mkdir(File folderPath) {
@@ -269,10 +263,6 @@ public class sUtils {
             activity.startActivity(i);
         } catch (ActivityNotFoundException ignored) {
         }
-    }
-
-    public static void requestPermission(String[] permissions, Activity activity) {
-        ActivityCompat.requestPermissions(activity, permissions, 0);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)

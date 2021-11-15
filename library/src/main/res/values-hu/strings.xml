@@ -1,0 +1,69 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
+
+    <string name="dismiss">"Elutasít"</string>
+
+    <!--Installer-->
+    <string name="installation_status_aborted">"A telepítést a felhasználó törölte"</string>
+    <string name="installation_status_bad_apks">"Érvénytelen APK fájlokat választott"</string>
+    <string name="installation_status_blocked">"A telepítés blokkolt"</string>
+    <string name="installation_status_conflict">"Az alkalmazást nem lehet telepíteni, mert ütközik egy már telepített, azonos csomagnevű alkalmazással"</string>
+    <string name="installation_status_failed">"Sikertelen telepítés!"</string>
+    <string name="installation_status_incompatible">"Az alkalmazás nem kompatibilis ezzel az eszközzel"</string>
+    <string name="installation_status_storage">"Nincs elég tárhely az alkalmazás telepítéséhez"</string>
+
+    <!--Permissions-->
+    <string name="permission_access_notification">"Engedélyezi egy rendszeralkalmazásnak az értesítések elérését"</string>
+    <string name="permission_accessibility_service">"Egy Kisegítő Szolgáltatás igényli, hogy csak a rendszer férhessen hozzá"</string>
+    <string name="permission_audio_notification">"Értesítési mennyiség módosítása"</string>
+    <string name="permission_boot_completed">"Adás vétele, hogy a rendszer befejezte a rendszerindítást"</string>
+    <string name="permission_body_sensors">"Adathozzáférés az érzékelőkhöz, amelyeket a felhasználó használ, például a pulzus méréséhez"</string>
+    <string name="permission_call_phone">"Engedélyezi az alkalmazásnak, hogy telefonhívást kezdeményezzen anélkül, hogy a Tárcsázót használja és a felhasználó megerősítse a hívást"</string>
+    <string name="permission_camera">"Szükséges ahhoz, hogy hozzáférhessen a kamera eszközhöz"</string>
+    <string name="permission_change_wifi">"Engedélyezi az alkalmazásoknak a Wi-Fi kapcsolat állapotának megváltoztatását"</string>
+    <string name="permission_coarse_location">"Engedélyezi az alkalmazásnak a hozzávetőleges hely elérését"</string>
+    <string name="permission_delete_packages">"Engedélyezi egy alkalmazás számára csomagok törlésének kérését"</string>
+    <string name="permission_fine_location">"Engedélyezi az alkalmazásnak a pontos hely elérését"</string>
+    <string name="permission_get_accounts">"Hozzáférést engedélyez a Fiókszolgáltatás fióklistájához"</string>
+    <string name="permission_gps">"Engedélyezi az alkalmazásnak a GPS elérését"</string>
+    <string name="permission_install_packages">"Engedélyezi egy alkalmazás számára csomagok telepítését"</string>
+    <string name="permission_mute_microphone">"Engedélyezi az alkalmazásnak a mikrofon elnémítását"</string>
+    <string name="permission_neighbouring_cells">"Engedélyezi az alkalmazásnak, hogy megkapja a Jelerősséget és a Cell ID azonosítót"</string>
+    <string name="permission_post_notification">"Engedélyezi az alkalmazásnak, hogy értesítéseket tegyen közzé"</string>
+    <string name="permission_process_outgoing_calls">"Engedélyezi az alkalmazásnak a kimenő hívás során tárcsázott szám megtekintését azzal a lehetőséggel, hogy átirányítsa a hívást egy másik számra, vagy teljesen megszakítsa a hívást"</string>
+    <string name="permission_read_calender">"Engedélyezi az alkalmazásnak, hogy elolvassa a felhasználó naptáradatait"</string>
+    <string name="permission_read_call_log">"Engedélyezi az alkalmazásnak, hogy elolvassa a felhasználó hívásnaplóját"</string>
+    <string name="permission_read_clipboard">"Elolvassa a vágólap szolgáltatás tartalmát"</string>
+    <string name="permission_read_contacts">"Engedélyezi az alkalmazásnak, hogy olvassa a felhasználó névjegyzékét"</string>
+    <string name="permission_read_storage">"Engedélyezi az alkalmazásnak a külső tárhelyről történő olvasást"</string>
+    <string name="permission_read_phone_numbers">"Olvasási hozzáférést tesz lehetővé az eszköz telefonszámához.  Ez a READ_PHONE_STATE által biztosított képességek egy részhalmaza, de a futó alkalmazásoknak lehetősége"</string>
+    <string name="permission_read_phone_state">"Csak olvasható hozzáférést tesz lehetővé a telefonállapothoz, beleértve az eszköz telefonszámát, az aktuális mobilhálózati információkat, a folyamatban lévő hívások állapotát és az eszközön regisztrált telefonfiókok listáját"</string>
+    <string name="permission_read_sms">"Engedélyezi az alkalmazásnak az SMS-üzenetek olvasását"</string>
+    <string name="permission_receive_mms">"Engedélyezi az alkalmazás számára, hogy figyelje a bejövő MMS-üzeneteket"</string>
+    <string name="permission_receive_sms">"Engedélyezi az alkalmazás számára, hogy SMS-üzeneteket fogadjon"</string>
+    <string name="permission_receive_emergency_sms">"Engedélyezi az alkalmazás számára, hogy Vészhelyzeti SMS-üzeneteket fogadjon"</string>
+    <string name="permission_receive_wap_push">"Engedélyezi az alkalmazás számára, hogy WAP push üzeneteket fogadjon"</string>
+    <string name="permission_record_audio">"Engedélyezi az alkalmazás számára hangfelvétel rögzítését"</string>
+    <string name="permission_ring_volume">"A csengetés hangerejének módosítása"</string>
+    <string name="permission_run_background">"Engedélyezi az alkalmazás futtatását a háttérben"</string>
+    <string name="permission_start_foreground">"Indítja az előtérben futó szolgáltatásokat.  FOREGROUND_SERVICE engedélyre van szükség"</string>
+    <string name="permission_system_alert_window">"Ablakok létrehozása és mutása a többi alkalmazás felett"</string>
+    <string name="permission_take_audio_focus">"Engedélyezi az alkalmazásnak, hogy egyedüli audió fókusza legyen"</string>
+    <string name="permission_toast_window">"Rövid ideig tartó üzenetek megjelenítése a képernyőn"</string>
+    <string name="permission_unavailable">"A '%s' leírása nem érhető el"</string>
+    <string name="permission_usage_status">"Használati statisztika gyűjtését engedélyezi az alkalmazásnak"</string>
+    <string name="permission_use_biometric">"Használja az eszköz által támogatott biometrikus módszereket"</string>
+    <string name="permission_use_fingerprint">"Engedélyezi az alkalmazásnak az ujjlenyomatolvasó használatát"</string>
+    <string name="permission_vibrate">"Engedélyezi a hozzáférést a vibrátorhoz"</string>
+    <string name="permission_wake_lock">"Használja a PowerManager WakeLocks funkciót, hogy a processzor ne aludjon, vagy a képernyő ne sötétüljön el"</string>
+    <string name="permission_wifi_scan">"Engedélyezi az alkalmazásnak a WiFi-hálózatok vizsgálatát"</string>
+    <string name="permission_write_calender">"Engedélyezi az alkalmzásnak a naptáradatokba írást"</string>
+    <string name="permission_write_call_log">"Engedélyezi az alkalmazásnak, hogy írja (de ne olvassa) a hívásnapló adatait"</string>
+    <string name="permission_write_clipboard">"Adatírás a vágólapra"</string>
+    <string name="permission_write_contacts">"Engedélyezi az alkalmazásnak a cimjegyzék írását"</string>
+    <string name="permission_write_settings">"A rendszerbeállítások olvasása vagy írása (vannak korlátozások)"</string>
+    <string name="permission_write_sms">"Engedélyezi az alkalmazásnak, hogy SMS üzeneteket küldjön"</string>
+    <string name="permission_write_storage">"Engedélyezi az alkalmazásnak, hogy külső tárhelyre írjon"</string>
+    <string name="permission_write_wallpaper">"Engedélyezi az alkalmazásnak a háttérkép beállítását"</string>
+</resources>

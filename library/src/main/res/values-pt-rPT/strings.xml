@@ -1,7 +1,73 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
     <string name="app_theme">"Tema do App"</string>
     <string name="app_theme_auto">"Auto"</string>
     <string name="app_theme_dark">"Escuro"</string>
     <string name="app_theme_light">"Claro"</string>
+
     <string name="dismiss">Dismiss</string>
+
+    <!--Installer-->
+    <string name="installation_status_aborted">"A instalação foi cancelada pelo utilizador"</string>
+    <string name="installation_status_bad_apks">"Ficheiros APK selecionados inválidos"</string>
+    <string name="installation_status_blocked">"A instalação foi bloqueada"</string>
+    <string name="installation_status_conflict">"Erro ao instalar a aplicação porque existe um conflito com uma aplicação já existente com o mesmo nome"</string>
+    <string name="installation_status_failed">"Erro na instalação!"</string>
+    <string name="installation_status_incompatible">"A aplicação é incompatível com este dispositivo"</string>
+    <string name="installation_status_storage">"Erro ao instalar a aplicação porque o armazenamento está cheio"</string>
+
+    <!--Permissions-->
+    <string name="permission_access_notification">"Permite que uma aplicação de sistema aceda às notificações"</string>
+    <string name="permission_accessibility_service">"Exigido por um Serviço de Acessibilidade, para garantir que apenas o sistema se possa conectar "</string>
+    <string name="permission_audio_notification">"Alterar o volume das notificações"</string>
+    <string name="permission_boot_completed">"Receber uma notificação assim que o sistema terminar a inicialização"</string>
+    <string name="permission_body_sensors">"Aceder aos dados dos sensores que o utilizador usa para avaliar o estado do corpo do utilizador, tal como o batimento cardíaco"</string>
+    <string name="permission_call_phone">"Permite que uma aplicação realize uma chamada telefónica se ter de utilizar o Telefone para confirmação do utilizador"</string>
+    <string name="permission_camera">"Necessário para aceder à câmara do dispositivo"</string>
+    <string name="permission_change_wifi">"Permite que uma aplicação altere o estado de conectividade do Wi-Fi"</string>
+    <string name="permission_coarse_location">"Permite que uma aplicação aceda à localização aproximada"</string>
+    <string name="permission_delete_packages">"Permite que uma aplicação elimine pacotes"</string>
+    <string name="permission_fine_location">"Permite que uma aplicação aceda à localização exata"</string>
+    <string name="permission_get_accounts">"Permite o acesso à lista de contas no Serviço de Contas"</string>
+    <string name="permission_gps">"Permite que uma aplicação aceda ao GPS"</string>
+    <string name="permission_install_packages">"Permite que uma aplicação instale pacotes"</string>
+    <string name="permission_mute_microphone">"Permite que uma aplicação silencie o microfone"</string>
+    <string name="permission_neighbouring_cells">"Permite que uma aplicação receba a Potência de Sinal e a localização do identificador do dispositivo"</string>
+    <string name="permission_post_notification">"Permite que uma aplicação faça notificações"</string>
+    <string name="permission_process_outgoing_calls">"Permite que uma aplicação aceda ao número que está a ser marcado durante uma chamada em curso com a opção de redirecionar a chamada para um número diferente ou abortar a chamada"</string>
+    <string name="permission_read_calender">"Permite que uma aplicação aceda aos dados do calendário do utilizador"</string>
+    <string name="permission_read_call_log">"Permite que uma aplicação aceda ao registo de chamadas do utilizador"</string>
+    <string name="permission_read_clipboard">"Aceder aos conteúdos da área de transferência"</string>
+    <string name="permission_read_contacts">"Permite que uma aplicação aceda aos dados dos contactos do utilizador"</string>
+    <string name="permission_read_storage">"Permite que uma aplicação aceda ao armazenamento externo"</string>
+    <string name="permission_read_phone_numbers">"Permite acesso aos números de telefone. Trata-se de um subsetor das funcionalidades incluídas em READ_PHONE_STATE mas está exposto a aplicações instantâneas."</string>
+    <string name="permission_read_phone_state">"Permite acesso ao estado do dispositivo, incluindo o número do dispositivo, informação sobre a rede telefónica atual, o estado de quaisquer chamadas em curso e uma lista de quaisquer contas telefónicas registadas no dispositivo."</string>
+    <string name="permission_read_sms">"Permite acesso de uma aplicação às mensagens SMS"</string>
+    <string name="permission_receive_mms">"Permite que uma aplicação monitorize mensagens MMS recebidas"</string>
+    <string name="permission_receive_sms">"Permite que uma aplicação receba mensagens SMS"</string>
+    <string name="permission_receive_emergency_sms">"Permite que uma aplicação receba mensagens SMS de emergência"</string>
+    <string name="permission_receive_wap_push">"Permite que uma aplicação receba mensagens WAP push"</string>
+    <string name="permission_record_audio">"Permite que uma aplicação grave áudio"</string>
+    <string name="permission_ring_volume">"Alterar o volume de toque"</string>
+    <string name="permission_run_background">"Permite que uma aplicação seja executada em segundo plano"</string>
+    <string name="permission_start_foreground">"Iniciar serviços de primeiro plano. Requer a permissão FOREGROUND_SERVICE"</string>
+    <string name="permission_system_alert_window">"Criar janelas e mostrá-las por cima de todas as outras aplicações"</string>
+    <string name="permission_take_audio_focus">"Permite que uma aplicação seja a única com foco áudio"</string>
+    <string name="permission_toast_window">"Mostra mensagens de curta duração no ecrã"</string>
+    <string name="permission_unavailable">"A descrição de '%s' não está disponível"</string>
+    <string name="permission_usage_status">"Permite que uma aplicação recolha estatísticas de utilização"</string>
+    <string name="permission_use_biometric">"Utilizar modalidades biométricas suportadas pelo dispositivo"</string>
+    <string name="permission_use_fingerprint">"Permite que uma aplicação utilize o leitor de impressões digitais"</string>
+    <string name="permission_vibrate">"Permitir acesso à vibração"</string>
+    <string name="permission_wake_lock">"Utilizar PowerManager WakeLocks para impedir o processador de entrar em suspensão ou o ecrã de escurecer"</string>
+    <string name="permission_wifi_scan">"Permitir que uma aplicação aceda à análise de redes Wi-Fi"</string>
+    <string name="permission_write_calender">"Permitir que uma aplicação grave os dados do calendário do utilizador"</string>
+    <string name="permission_write_call_log">"Permitir que uma aplicação grave (mas não aceda) os dados do registo de chamadas do utilizador"</string>
+    <string name="permission_write_clipboard">"Gravar dados na área de transferência"</string>
+    <string name="permission_write_contacts">"Permitir que uma aplicação grave os dados dos contactos do utilizador"</string>
+    <string name="permission_write_settings">"Aceder ou gravar as definições de sistema (existem limitações)"</string>
+    <string name="permission_write_sms">"Permitir que uma aplicação envie mensagens SMS"</string>
+    <string name="permission_write_storage">"Permitir que uma aplicação grave dados no armazenamento externo"</string>
+    <string name="permission_write_wallpaper">"Permitir que uma aplicação defina o papel de parede"</string>
 </resources>

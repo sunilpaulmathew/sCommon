@@ -1,7 +1,23 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
     <string name="app_theme">"Tema do App"</string>
     <string name="app_theme_auto">"Autom."</string>
     <string name="app_theme_dark">"Escuro"</string>
     <string name="app_theme_light">"Claro"</string>
+
     <string name="dismiss">Dispensar</string>
+
+    <!--Installer-->
+    <string name="installation_cancel_message">"Você tem certeza de quer cancelar a instalação?"</string>
+    <string name="installation_status_aborted">"A instalação foi cancelada pelo usuário"</string>
+    <string name="installation_status_bad_apks">"Os arquivos de APK selecionados são inválidos"</string>
+    <string name="installation_status_blocked">"A instalação foi bloqueada"</string>
+    <string name="installation_status_conflict">"Não foi possível instalar o App porque ele está num conflito com o app de pacote com o mesmo nome já instalado"</string>
+    <string name="installation_status_failed">"Instalação não concluída!"</string>
+    <string name="installation_status_incompatible">"O App é incompatível com este dispositivo"</string>
+    <string name="installation_status_storage">"Não há espaço suficiente no armazenamento para instalar o App"</string>
+    <string name="installation_status_success">"Instalação concluída com sucesso!"</string>
+
+    <!--Permissions-->
 </resources>

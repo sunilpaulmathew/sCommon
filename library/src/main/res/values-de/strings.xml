@@ -1,7 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
     <string name="app_theme">"Theme"</string>
     <string name="app_theme_auto">"Automatisch"</string>
     <string name="app_theme_dark">"Dunkel"</string>
     <string name="app_theme_light">"Hell"</string>
+
     <string name="dismiss">"Verwerfen"</string>
+
+    <!--Installer-->
+    <string name="installation_cancel_message">"Sind Sie sicher, dass Sie die Installation abbrechen wollen?"</string>
+    <string name="installation_status_aborted">"Installation wurde vom Nutzer abgebrochen"</string>
+    <string name="installation_status_bad_apks">"Ungültige APK-Dateien ausgewählt"</string>
+    <string name="installation_status_blocked">"Installation wurde blockiert"</string>
+    <string name="installation_status_conflict">"Die App kann nicht installiert werden, da sie in Konflikt mit einer bereits installierten App mit demselben Paketnamen steht"</string>
+    <string name="installation_status_failed">"Installation fehlgeschlagen!"</string>
+    <string name="installation_status_incompatible">"Anwendung ist mit diesem Gerät nicht kompatibel"</string>
+    <string name="installation_status_storage">"Nicht genügend Speicherplatz für die Installation der Anwendung"</string>
+    <string name="installation_status_success">"Installation erfolgreich abgeschlossen!"</string>
+
+    <!--Permissions-->
+
 </resources>

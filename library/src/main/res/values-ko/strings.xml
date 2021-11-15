@@ -1,3 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
+
     <string name="dismiss">취소</string>
+
+    <!--Installer-->
+
+    <!--Permissions-->
 </resources>

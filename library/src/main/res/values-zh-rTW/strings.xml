@@ -1,3 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--Theme-->
+
     <string name="dismiss">不予理會</string>
+
+    <!--Installer-->
+    <string name="installation_status_aborted">"安裝被用戶取消"</string>
+    <string name="installation_status_bad_apks">"已選無效的APK檔"</string>
+    <string name="installation_status_failed">"安裝失敗！"</string>
+    <string name="installation_status_incompatible">"應用程式與本裝置不相容"</string>
+    <string name="installation_status_storage">"沒有足夠空間安裝此應用程式"</string>
+
+    <!--Permissions-->
 </resources>
