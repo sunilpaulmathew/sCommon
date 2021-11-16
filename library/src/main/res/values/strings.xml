@@ -1,4 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="lib_name" translatable="false">sCommon</string>
 
     <!--Theme-->
     <string name="app_theme">App Theme</string>
@@ -6,6 +7,7 @@
     <string name="app_theme_dark">Dark</string>
     <string name="app_theme_light">Light</string>
 
+    <string name="cancel">Cancel</string>
     <string name="dismiss">Dismiss</string>
 
     <!--Language-->
@@ -95,4 +97,10 @@
     <string name="permission_write_sms">Allows an application to send SMS messages</string>
     <string name="permission_write_storage">Allows an application to write to external storage</string>
     <string name="permission_write_wallpaper">Allows an application to set the wallpaper</string>
+
+    <!--Translations-->
+    <string name="translate">Translate %s</string>
+    <string name="translations">Translations</string>
+    <string name="translations_message">Important: This application uses a lot of strings from sCommon, an open-source library sharing common code-base for most of the projects made by this developer. Hence, in-order to use this app completely in your language, please consider translating the library as well.</string>
+    <string name="translations_summary">Help me to translate this app. Click here to visit POEditor localization project</string>
 </resources>

@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"深色"</string>
     <string name="app_theme_light">"浅色"</string>
 
+    <!--General-->
+    <string name="cancel">取消</string>
     <string name="dismiss">不予理会</string>
 
     <!--Installer-->
@@ -72,4 +74,8 @@
     <string name="permission_write_sms">"允许应用发送短信"</string>
     <string name="permission_write_storage">"允许应用写入外部存储"</string>
     <string name="permission_write_wallpaper">"允许应用设置壁纸"</string>
+
+    <!--Translations-->
+    <string name="translations">"翻译"</string>
+    <string name="translations_summary">"帮我们翻译此应用！点击此处访问 POEditor 本地化项目"</string>
 </resources>

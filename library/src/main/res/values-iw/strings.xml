@@ -1,13 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <!--Theme-->
-    <string name="app_theme_auto">Aŭtomate</string>
-    
+    <string name="app_theme_auto">"אוטומטי"</string>
+
     <!--General-->
-    <string name="cancel">Nuligi</string>
-    <string name="dismiss">Kaŝi</string>
+    <string name="cancel">"ביטול"</string>
+
+    <!--Installer-->
 
     <!--Permissions-->
 
     <!--Translations-->
+    <string name="translations">תרגומים</string>
 </resources>

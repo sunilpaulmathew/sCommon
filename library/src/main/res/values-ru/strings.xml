@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"Темная"</string>
     <string name="app_theme_light">"Светлая"</string>
 
+    <!--General-->
+    <string name="cancel">Отмена</string>
     <string name="dismiss">Закрыть</string>
 
     <!--Installer-->
@@ -72,4 +74,8 @@
     <string name="permission_write_sms">"Позволяет приложению отправлять SMS-сообщения."</string>
     <string name="permission_write_storage">"Позволяет приложению записывать данные во внешнее хранилище."</string>
     <string name="permission_write_wallpaper">"Позволяет приложению устанавливать обои"</string>
+
+    <!--Translations-->
+    <string name="translations">"Переводы"</string>
+    <string name="translations_summary">"Помогите мне перевести это приложение! Нажмите здесь, чтобы получить исходные языковые строки на английском"</string>
 </resources>

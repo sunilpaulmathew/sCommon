@@ -5,6 +5,9 @@
     <string name="app_theme_auto">"Auto"</string>
     <string name="app_theme_dark">"Sombre"</string>
     <string name="app_theme_light">"Clair"</string>
+    
+    <!--General-->
+    <string name="cancel">Annuler</string>
     <string name="dismiss">Fermer</string>
 
     <!--Installer-->
@@ -69,4 +72,8 @@
     <string name="permission_write_sms">"Permet à une application d'envoyer des messages SMS"</string>
     <string name="permission_write_storage">"Permet à une application d'écrire sur un stockage externe"</string>
     <string name="permission_write_wallpaper">"Permet à une application de définir le fond d'écran"</string>
+
+    <!--Translations-->
+    <string name="translations">"Traductions"</string>
+    <string name="translations_summary">"Aidez-moi à traduire cette application ! Cliquer ici pour rejoindre le projet sur le site de POEditor"</string>
 </resources>

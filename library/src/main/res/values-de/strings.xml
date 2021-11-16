@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"Dunkel"</string>
     <string name="app_theme_light">"Hell"</string>
 
+    <!--General-->
+    <string name="cancel">Abbrechen</string>
     <string name="dismiss">"Verwerfen"</string>
 
     <!--Installer-->
@@ -21,4 +23,7 @@
 
     <!--Permissions-->
 
+    <!--Translations-->
+    <string name="translations">"Übersetzungen"</string>
+    <string name="translations_summary">"Helfen Sie mir, diese App zu übersetzen! Klicken Sie hier, um die Original-Sprachzeichenfolgen in Englisch zu erhalten"</string>
 </resources>

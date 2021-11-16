@@ -6,9 +6,15 @@
     <string name="app_theme_dark">"مظلم"</string>
     <string name="app_theme_light">"منير"</string>
 
+    <!--General-->
+    <string name="cancel">"إلغاء"</string>
     <string name="dismiss">"رفض"</string>
 
     <!--Installer-->
 
     <!--Permissions-->
+
+    <!--Translations-->
+    <string name="translations">"الترجمات"</string>
+    <string name="translations_summary">"ساعدني في ترجمة هذا التطبيق. انقر هنا لزيارة مشروع الترجمة على POEditor."</string>
 </resources>

@@ -2,9 +2,15 @@
 
     <!--Theme-->
 
+    <!--General-->
+    <string name="cancel">취소</string>
     <string name="dismiss">취소</string>
 
     <!--Installer-->
 
     <!--Permissions-->
+
+    <!--Translations-->
+    <string name="translations">번역</string>
+    <string name="translations_summary">이 앱을 번역하는 것을 도와주세요!</string>
 </resources>

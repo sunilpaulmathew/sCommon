@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"Ciemny"</string>
     <string name="app_theme_light">"Jasny"</string>
 
+    <!--General-->
+    <string name="cancel">Anuluj</string>
     <string name="dismiss">Zamknij</string>
 
     <!--Installer-->
@@ -70,4 +72,8 @@
     <string name="permission_write_sms">"Pozwala aplikacji wysyłać wiadomości SMS"</string>
     <string name="permission_write_storage">"Pozwala aplikacji zapisywać do pamięci zewnętrznej"</string>
     <string name="permission_write_wallpaper">"Pozwala aplikacji ustawiać tapetę"</string>
+
+    <!--Translations-->
+    <string name="translations">"Tłumaczenia"</string>
+    <string name="translations_summary">"Pomóż mi przetłumaczyć tę aplikację. Naciśnij tutaj, aby odwiedzić projekt lokalizacji w POEditor"</string>
 </resources>

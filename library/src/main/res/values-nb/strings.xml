@@ -1,0 +1,10 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!--General-->
+    <string name="cancel">"Avbryt"</string>
+    <string name="dismiss">"Avvis"</string>
+
+    <!--Translations-->
+    <string name="translations">"Oversettelser"</string>
+    <string name="translations_summary">"Hjelp med å oversette appen. Trykk her for å gå til POEditor localization project."</string>
+</resources>

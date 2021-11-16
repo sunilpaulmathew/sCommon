@@ -2,6 +2,8 @@
 
     <!--Theme-->
 
+    <!--General-->
+    <string name="cancel">റദ്ദാക്കുക</string>
     <string name="dismiss">"നിരസിക്കുക"</string>
 
     <!--Installer-->
@@ -58,4 +60,8 @@
     <string name="permission_write_sms">"SMS സന്ദേശങ്ങൾ അയയ്ക്കാൻ അപ്ലിക്കേഷനെ അനുവദിക്കുന്നു"</string>
     <string name="permission_write_storage">"സംഭരണത്തിൽ മാറ്റങ്ങൾ വരുത്താൻ അപ്ലിക്കേഷനെ അനുവദിക്കുന്നു"</string>
     <string name="permission_write_wallpaper">"വാൾപേപ്പർ സജ്ജമാക്കാൻ അപ്ലിക്കേഷനെ അനുവദിക്കുന്നു"</string>
+
+    <!--Translations-->
+    <string name="translations">"വിവർത്തനങ്ങൾ"</string>
+    <string name="translations_summary">"ഈ അപ്ലിക്കേഷൻ വിവർത്തനം ചെയ്യാൻ എന്നെ സഹായിക്കൂ"</string>
 </resources>

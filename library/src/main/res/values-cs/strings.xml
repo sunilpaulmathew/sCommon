@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"Tmavý"</string>
     <string name="app_theme_light">"Světlý"</string>
 
+    <!--General-->
+    <string name="cancel">"Storno"</string>
     <string name="dismiss">"Zavrhnout"</string>
 
     <!--Installer-->
@@ -72,4 +74,8 @@
     <string name="permission_write_sms">"Povolit aplikaci odeslat SMS"</string>
     <string name="permission_write_storage">"Povolit aplikaci zapsat na externí úložiště"</string>
     <string name="permission_write_wallpaper">"Povolit aplikaci nastavit tapetu"</string>
+
+    <!--Translations-->
+    <string name="translations">"Překlady"</string>
+    <string name="translations_summary">"Pomozte mi přeložit tuto aplikaci! Klikněte zde pro navštívení POEditor lokalizační projekt."</string>
 </resources>

@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"Escuro"</string>
     <string name="app_theme_light">"Claro"</string>
 
+    <!--General-->
+    <string name="cancel">Cancelar</string>
     <string name="dismiss">Dispensar</string>
 
     <!--Installer-->
@@ -20,4 +22,8 @@
     <string name="installation_status_success">"Instalação concluída com sucesso!"</string>
 
     <!--Permissions-->
+
+    <!--Translations-->
+    <string name="translations">Traduções</string>
+    <string name="translations_summary">Ajude-me a traduzir este app! Clique aqui para visitar o projeto de localização POEditor</string>
 </resources>

@@ -6,9 +6,13 @@
     <string name="app_theme_dark">"Gelap"</string>
     <string name="app_theme_light">"Terang"</string>
 
+    <!--General-->
+    <string name="cancel">Membatalkan</string>
     <string name="dismiss">Memberhentikan</string>
 
     <!--Installer-->
 
     <!--Permissions-->
+
+    <!--Translations-->
 </resources>

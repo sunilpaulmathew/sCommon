@@ -2,6 +2,8 @@
 
     <!--Theme-->
 
+    <!--General-->
+    <string name="cancel">റദ്ദാക്കുക</string>
     <string name="dismiss">"Elutasít"</string>
 
     <!--Installer-->
@@ -66,4 +68,8 @@
     <string name="permission_write_sms">"Engedélyezi az alkalmazásnak, hogy SMS üzeneteket küldjön"</string>
     <string name="permission_write_storage">"Engedélyezi az alkalmazásnak, hogy külső tárhelyre írjon"</string>
     <string name="permission_write_wallpaper">"Engedélyezi az alkalmazásnak a háttérkép beállítását"</string>
+
+    <!--Translations-->
+    <string name="translations">"Fordítások"</string>
+    <string name="translations_summary">"Segítsen lefordítani ezt az alkalmazást!  Kattintson ide a POEditor lokalizációs projekt meglátogatásához."</string>
 </resources>

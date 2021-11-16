@@ -6,6 +6,8 @@
     <string name="app_theme_dark">"Koyu"</string>
     <string name="app_theme_light">"Açık"</string>
 
+    <!--General-->
+    <string name="cancel">İptal</string>
     <string name="dismiss">Yok say</string>
 
     <!--Installer-->
@@ -72,4 +74,8 @@
     <string name="permission_write_sms">"Bir uygulamanın SMS mesajı göndermesine izin verir"</string>
     <string name="permission_write_storage">"Bir uygulamanın harici depolamaya yazmasına izin verir"</string>
     <string name="permission_write_wallpaper">"Bir uygulamanın duvar kağıdını değiştirmesine izin verir"</string>
+
+    <!--Translations-->
+    <string name="translations">"Çeviriler"</string>
+    <string name="translations_summary">"Bu uygulamayı çevirmemde bana yardım edin! Buraya tıklayarak POEditor yerelleştirme projesine ulaşabilirsiniz"</string>
 </resources>
