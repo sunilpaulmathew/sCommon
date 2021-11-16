@@ -26,11 +26,11 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-import java.io.OutputStreamWriter;
 import java.util.Locale;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
@@ -190,15 +190,10 @@ public class sUtils {
 
     public static void create(String text, File path) {
         try {
-            if (!path.exists()) {
-                path.createNewFile();
-            }
-            FileOutputStream fOut = new FileOutputStream(path);
-            OutputStreamWriter myOutWriter = new OutputStreamWriter(fOut);
-            myOutWriter.append(text);
-            myOutWriter.close();
-            fOut.close();
-        } catch (Exception ignored) {
+            FileWriter writer = new FileWriter(path);
+            writer.write(text);
+            writer.close();
+        } catch (IOException ignored) {
         }
     }
 
