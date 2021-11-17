@@ -2,7 +2,9 @@
 
     <!--General-->
     <string name="cancel">Скасувати</string>
+    <string name="credits">"Подяки"</string>
     <string name="dismiss">Закрити</string>
+    <string name="version">"Версія: %s"</string>
 
     <!--Installer-->
     <string name="installation_status_aborted">"Встановленя"</string>

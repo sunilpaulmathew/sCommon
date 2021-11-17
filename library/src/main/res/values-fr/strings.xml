@@ -8,7 +8,9 @@
     
     <!--General-->
     <string name="cancel">Annuler</string>
+    <string name="credits">"Crédits"</string>
     <string name="dismiss">Fermer</string>
+    <string name="version">"Version : %s"</string>
 
     <!--Installer-->
     <string name="installation_status_aborted">"L'installation est annulée par l'utilisateur"</string>

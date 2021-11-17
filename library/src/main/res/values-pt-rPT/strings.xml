@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">Cancelar</string>
+    <string name="copyright">"Direitos de autor: © %s"</string>
+    <string name="credits">"Créditos"</string>
     <string name="dismiss">Dismiss</string>
+    <string name="version">"Versão: %s"</string>
 
     <!--Installer-->
     <string name="installation_status_aborted">"A instalação foi cancelada pelo utilizador"</string>

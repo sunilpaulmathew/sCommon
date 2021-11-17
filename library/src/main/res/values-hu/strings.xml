@@ -3,8 +3,11 @@
     <!--Theme-->
 
     <!--General-->
-    <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="cancel">"Mégse"</string>
+    <string name="copyright">"Szerzőijog: © %s"</string>
+    <string name="credits">"Hitelek"</string>
     <string name="dismiss">"Elutasít"</string>
+    <string name="version">"Verzió: %s"</string>
 
     <!--Installer-->
     <string name="installation_status_aborted">"A telepítést a felhasználó törölte"</string>

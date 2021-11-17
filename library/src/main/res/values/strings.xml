@@ -8,7 +8,10 @@
     <string name="app_theme_light">Light</string>
 
     <string name="cancel">Cancel</string>
+    <string name="copyright">Copyright: © %s</string>
+    <string name="credits">Credits</string>
     <string name="dismiss">Dismiss</string>
+    <string name="version">Version: %s</string>
 
     <!--Language-->
     <string name="language_am" translatable="false">አማርኛ</string>

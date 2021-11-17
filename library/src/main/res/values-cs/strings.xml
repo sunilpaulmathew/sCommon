@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">"Storno"</string>
+    <string name="copyright">"Autorské právo: ©%s"</string>
+    <string name="credits">"Kredity"</string>
     <string name="dismiss">"Zavrhnout"</string>
+    <string name="version">"Verze: %s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Opravdu instalaci zrušíte?"</string>

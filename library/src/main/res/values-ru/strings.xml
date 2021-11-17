@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">Отмена</string>
+    <string name="copyright">"Copyright: %s"</string>
+    <string name="credits">"Благодарности"</string>
     <string name="dismiss">Закрыть</string>
+    <string name="version">"Версия: %s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Вы уверены, что хотите прервать установку?"</string>

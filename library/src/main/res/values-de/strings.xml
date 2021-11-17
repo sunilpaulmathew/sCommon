@@ -8,7 +8,9 @@
 
     <!--General-->
     <string name="cancel">Abbrechen</string>
+    <string name="credits">"Impressum"</string>
     <string name="dismiss">"Verwerfen"</string>
+    <string name="version">"Version: %s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Sind Sie sicher, dass Sie die Installation abbrechen wollen?"</string>

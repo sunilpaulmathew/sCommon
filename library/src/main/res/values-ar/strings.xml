@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">"إلغاء"</string>
+    <string name="copyright">"حقوق النشر: © %s"</string>
+    <string name="credits">"ثناء"</string>
     <string name="dismiss">"رفض"</string>
+    <string name="version">"الإصدار: %s"</string>
 
     <!--Installer-->
 

@@ -4,7 +4,9 @@
 
     <!--General-->
     <string name="cancel">취소</string>
+    <string name="credits">도움을 주신 분들</string>
     <string name="dismiss">취소</string>
+    <string name="version">버전: %s</string>
 
     <!--Installer-->
 

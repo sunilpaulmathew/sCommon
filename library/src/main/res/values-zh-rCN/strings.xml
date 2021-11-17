@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">取消</string>
+    <string name="copyright">"版权所有 © %s"</string>
+    <string name="credits">"贡献者"</string>
     <string name="dismiss">不予理会</string>
+    <string name="version">"版本：%s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"是否取消此次安装？"</string>

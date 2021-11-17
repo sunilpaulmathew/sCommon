@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">Membatalkan</string>
+    <string name="copyright">"Hak Cipta: © %s"</string>
+    <string name="credits">Kredit</string>
     <string name="dismiss">Memberhentikan</string>
+    <string name="version">"Versi: %s"</string>
 
     <!--Installer-->
 

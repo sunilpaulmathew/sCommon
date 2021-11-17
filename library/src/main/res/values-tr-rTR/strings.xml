@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">İptal</string>
+    <string name="copyright">"Telif Hakkı: © %s"</string>
+    <string name="credits">"Katkılar"</string>
     <string name="dismiss">Yok say</string>
+    <string name="version">"Sürüm: %s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Kurulum iptal edilsin mi?"</string>

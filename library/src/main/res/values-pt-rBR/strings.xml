@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">Cancelar</string>
+    <string name="copyright">"Direitos autorais: © %s"</string>
+    <string name="credits">Créditos</string>
     <string name="dismiss">Dispensar</string>
+    <string name="version">Versão: %s</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Você tem certeza de quer cancelar a instalação?"</string>

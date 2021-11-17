@@ -4,7 +4,9 @@
 
     <!--General-->
     <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="credits">"ക്രെഡിറ്റുകൾ"</string>
     <string name="dismiss">"നിരസിക്കുക"</string>
+    <string name="version">"പതിപ്പ്: %s"</string>
 
     <!--Installer-->
     <string name="installation_status_aborted">"ഉപയോക്താവ് ഇൻസ്റ്റാളേഷൻ റദ്ദാക്കിയിരിക്കുന്നു"</string>

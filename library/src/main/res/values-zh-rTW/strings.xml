@@ -4,7 +4,9 @@
 
     <!--General-->
     <string name="cancel">取消</string>
+    <string name="credits">"貢獻者"</string>
     <string name="dismiss">不予理會</string>
+    <string name="version">"版本：％s"</string>
 
     <!--Installer-->
     <string name="installation_status_aborted">"安裝被用戶取消"</string>

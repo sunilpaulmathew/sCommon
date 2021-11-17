@@ -8,7 +8,10 @@
 
     <!--General-->
     <string name="cancel">Hủy</string>
+    <string name="copyright">"Bản quyền: © %s"</string>
+    <string name="credits">"Tín dụng"</string>
     <string name="dismiss">BỎ QUA</string>
+    <string name="version">"Phiên bản: %s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Bạn có chắc muốn huỷ cài đặt không?"</string>
