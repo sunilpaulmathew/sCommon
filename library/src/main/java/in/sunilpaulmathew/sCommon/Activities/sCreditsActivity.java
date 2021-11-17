@@ -1,6 +1,7 @@
 package in.sunilpaulmathew.sCommon.Activities;
 
 import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.TypedValue;
 
@@ -46,6 +47,9 @@ public class sCreditsActivity extends AppCompatActivity {
         mAppName.setTextColor(sCreditsUtils.getAccentColor());
         mAppIcon.setImageDrawable(sCreditsUtils.getIcon());
         mBackButton.setImageDrawable(sCreditsUtils.getBackButton());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
+            mBackButton.setColorFilter(sCreditsUtils.getAccentColor());
+        }
         mVersion.setText(getString(R.string.version, sCreditsUtils.geVersionName()));
         mCopyright.setText(getString(R.string.copyright, sCreditsUtils.getCopyRight()));
 
