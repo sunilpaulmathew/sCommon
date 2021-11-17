@@ -5,6 +5,7 @@
     <!--General-->
     <string name="cancel">取消</string>
     <string name="credits">"貢獻者"</string>
+    <string name="credits_summary">"貢獻者名單"</string>
     <string name="dismiss">不予理會</string>
     <string name="version">"版本：％s"</string>
 

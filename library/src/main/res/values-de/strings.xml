@@ -9,6 +9,7 @@
     <!--General-->
     <string name="cancel">Abbrechen</string>
     <string name="credits">"Impressum"</string>
+    <string name="credits_summary">"Eine Liste an Personen die zu diesem Projekt beigetragen haben"</string>
     <string name="dismiss">"Verwerfen"</string>
     <string name="version">"Version: %s"</string>
 

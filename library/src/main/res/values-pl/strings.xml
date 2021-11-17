@@ -10,6 +10,7 @@
     <string name="cancel">Anuluj</string>
     <string name="copyright">"Prawa autorskie: © %s"</string>
     <string name="credits">"Autorzy"</string>
+    <string name="credits_summary">"Lista osób, które przyczyniły się do powstania tego projektu"</string>
     <string name="dismiss">Zamknij</string>
     <string name="version">"Wersja: %s"</string>
 

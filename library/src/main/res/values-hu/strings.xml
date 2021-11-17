@@ -6,6 +6,7 @@
     <string name="cancel">"Mégse"</string>
     <string name="copyright">"Szerzőijog: © %s"</string>
     <string name="credits">"Hitelek"</string>
+    <string name="credits_summary">"A projektben közreműködők listája"</string>
     <string name="dismiss">"Elutasít"</string>
     <string name="version">"Verzió: %s"</string>
 

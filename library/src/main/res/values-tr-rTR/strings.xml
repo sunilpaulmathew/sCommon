@@ -10,6 +10,7 @@
     <string name="cancel">İptal</string>
     <string name="copyright">"Telif Hakkı: © %s"</string>
     <string name="credits">"Katkılar"</string>
+    <string name="credits_summary">"Bu projeye katkı sağlamış insanların bir listesi"</string>
     <string name="dismiss">Yok say</string>
     <string name="version">"Sürüm: %s"</string>
 

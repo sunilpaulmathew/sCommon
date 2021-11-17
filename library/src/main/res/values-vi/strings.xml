@@ -10,6 +10,7 @@
     <string name="cancel">Hủy</string>
     <string name="copyright">"Bản quyền: © %s"</string>
     <string name="credits">"Tín dụng"</string>
+    <string name="credits_summary">"Danh sách những người đã đóng góp cho dự án này"</string>
     <string name="dismiss">BỎ QUA</string>
     <string name="version">"Phiên bản: %s"</string>
 
