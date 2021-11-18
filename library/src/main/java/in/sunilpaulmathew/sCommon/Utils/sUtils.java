@@ -234,6 +234,9 @@ public class sUtils {
     }
 
     public static void copyDir(File sourceDir, File destDir) {
+        if (!exist(destDir)) {
+            mkdir(destDir);
+        }
         for (File mFile : Objects.requireNonNull(sourceDir.listFiles())) {
             if (mFile.isDirectory()) {
                 copyDir(mFile, new File(destDir, mFile.getName()));
