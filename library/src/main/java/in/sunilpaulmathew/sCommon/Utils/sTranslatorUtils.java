@@ -11,18 +11,27 @@ import in.sunilpaulmathew.sCommon.R;
  */
 public class sTranslatorUtils {
 
-    public static MaterialAlertDialogBuilder showTranslationMessage(String appName, String url, Activity activity) {
-        return new MaterialAlertDialogBuilder(activity)
-                .setIcon(R.drawable.ic_translate)
-                .setTitle(R.string.translations)
-                .setMessage(R.string.translations_message)
-                .setNeutralButton(activity.getString(R.string.cancel), (dialog, which) ->{
-                })
-                .setNegativeButton(activity.getString(R.string.translate, appName), (dialog, which) ->
-                        sUtils.launchUrl(url, activity))
+    private final Activity mActivity;
+    private final MaterialAlertDialogBuilder mDialogBuilder;
+    private final String mAppName, mUrl;
 
-                .setPositiveButton(activity.getString(R.string.translate, activity.getString(R.string.lib_name)), (dialog, which) ->
-                        sUtils.launchUrl("https://poeditor.com/join/project?hash=9AiLut8Dmy", activity));
+    public sTranslatorUtils(String appName, String url, Activity activity) {
+        this.mActivity = activity;
+        this.mAppName = appName;
+        this.mUrl = url;
+        this.mDialogBuilder = new MaterialAlertDialogBuilder(activity);
+    }
+
+    public void show() {
+        mDialogBuilder.setIcon(R.drawable.ic_translate);
+        mDialogBuilder.setTitle(R.string.translations);
+        mDialogBuilder.setMessage(R.string.translations_message);
+        mDialogBuilder.setNeutralButton(mActivity.getString(R.string.cancel), (dialog, which) -> {
+        });
+        mDialogBuilder.setNegativeButton(mActivity.getString(R.string.translate, mAppName), (dialog, which) ->
+                sUtils.launchUrl(mUrl, mActivity));
+        mDialogBuilder.setPositiveButton(mActivity.getString(R.string.translate, mActivity.getString(R.string.lib_name)), (dialog, which) ->
+                sUtils.launchUrl("https://poeditor.com/join/project?hash=9AiLut8Dmy", mActivity)).show();
     }
 
 }

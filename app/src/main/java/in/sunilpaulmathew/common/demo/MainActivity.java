@@ -22,11 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onItemSelected(int position) {
-                        if (position == 0) {
-                            sUtils.filePickerIntent(false, 0, null, MainActivity.this);
-                        } else {
-                            sUtils.toast(getMenu()[position] + " Selected", MainActivity.this).show();
-                        }
+                        sUtils.toast(getMenu()[position] + " Selected", MainActivity.this).show();
                     }
                 }.show()
         );
