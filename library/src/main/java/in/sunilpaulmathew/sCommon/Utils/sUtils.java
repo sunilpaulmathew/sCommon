@@ -210,7 +210,7 @@ public class sUtils {
         } catch (IOException ignored) {}
     }
 
-    // Make sure permission to write to the destination available
+    // // Requires android.permission.WRITE_EXTERNAL_STORAGE
     public static void copy(Uri uri, File dest, Context context) {
         try (FileOutputStream outputStream = new FileOutputStream(dest, false)) {
             InputStream inputStream = context.getContentResolver().openInputStream(uri);

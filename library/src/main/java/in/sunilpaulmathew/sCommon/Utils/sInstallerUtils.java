@@ -1,10 +1,12 @@
 package in.sunilpaulmathew.sCommon.Utils;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageInstaller;
+import android.net.Uri;
 import android.os.Build;
 
 import androidx.annotation.RequiresApi;
@@ -23,8 +25,9 @@ import in.sunilpaulmathew.sCommon.R;
  */
 public class sInstallerUtils {
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     public static boolean isPermissionDenied(Context context) {
-        return Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !context.getPackageManager().canRequestPackageInstalls();
+        return !context.getPackageManager().canRequestPackageInstalls();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -40,6 +43,17 @@ public class sInstallerUtils {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static int runInstallCreate(sInstallerParams installParams, Context context) {
         return doCreateSession(installParams.mSessionParams, context);
+    }
+
+    // Requires android.permission.REQUEST_DELETE_PACKAGES
+    @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
+    public static Intent filePickerIntent(boolean returnResult, int requestCode,
+                                          String packageName, Activity activity) {
+        Intent intent = new Intent(Intent.ACTION_DELETE);
+        intent.putExtra(Intent.EXTRA_RETURN_RESULT, returnResult);
+        intent.setData(Uri.parse("package:" + packageName));
+        activity.startActivityForResult(intent, requestCode);
+        return intent;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
