@@ -32,6 +32,11 @@ public class sPagerAdapter extends FragmentPagerAdapter {
     }
 
     @Override
+    public int getItemPosition(@NonNull Object object) {
+        return POSITION_NONE;
+    }
+
+    @Override
     public CharSequence getPageTitle(int position) {
         return fragmentListTitles.get(position);
     }
@@ -39,4 +44,5 @@ public class sPagerAdapter extends FragmentPagerAdapter {
         fragmentList.add(fragment);
         fragmentListTitles.add(title);
     }
+
 }
