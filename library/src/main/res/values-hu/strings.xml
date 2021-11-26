@@ -5,12 +5,13 @@
     <!--General-->
     <string name="cancel">"Mégse"</string>
     <string name="copyright">"Szerzőijog: © %s"</string>
-    <string name="credits">"Hitelek"</string>
+    <string name="credits">"Elismerések"</string>
     <string name="credits_summary">"A projektben közreműködők listája"</string>
     <string name="dismiss">"Elutasít"</string>
     <string name="version">"Verzió: %s"</string>
 
     <!--Installer-->
+    <string name="installation_status_success">"A telepítés sikeresen befejeződött!"</string>
     <string name="installation_status_aborted">"A telepítést a felhasználó törölte"</string>
     <string name="installation_status_bad_apks">"Érvénytelen APK fájlokat választott"</string>
     <string name="installation_status_blocked">"A telepítés blokkolt"</string>
