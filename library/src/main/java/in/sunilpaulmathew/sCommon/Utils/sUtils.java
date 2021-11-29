@@ -33,6 +33,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.util.Locale;
 import java.util.Objects;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import in.sunilpaulmathew.sCommon.R;
@@ -105,6 +106,11 @@ public class sUtils {
 
     public static long getLong(String name, long defaults, Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context).getLong(name, defaults);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
+    public static Set<String> getStringSet(String name, Set<String> defaults, Context context) {
+        return PreferenceManager.getDefaultSharedPreferences(context).getStringSet(name, defaults);
     }
 
     public static Snackbar snackBar(View view, String message) {
@@ -264,6 +270,11 @@ public class sUtils {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
+    public static void remove(String name, Context context) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().remove(name).apply();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void saveBoolean(String name, boolean value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putBoolean(name, value).apply();
     }
@@ -281,6 +292,11 @@ public class sUtils {
     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void saveString(String name, String value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString(name, value).apply();
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
+    public static void saveStringSet(String name, Set<String> value, Context context) {
+        PreferenceManager.getDefaultSharedPreferences(context).edit().putStringSet(name, value).apply();
     }
 
     // Should be called before setContentView of launcher activity
