@@ -11,7 +11,8 @@
     <string name="cancel">Cancel</string>
     <string name="copyright">Copyright: © %s</string>
     <string name="crash_report">Crash Report</string>
-    <string name="crash_report_message">A crash is detected during the last use of this app. Inorder to help the developer to fix this issue, please consider sharing this crash log\n\nE-mail: smartpack.org@gmail.com\nTelegram: https://t.me/smartpack_kmanager</string>
+    <string name="crash_report_message">A crash is detected during the last use of this app. Inorder to help the developer to fix this issue, please consider sharing this crash log to \n\nE-mail: smartpack.org@gmail.com</string>
+    <string name="crash_reproduce_steps">Steps to reproduce crash (Optional)</string>
     <string name="credits">Credits</string>
     <string name="credits_summary">A list of people who contributed to this project</string>
     <string name="dismiss">Dismiss</string>
