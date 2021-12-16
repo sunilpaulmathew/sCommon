@@ -1,19 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <!--Theme-->
+    <!-- Theme -->
     <string name="app_theme">"Thème de l'application"</string>
     <string name="app_theme_auto">"Auto"</string>
     <string name="app_theme_dark">"Sombre"</string>
     <string name="app_theme_light">"Clair"</string>
-    
+
     <!--General-->
-    <string name="cancel">Annuler</string>
+    <string name="cancel">"Annuler"</string>
+    <string name="copyright">"Copyright: © %s"</string>
     <string name="credits">"Crédits"</string>
     <string name="credits_summary">"Liste des contributeurs au projet"</string>
     <string name="dismiss">Fermer</string>
     <string name="version">"Version : %s"</string>
 
-    <!--Installer-->
+    <!-- Installer -->
+    <string name="installation_cancel_message">"Êtes-vous sûr de vouloir annuler l’installation ?"</string>
     <string name="installation_status_aborted">"L'installation est annulée par l'utilisateur"</string>
     <string name="installation_status_bad_apks">"Les fichiers APK sélectionnés sont invalides"</string>
     <string name="installation_status_blocked">"L'installation est bloquée"</string>
@@ -21,8 +23,9 @@
     <string name="installation_status_failed">"L'installation a échoué !"</string>
     <string name="installation_status_incompatible">"L'application est incompatible avec cet appareil"</string>
     <string name="installation_status_storage">"Il n'y a pas assez d'espace de stockage pour installer l'application"</string>
+    <string name="installation_status_success">"Installation terminée avec succès"</string>
 
-    <!--Permissions-->
+    <!-- Permissions -->
     <string name="permission_access_notification">"Autoriser une application système à accéder aux notifications"</string>
     <string name="permission_accessibility_service">"Requis par un service d'accessibilité, pour assurer que seul le système peut s'y lier"</string>
     <string name="permission_audio_notification">"Changer le volume de notification"</string>
@@ -76,7 +79,9 @@
     <string name="permission_write_storage">"Permet à une application d'écrire sur un stockage externe"</string>
     <string name="permission_write_wallpaper">"Permet à une application de définir le fond d'écran"</string>
 
-    <!--Translations-->
+    <!-- Translations -->
+    <string name="translate">"Traduire %s"</string>
     <string name="translations">"Traductions"</string>
+    <string name="translations_message">"Important : cette application utilise beaucoup de chaînes de sCommon, une bibliothèque open source partageant une base de code commune pour la plupart des projets réalisés par ce développeur. Par conséquent, afin d'utiliser cette application entièrement traduite dans votre langue, veuillez également envisager de traduire la bibliothèque."</string>
     <string name="translations_summary">"Aidez-moi à traduire cette application ! Cliquer ici pour rejoindre le projet sur le site de POEditor"</string>
 </resources>

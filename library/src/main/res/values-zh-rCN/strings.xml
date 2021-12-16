@@ -1,35 +1,37 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <!--Theme-->
+    <!-- Theme -->
     <string name="app_theme">"应用主题"</string>
     <string name="app_theme_auto">"自动"</string>
     <string name="app_theme_dark">"深色"</string>
     <string name="app_theme_light">"浅色"</string>
 
+
     <!--General-->
-    <string name="cancel">取消</string>
+    <string name="cancel">"取消"</string>
     <string name="copyright">"版权所有 © %s"</string>
     <string name="credits">"贡献者"</string>
     <string name="credits_summary">"此项目的贡献者名单"</string>
-    <string name="dismiss">不予理会</string>
+    <string name="dismiss">"忽略"</string>
     <string name="version">"版本：%s"</string>
 
-    <!--Installer-->
-    <string name="installation_cancel_message">"是否取消此次安装？"</string>
-    <string name="installation_status_aborted">"安装已被用户取消"</string>
-    <string name="installation_status_bad_apks">"无效的APK文件！"</string>
-    <string name="installation_status_blocked">"未授予安装应用权限"</string>
-    <string name="installation_status_conflict">"无法安装！和已安装应用包名一致！"</string>
-    <string name="installation_status_failed">"安装失败!"</string>
-    <string name="installation_status_incompatible">"应用不兼容此设备"</string>
-    <string name="installation_status_storage">"存储空间已满，无法安装！"</string>
-    <string name="installation_status_success">"安装成功!"</string>
 
-    <!--Permissions-->
+    <!-- Installer -->
+    <string name="installation_cancel_message">"确认取消此次安装吗？"</string>
+    <string name="installation_status_aborted">"安装已被用户取消"</string>
+    <string name="installation_status_bad_apks">"选择的 APK 文件无效"</string>
+    <string name="installation_status_blocked">"安装被阻止"</string>
+    <string name="installation_status_conflict">"无法安装应用，因为它与已安装的应用包名冲突"</string>
+    <string name="installation_status_failed">"安装失败"</string>
+    <string name="installation_status_incompatible">"应用不兼容此设备"</string>
+    <string name="installation_status_storage">"存储空间不足以安装应用"</string>
+    <string name="installation_status_success">"安装成功完成"</string>
+
+    <!-- Permissions -->
     <string name="permission_access_notification">"允许系统应用访问通知"</string>
     <string name="permission_accessibility_service">"确保无障碍服务只有系统可以绑定"</string>
     <string name="permission_audio_notification">"更改通知音量"</string>
-    <string name="permission_boot_completed">"收到广播表明系统已完成启动"</string>
+    <string name="permission_boot_completed">"接收表明系统已完成启动的广播"</string>
     <string name="permission_body_sensors">"访问用户用于测量身体数据的传感器数据，例如心率"</string>
     <string name="permission_call_phone">"允许应用无需用户经过拨号器界面确认就可以拨打电话"</string>
     <string name="permission_camera">"允许访问相机设备"</string>
@@ -79,7 +81,9 @@
     <string name="permission_write_storage">"允许应用写入外部存储"</string>
     <string name="permission_write_wallpaper">"允许应用设置壁纸"</string>
 
-    <!--Translations-->
+    <!-- Translations -->
+    <string name="translate">"翻译 %s"</string>
     <string name="translations">"翻译"</string>
+    <string name="translations_message">"注意：本应用使用了来自 sCommon 的大量字符串，sCommon 是一个开源代码库，用于为此开发者的大多数项目提供公共代码。因此，为了使本应用完整包含您的语言，请同样翻译此库。"</string>
     <string name="translations_summary">"帮我们翻译此应用！点击此处访问 POEditor 本地化项目"</string>
 </resources>
