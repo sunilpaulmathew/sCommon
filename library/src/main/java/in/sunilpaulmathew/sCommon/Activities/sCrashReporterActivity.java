@@ -70,6 +70,9 @@ public class sCrashReporterActivity extends AppCompatActivity {
             share_log.setType("text/plain");
             Intent shareIntent = Intent.createChooser(share_log, "Share");
             startActivity(shareIntent);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
+                sCrashReporterUtils.reload();
+            }
         });
     }
 
