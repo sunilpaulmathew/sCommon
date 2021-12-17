@@ -76,6 +76,7 @@ public class sCrashReporterUtils implements Thread.UncaughtExceptionHandler {
 
     @RequiresApi(api = Build.VERSION_CODES.FROYO)
     public static void reload() {
+        sUtils.create(getCrashLog(), new File(mPath.getParentFile(), sUtils.getTimeStamp()));
         sUtils.delete(mPath);
         Thread.setDefaultUncaughtExceptionHandler(new sCrashReporterUtils(mBackButton, mPath, mAccentColor, mTitleSize));
     }

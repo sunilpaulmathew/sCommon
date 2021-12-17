@@ -90,6 +90,7 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:text="@string/crash_reproduce_steps"
+                                            android:layout_margin="10dp"
                                             android:textStyle="bold"
                                             android:gravity="start"
                                             android:textSize="17sp" />
@@ -99,6 +100,7 @@
                                             android:layout_width="match_parent"
                                             android:layout_height="wrap_content"
                                             android:textStyle="bold|italic"
+                                            android:layout_margin="10dp"
                                             android:gravity="start"
                                             android:textSize="15sp" />
                                 </androidx.appcompat.widget.LinearLayoutCompat>

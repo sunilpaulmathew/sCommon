@@ -1,5 +1,6 @@
 package in.sunilpaulmathew.sCommon.Utils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -31,6 +32,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 import java.util.Objects;
 import java.util.Set;
@@ -126,6 +129,11 @@ public class sUtils {
 
     public static String getString(String name, String defaults, Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context).getString(name, defaults);
+    }
+
+    @SuppressLint("SimpleDateFormat")
+    public static String getTimeStamp() {
+        return new SimpleDateFormat("yyyyMMdd_HH-mm").format(new Date());
     }
 
     public static String read(File file) {
