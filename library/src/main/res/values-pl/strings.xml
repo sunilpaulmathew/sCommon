@@ -1,20 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <!--Theme-->
-    <string name="app_theme">"Kompozycje"</string>
-    <string name="app_theme_auto">"Automatycznie"</string>
+    <!-- Theme -->
+    <string name="app_theme">"Motyw aplikacji"</string>
+    <string name="app_theme_auto">"Automatyczny"</string>
     <string name="app_theme_dark">"Ciemny"</string>
     <string name="app_theme_light">"Jasny"</string>
 
-    <!--General-->
-    <string name="cancel">Anuluj</string>
-    <string name="copyright">"Prawa autorskie: © %s"</string>
+    <!-- General -->
+    <string name="cancel">"Anuluj"</string>
+    <string name="copyright">"Copyright: © %s"</string>
+    <string name="crash_report">"Raport o awarii"</string>
+    <string name="crash_report_message">"Wykryto awarię podczas ostatniego użycia tej aplikacji. Aby pomóc programiście w rozwiązaniu tego problemu, rozważ zgłoszenie tego dziennika awarii do
+
+        E-mail: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Kroki do odtworzenia awarii (opcjonalnie)"</string>
     <string name="credits">"Autorzy"</string>
     <string name="credits_summary">"Lista osób, które przyczyniły się do powstania tego projektu"</string>
-    <string name="dismiss">Zamknij</string>
+    <string name="dismiss">"Odrzuć"</string>
+    <string name="report">"Zgłoś"</string>
     <string name="version">"Wersja: %s"</string>
 
-    <!--Installer-->
+    <!-- Installer -->
+    <string name="installation_cancel_message">"Czy na pewno anulować instalację?"</string>
     <string name="installation_status_aborted">"Instalacja została anulowana przez użytkownika"</string>
     <string name="installation_status_bad_apks">"Wybrano niepoprawne pliki APK"</string>
     <string name="installation_status_blocked">"Instalacja została zablokowana"</string>
@@ -22,8 +29,9 @@
     <string name="installation_status_failed">"Instalacja nie powiodła się"</string>
     <string name="installation_status_incompatible">"Aplikacja jest niekompatybilna z tym urządzeniem"</string>
     <string name="installation_status_storage">"Za mało miejsca do zainstalowania aplikacji"</string>
+    <string name="installation_status_success">"Instalacja zakończona pomyślnie"</string>
 
-    <!--Permissions-->
+    <!-- Permissions -->
     <string name="permission_access_notification">"Pozwala aplikacji systemowej na dostęp do powiadomień"</string>
     <string name="permission_accessibility_service">"Wymagane przez usługę ułatwień dostępu, aby zapewnić, że tylko system może się do niej przypisać"</string>
     <string name="permission_audio_notification">"Zmienia głośność powiadomienia"</string>
@@ -77,7 +85,9 @@
     <string name="permission_write_storage">"Pozwala aplikacji zapisywać do pamięci zewnętrznej"</string>
     <string name="permission_write_wallpaper">"Pozwala aplikacji ustawiać tapetę"</string>
 
-    <!--Translations-->
+    <!-- Translations -->
+    <string name="translate">"Przetłumacz %s"</string>
     <string name="translations">"Tłumaczenia"</string>
+    <string name="translations_message">"Ważne: Ta aplikacja używa wielu ciągów znaków z sCommon, czyli z biblioteki o otwartym kodzie źródłowym, która udostępnia wspólną bazę kodu dla większości projektów stworzonych przez tego programistę. Dlatego aby móc korzystać z tej aplikacji w całości w Twoim języku, rozważ również przetłumaczenie biblioteki."</string>
     <string name="translations_summary">"Pomóż mi przetłumaczyć tę aplikację. Naciśnij tutaj, aby odwiedzić projekt lokalizacji w POEditor"</string>
 </resources>
