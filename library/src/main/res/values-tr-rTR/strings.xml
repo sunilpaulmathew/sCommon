@@ -1,17 +1,20 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <!--Theme-->
-    <string name="app_theme">"App teması"</string>
+    <string name="app_theme">"Uygulama Teması"</string>
     <string name="app_theme_auto">"Otomatik"</string>
-    <string name="app_theme_dark">"Koyu"</string>
-    <string name="app_theme_light">"Açık"</string>
+    <string name="app_theme_dark">"Karanlık"</string>
+    <string name="app_theme_light">"Ayndınlık"</string>
 
     <!--General-->
-    <string name="cancel">İptal</string>
+    <string name="cancel">"İptal"</string>
     <string name="copyright">"Telif Hakkı: © %s"</string>
+    <string name="crash_report">"Çökme Raporu"</string>
+    <string name="crash_reproduce_steps">"Sorunu tekrarlamak için adımlar (isteğe bağlı)"</string>
     <string name="credits">"Katkılar"</string>
     <string name="credits_summary">"Bu projeye katkı sağlamış insanların bir listesi"</string>
-    <string name="dismiss">Yok say</string>
+    <string name="dismiss">"Yok say"</string>
+    <string name="report">"Raporla"</string>
     <string name="version">"Sürüm: %s"</string>
 
     <!--Installer-->
@@ -80,6 +83,7 @@
     <string name="permission_write_wallpaper">"Bir uygulamanın duvar kağıdını değiştirmesine izin verir"</string>
 
     <!--Translations-->
+    <string name="translate">"%s çevir"</string>
     <string name="translations">"Çeviriler"</string>
     <string name="translations_summary">"Bu uygulamayı çevirmemde bana yardım edin! Buraya tıklayarak POEditor yerelleştirme projesine ulaşabilirsiniz"</string>
 </resources>
