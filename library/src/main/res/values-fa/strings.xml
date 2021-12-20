@@ -1,0 +1,92 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- Theme -->
+    <string name="app_theme">"پس زمینه برنامه"</string>
+    <string name="app_theme_auto">"خودکار"</string>
+    <string name="app_theme_dark">"تاریک"</string>
+    <string name="app_theme_light">"روشن"</string>
+
+    <!-- General -->
+    <string name="cancel">"لغو "</string>
+    <string name="copyright">"کپی رایت : © %s"</string><string name="crash_report">"گزارش مشکلات"</string>
+    <string name="crash_report_message">"یک مشکل در آخرین استفاده از این برنامه شناسایی شده است برای کمک به توسعه‌دهنده در برطرف کردن این مشکل لطفا گزارش مشکلات برنامه را از طریق ایمیل به ما ارسال کنید
+
+        ایمیل ما : smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"مشکل برنامه در چه مرحله ای اتفاق می افتد (اختیاری)"</string>
+    <string name="credits">"اعتبارات"</string>
+    <string name="credits_summary">"لیستی از افرادی که در این پروژه مشارکت داشته اند"</string>
+    <string name="dismiss">"رد"</string>
+    <string name="report">"گزارش"</string>
+    <string name="version">"نسخه : %s"</string>
+
+    <!-- Installer -->
+    <string name="installation_cancel_message">"آیا می خواهید نصب را لغو کنید؟"</string>
+    <string name="installation_status_aborted">"نصب توسط کاربر لغو شد"</string>
+    <string name="installation_status_bad_apks">"فایل‌های APK انتخاب شده نامعتبر است"</string>
+    <string name="installation_status_blocked">"نصب مسدود شد"</string>
+    <string name="installation_status_conflict">"نصب برنامه امکان پذیر نیست زیرا یک برنامه با همان نام بسته از قبل نصب شده است"</string>
+    <string name="installation_status_failed">"نصب انجام نشد"</string>
+    <string name="installation_status_incompatible">"برنامه با این دستگاه ناسازگار است"</string>
+    <string name="installation_status_storage">"فضای ذخیره سازی کافی برای نصب برنامه وجود ندارد"</string>
+    <string name="installation_status_success">"نصب با موفقیت انجام شد"</string>
+
+    <!-- Permissions -->
+    <string name="permission_access_notification">"به یک برنامه سیستم اجازه دسترسی به اعلان ها را می دهد"</string>
+    <string name="permission_accessibility_service">"برای این که اطمینان حاصل شود که فقط سیستم می تواند به آن متصل شود به دسترسی به یک سرویس نیاز دارد"</string>
+    <string name="permission_audio_notification">"تغییر حجم اعلان"</string>
+    <string name="permission_boot_completed">"در هنگام پایان بوت شدن سیستم یک صدا دریافت کنید"</string>
+    <string name="permission_body_sensors">"دسترسی به اطلاعات حسگرهایی که کاربر از آن برای اندازه‌گیری اتفاقاتی که در بدنش اتفاق می‌افتد مانند ضربان قلب استفاده می‌کند"</string>
+    <string name="permission_call_phone">"به یک برنامه کاربردی اجازه می دهد تا یک تماس تلفنی را بدون عبور از رابط کاربری شماره گیر آغاز کند تا کاربر تماس را تایید کند"</string>
+    <string name="permission_camera">"برای دسترسی به دوربین دستگاه لازم است"</string>
+    <string name="permission_change_wifi">"به برنامه های کاربردی اجازه می دهد تا وضعیت اتصال وای فای را تغییر دهند"</string>
+    <string name="permission_coarse_location">"به برنامه اجازه می دهد به مکان تقریبی دسترسی داشته باشد"</string>
+    <string name="permission_delete_packages">"به یک برنامه کاربردی اجازه می دهد تا درخواست حذف بسته ها را بدهد"</string>
+    <string name="permission_fine_location">"به یک برنامه کاربردی اجازه دسترسی به مکان دقیق را می دهد"</string>
+    <string name="permission_get_accounts">"دسترسی به لیست حساب ها در سرویس حساب ها را می دهد"</string>
+    <string name="permission_gps">"به یک برنامه کاربردی اجازه دسترسی به مکان را می دهد"</string>
+    <string name="permission_install_packages">"به یک برنامه کاربردی اجازه می دهد تا بسته ها را نصب کند"</string>
+    <string name="permission_mute_microphone">"به یک برنامه کاربردی اجازه می دهد تا بی صدا به میکروفون دسترسی پیدا کند"</string>
+    <string name="permission_neighbouring_cells">"به یک برنامه کاربردی اجازه می دهد تا قدرت سیگنال و مکان شناسه سلولی را دریافت کند"</string>
+    <string name="permission_post_notification">"به یک برنامه کاربردی اجازه می دهد تا اعلان ها را ارسال کند"</string>
+    <string name="permission_process_outgoing_calls">"به یک برنامه کاربردی اجازه می دهد تا شماره در حال شماره گیری را در حین تماس خروجی با گزینه هدایت تماس به شماره دیگری یا قطع کامل تماس مشاهده کند"</string>
+    <string name="permission_read_calender">"به یک برنامه کاربردی اجازه می دهد تا داده های تقویم کاربر را بخواند"</string>
+    <string name="permission_read_call_log">"به یک برنامه کاربردی اجازه می دهد تا گزارش تماس های کاربر را بخواند"</string>
+    <string name="permission_read_clipboard">"محتویات سرویس کلیپ بورد را بخوانید"</string>
+    <string name="permission_read_contacts">"به یک برنامه کاربردی اجازه می دهد تا داده های مخاطبین کاربر را بخواند"</string>
+    <string name="permission_read_storage">"به یک برنامه کاربردی اجازه می دهد تا حافظه خارجی را بخواند"</string>
+    <string name="permission_read_phone_numbers">"اجازه خواندن شماره تلفن (های) دستگاه را می دهد این زیر مجموعه ای از قابلیت های ارائه شده توسط مجوز خواندن وضعیت گوشی است که بیشتر برای برنامه های فوری است"</string>
+    <string name="permission_read_phone_state">"اجازه دسترسی فقط خواندنی به وضعیت تلفن از جمله شماره تلفن دستگاه و اطلاعات شبکه تلفن همراه فعلی و وضعیت تماس‌ های جاری و فهرستی از حساب‌ های تلفن ثبت شده در دستگاه را می‌دهد"</string>
+    <string name="permission_read_sms">"به یک برنامه کاربردی اجازه می دهد تا پیامک ها را بخواند"</string>
+    <string name="permission_receive_mms">"به یک برنامه کاربردی اجازه می دهد تا پیام های MMS دریافتی را نظارت کند"</string>
+    <string name="permission_receive_sms">"به یک برنامه کاربردی اجازه می دهد تا پیامک دریافت کند"</string>
+    <string name="permission_receive_emergency_sms">"به یک برنامه کاربردی اجازه می دهد تا پیامک های اضطراری را دریافت کند"</string>
+    <string name="permission_receive_wap_push">"به یک برنامه کاربردی اجازه می دهد تا پیام های WAP را دریافت کند"</string>
+    <string name="permission_record_audio">"به یک برنامه کاربردی اجازه می دهد صدا را ضبط کند"</string>
+    <string name="permission_ring_volume">"تغییر صدای حلقه"</string>
+    <string name="permission_run_background">"به برنامه اجازه می دهد در پس زمینه اجرا شود"</string>
+    <string name="permission_start_foreground">"خدمات پیش زمینه را شروع کنید به مجوز سرویس پیش زمینه نیاز دارد"</string>
+    <string name="permission_system_alert_window">"پنجره ها را ایجاد کنید و آن ها را در بالای همه برنامه های دیگر نشان دهید"</string>
+    <string name="permission_take_audio_focus">"به یک برنامه اجازه می‌دهد تنها برنامه‌ای باشد که فوکوس صوتی را نگه می‌دارد"</string>
+    <string name="permission_toast_window">"نمایش پیام‌های کوتاه مدت روی صفحه"</string>
+    <string name="permission_unavailable">"توضیح برای '%s' در دسترس نیست"</string>
+    <string name="permission_usage_status">"به یک برنامه کاربردی اجازه می دهد تا آمار استفاده از مولفه را جمع آوری کند"</string>
+    <string name="permission_use_biometric">"از روش های بیومتریک پشتیبانی شده از دستگاه استفاده کنید"</string>
+    <string name="permission_use_fingerprint">"به برنامه اجازه می دهد از سخت افزار اثر انگشت استفاده کند"</string>
+    <string name="permission_vibrate">"اجازه دسترسی به ویبره را می دهد"</string>
+    <string name="permission_wake_lock">"از برنامه PowerManager WakeLocks برای جلوگیری از خوابیدن پردازنده یا کم نور شدن صفحه استفاده کنید"</string>
+    <string name="permission_wifi_scan">"به یک برنامه کاربردی اجازه می دهد تا شبکه های وای فای را اسکن کند"</string>
+    <string name="permission_write_calender">"به یک برنامه کاربردی اجازه می دهد تا داده های تقویم کاربران را بنویسد"</string>
+    <string name="permission_write_call_log">"به یک برنامه کاربردی اجازه می دهد تا داده های گزارش تماس کاربر را بنویسد (اما نخواند)"</string>
+    <string name="permission_write_clipboard">"داده ها را در کلیپ بورد بنویسید"</string>
+    <string name="permission_write_contacts">"به یک برنامه کاربردی اجازه می دهد تا داده های مخاطبین کاربر را بنویسد"</string>
+    <string name="permission_write_settings">"خواندن یا نوشتن تنظیمات سیستم (محدودیت هایی وجود دارد)"</string>
+    <string name="permission_write_sms">"به یک برنامه کاربردی برای ارسال پیامک اجازه می دهد"</string>
+    <string name="permission_write_storage">"به یک برنامه کاربردی اجازه می دهد تا در حافظه خارجی بنویسد"</string>
+    <string name="permission_write_wallpaper">"به یک برنامه کاربردی اجازه می دهد تا تصویر زمینه را تنظیم کند"</string>
+
+    <!-- Translations -->
+    <string name="translate">"ترجمه %s "</string>
+    <string name="translations">"ترجمه ها"</string>
+    <string name="translations_message">"مهم : این برنامه از رشته‌های زیادی از sCommon استفاده کرده است یک کتابخانه منبع باز که برای بیشتر  پروژه های ساخته شده توسط این توسعه دهنده کد مشترک را به اشتراک می گذارد از این رو برای استفاده کامل از این برنامه به زبان خود لطفا ترجمه کتابخانه را نیز در نظر بگیرید"</string>
+    <string name="translations_summary">"در ترجمه این برنامه به زبان محلی خود به من کمک کنید برای بازدید از پروژه محلی سازی POEditor اینجا را لمس کنید"</string>
+</resources>
