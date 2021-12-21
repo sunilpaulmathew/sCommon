@@ -2,7 +2,6 @@ package in.sunilpaulmathew.sCommon.Utils;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 
 import androidx.annotation.NonNull;
@@ -21,35 +20,18 @@ import in.sunilpaulmathew.sCommon.Activities.sCrashReporterActivity;
  */
 public class sCrashReporterUtils implements Thread.UncaughtExceptionHandler {
 
-    private static Drawable mBackButton;
-    private static File mPath;
+    private final Context mContext;
     private static int mAccentColor, mTitleSize;
     private final Thread.UncaughtExceptionHandler mDefaultUEH;
 
-    public sCrashReporterUtils(Drawable backButton, File path, int color, int size) {
-        mBackButton = backButton;
-        mPath = path;
+    public sCrashReporterUtils(int color, int size, Context context) {
         mAccentColor = color;
         mTitleSize = size;
-        this.mDefaultUEH = Thread.getDefaultUncaughtExceptionHandler();
+        mContext = context;
+        mDefaultUEH = Thread.getDefaultUncaughtExceptionHandler();
     }
 
-    public static Drawable getBackButton() {
-        return mBackButton;
-    }
-
-    public static int getAccentColor() {
-        return mAccentColor;
-    }
-
-    public static int getTextSize() {
-        return mTitleSize;
-    }
-
-    public static String getCrashLog() {
-        return sUtils.read(mPath);
-    }
-
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public void uncaughtException(@NonNull Thread t, Throwable e) {
         final Writer result = new StringWriter();
         final PrintWriter printWriter = new PrintWriter(result);
@@ -57,28 +39,33 @@ public class sCrashReporterUtils implements Thread.UncaughtExceptionHandler {
         String stacktrace = result.toString();
         printWriter.close();
 
-        if (mPath != null) {
-            sUtils.create(stacktrace, mPath);
-        }
+        sUtils.create(stacktrace, new File(mContext.getExternalFilesDir("logs"), "crashLog_" + sUtils.getTimeStamp()));
+        sUtils.saveString("crashLog", sUtils.getTimeStamp(), mContext);
+        sUtils.saveInt("accentColor", mAccentColor, mContext);
+        sUtils.saveInt("titleSize", mTitleSize, mContext);
+
+        Intent intent = new Intent(mContext, sCrashReporterActivity.class);
+        intent.putExtra("crashLog", stacktrace);
+        intent.putExtra("accentColor", mAccentColor);
+        intent.putExtra("titleSize", mTitleSize);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        mContext.startActivity(intent);
 
         mDefaultUEH.uncaughtException(t, e);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.FROYO)
-    public void initialize(Context context) {
-        if (sUtils.exist(mPath)) {
-            Intent crashLog = new Intent(context, sCrashReporterActivity.class);
-            context.startActivity(crashLog);
-        } else {
-            Thread.setDefaultUncaughtExceptionHandler(new sCrashReporterUtils(mBackButton, mPath, mAccentColor, mTitleSize));
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
+    public void initialize() {
+        String timeStamp = sUtils.getString("crashLog", null, mContext);
+        if (timeStamp != null) {
+            Intent intent = new Intent(mContext, sCrashReporterActivity.class);
+            intent.putExtra("crashLog", sUtils.read(new File(mContext.getExternalFilesDir("logs"), "crashLog_" + timeStamp)));
+            intent.putExtra("accentColor", sUtils.getInt("accentColor", Integer.MIN_VALUE, mContext));
+            intent.putExtra("titleSize", sUtils.getInt("titleSize", Integer.MIN_VALUE, mContext));
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            mContext.startActivity(intent);
         }
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.FROYO)
-    public static void reload() {
-        sUtils.create(getCrashLog(), new File(mPath.getParentFile(), sUtils.getTimeStamp()));
-        sUtils.delete(mPath);
-        Thread.setDefaultUncaughtExceptionHandler(new sCrashReporterUtils(mBackButton, mPath, mAccentColor, mTitleSize));
+        Thread.setDefaultUncaughtExceptionHandler(new sCrashReporterUtils(mAccentColor, mTitleSize, mContext));
     }
 
 }

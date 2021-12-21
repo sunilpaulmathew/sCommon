@@ -11,22 +11,25 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:background="@color/colorBlack" >
+            android:background="@color/colorBlack"
+            android:gravity="center_vertical" >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/back"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="start|center_vertical"
-                    android:background="@color/colorBlack"
+                    android:tint="@color/colorWhite"
+                    android:src="@drawable/ic_back"
                     android:layout_marginEnd="10dp"
+                    android:background="@null"
                     android:scaleType="center" />
 
                 <com.google.android.material.textview.MaterialTextView
                     android:id="@+id/title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
                     android:gravity="center_vertical"
                     android:layout_marginStart="30dp"
                     android:text="@string/crash_report"
@@ -69,6 +72,7 @@
                                             android:id="@+id/crash_log"
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
+                                            android:textIsSelectable="true"
                                             android:textStyle="bold|italic"
                                             android:gravity="start"
                                             android:textSize="17sp" />

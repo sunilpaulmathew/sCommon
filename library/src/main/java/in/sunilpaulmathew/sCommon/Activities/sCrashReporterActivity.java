@@ -16,15 +16,15 @@ import com.google.android.material.textview.MaterialTextView;
 
 import in.sunilpaulmathew.sCommon.R;
 import in.sunilpaulmathew.sCommon.Utils.sAPKUtils;
-import in.sunilpaulmathew.sCommon.Utils.sCrashReporterUtils;
 import in.sunilpaulmathew.sCommon.Utils.sPackageUtils;
+import in.sunilpaulmathew.sCommon.Utils.sUtils;
 
 /*
  * Created by sunilpaulmathew <sunil.kde@gmail.com> on December 15, 2021
  */
 public class sCrashReporterActivity extends AppCompatActivity {
 
-    @RequiresApi(api = Build.VERSION_CODES.DONUT)
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,17 +37,24 @@ public class sCrashReporterActivity extends AppCompatActivity {
         MaterialTextView mTitle = findViewById(R.id.title);
         MaterialTextView mCrashLog = findViewById(R.id.crash_log);
 
-        mTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, sCrashReporterUtils.getTextSize());
-        mTitle.setTextColor(sCrashReporterUtils.getAccentColor());
-        mCancelButton.setCardBackgroundColor(sCrashReporterUtils.getAccentColor());
-        mCrashLog.setTextColor(sCrashReporterUtils.getAccentColor());
-        mCrashSteps.setTextColor(sCrashReporterUtils.getAccentColor());
-        mReportButton.setCardBackgroundColor(sCrashReporterUtils.getAccentColor());
-        mCrashLog.setText(sCrashReporterUtils.getCrashLog());
+        int mAccentColor = getIntent().getIntExtra("accentColor", Integer.MIN_VALUE);
+        int mTitleSize = getIntent().getIntExtra("titleSize", 20);
 
-        mBackButton.setImageDrawable(sCrashReporterUtils.getBackButton());
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
-            mBackButton.setColorFilter(sCrashReporterUtils.getAccentColor());
+        mTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, mTitleSize);
+
+        if (mAccentColor != Integer.MIN_VALUE) {
+            mTitle.setTextColor(mAccentColor);
+            mCancelButton.setCardBackgroundColor(mAccentColor);
+            mCrashLog.setTextColor(mAccentColor);
+            mCrashSteps.setTextColor(mAccentColor);
+            mReportButton.setCardBackgroundColor(mAccentColor);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
+                mBackButton.setColorFilter(mAccentColor);
+            }
+        }
+
+        if (getIntent().getStringExtra("crashLog") != null) {
+            mCrashLog.setText(getIntent().getStringExtra("crashLog"));
         }
 
         mBackButton.setOnClickListener(v -> onBackPressed());
@@ -70,16 +77,20 @@ public class sCrashReporterActivity extends AppCompatActivity {
             share_log.setType("text/plain");
             Intent shareIntent = Intent.createChooser(share_log, "Share");
             startActivity(shareIntent);
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
-                sCrashReporterUtils.reload();
-            }
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     @Override
     public void onBackPressed() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
-            sCrashReporterUtils.reload();
+        if (sUtils.getString("crashLog", null, this) != null) {
+            sUtils.saveString("crashLog", null, this);
+        }
+        if (sUtils.getInt("accentColor", Integer.MIN_VALUE, this) != Integer.MIN_VALUE) {
+            sUtils.saveInt("accentColor", Integer.MIN_VALUE, this);
+        }
+        if (sUtils.getInt("titleSize", Integer.MIN_VALUE, this) != Integer.MIN_VALUE) {
+            sUtils.saveInt("titleSize", Integer.MIN_VALUE, this);
         }
         finish();
     }
