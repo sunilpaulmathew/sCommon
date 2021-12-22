@@ -68,7 +68,8 @@ public class sCrashReporterActivity extends AppCompatActivity {
             }
             Intent share_log = new Intent();
             share_log.setAction(Intent.ACTION_SEND);
-            share_log.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.crash_report));
+            share_log.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.crash_report) + "/" +
+                    sPackageUtils.getAppName(getPackageName(), this));
             share_log.putExtra(Intent.EXTRA_TEXT, "App Name: " + sPackageUtils.getAppName(
                     getPackageName(), this) + "\nPackage Name: " + getPackageName() + "\nApp Version: " +
                     sAPKUtils.getVersionName(sPackageUtils.getSourceDir(getPackageName(), this), this) +
