@@ -47,6 +47,7 @@ public class sCrashReporterActivity extends AppCompatActivity {
             mCancelButton.setCardBackgroundColor(mAccentColor);
             mCrashLog.setTextColor(mAccentColor);
             mCrashSteps.setTextColor(mAccentColor);
+            mCrashSteps.requestFocus();
             mReportButton.setCardBackgroundColor(mAccentColor);
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
                 mBackButton.setColorFilter(mAccentColor);
