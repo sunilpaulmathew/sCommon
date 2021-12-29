@@ -2,6 +2,11 @@
 
     <!--General-->
     <string name="cancel">"Avbryt"</string>
+    <string name="crash_report">"Krasj-rapport"</string>
+    <string name="crash_report_message">"En krasj er oppdaget under siste bruk av denne appen. For å hjelpe utvikleren å fikse problemet, vennligst vurder å rapportere denne krasj-loggen til
+
+        E-post: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Trinn for å reprodusere krasjen (valgfritt)"</string>
     <string name="credits">"Krediteringer"</string>
     <string name="credits_summary">"En liste over bidragsytere til dette prosjektet"</string>
     <string name="dismiss">"Avvis"</string>
