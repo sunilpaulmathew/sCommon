@@ -80,7 +80,7 @@ public class sInstallerUtils {
             } catch (IOException ignored) {
             }
             @SuppressLint("UnspecifiedImmutableFlag")
-            PendingIntent pendingIntent = PendingIntent.getService(context, 0, callbackIntent, 0);
+            PendingIntent pendingIntent = PendingIntent.getService(context, 0, callbackIntent, PendingIntent.FLAG_UPDATE_CURRENT);
             assert session != null;
             session.commit(pendingIntent.getIntentSender());
             session.close();
