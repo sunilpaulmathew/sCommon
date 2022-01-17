@@ -1,6 +1,5 @@
 package in.sunilpaulmathew.sCommon.Utils;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -79,8 +78,8 @@ public class sInstallerUtils {
                 session = getPackageInstaller(context).openSession(sessionId);
             } catch (IOException ignored) {
             }
-            @SuppressLint("UnspecifiedImmutableFlag")
-            PendingIntent pendingIntent = PendingIntent.getService(context, 0, callbackIntent, PendingIntent.FLAG_UPDATE_CURRENT);
+            PendingIntent pendingIntent = PendingIntent.getService(context, 0, callbackIntent, android.os.Build.VERSION.SDK_INT >=
+                    android.os.Build.VERSION_CODES.S ? PendingIntent.FLAG_MUTABLE : 0);
             assert session != null;
             session.commit(pendingIntent.getIntentSender());
             session.close();
