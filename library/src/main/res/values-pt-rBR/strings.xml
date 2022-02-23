@@ -2,17 +2,17 @@
 
     <!--Theme-->
     <string name="app_theme">"Tema do App"</string>
-    <string name="app_theme_auto">"Autom."</string>
+    <string name="app_theme_auto">"Auto"</string>
     <string name="app_theme_dark">"Escuro"</string>
     <string name="app_theme_light">"Claro"</string>
 
     <!--General-->
-    <string name="cancel">Cancelar</string>
+    <string name="cancel">"Cancelar"</string>
     <string name="copyright">"Direitos autorais: © %s"</string>
-    <string name="credits">Créditos</string>
-    <string name="credits_summary">Uma lista de pessoas que contribuíram para o projeto</string>
-    <string name="dismiss">Dispensar</string>
-    <string name="version">Versão: %s</string>
+    <string name="credits">"Créditos"</string>
+    <string name="credits_summary">"Uma lista de pessoas que contribuíram para o projeto"</string>
+    <string name="dismiss">"Dispensar"</string>
+    <string name="version">"Versão: %s"</string>
 
     <!--Installer-->
     <string name="installation_cancel_message">"Você tem certeza de quer cancelar a instalação?"</string>
@@ -28,6 +28,6 @@
     <!--Permissions-->
 
     <!--Translations-->
-    <string name="translations">Traduções</string>
-    <string name="translations_summary">Ajude-me a traduzir este app! Clique aqui para visitar o projeto de localização POEditor</string>
+    <string name="translations">"Traduções"</string>
+    <string name="translations_summary">"Ajude-me a traduzir este app! Clique aqui para visitar o projeto de localização POEditor"</string>
 </resources>
