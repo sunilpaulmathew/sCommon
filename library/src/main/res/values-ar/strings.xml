@@ -9,16 +9,85 @@
     <!--General-->
     <string name="cancel">"إلغاء"</string>
     <string name="copyright">"حقوق النشر: © %s"</string>
+    <string name="crash_report">تقرير الأعطال</string>
+    <string name="crash_report_message">"تم الكشف عن عطل أثناء الاستخدام الأخير لهذا التطبيق. لمساعدة المطور على إصلاح هذه المشكلة ، يرجى مراعاة الإبلاغ عن سجل الأعطال هذا إلى
+
+        البريد الإلكتروني: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">خطوات إعادة إنتاج التعطل (اختياري)</string>
     <string name="credits">"ثناء"</string>
+    <string name="credits_summary">قائمة بالأشخاص الذين ساهموا في هذا المشروع</string>
     <string name="dismiss">"رفض"</string>
+    <string name="report">تقرير</string>
     <string name="version">"الإصدار: %s"</string>
 
     <!--Installer-->
+    <string name="installation_cancel_message">Are you sure to cancel the installation?</string>
+    <string name="installation_status_aborted">Installation was cancelled by user</string>
+    <string name="installation_status_bad_apks">تم تحديد ملفات APK غير صالحة</string>
+    <string name="installation_status_blocked">Installation was blocked</string>
+    <string name="installation_status_conflict">غير قادر على تثبيت التطبيق لأنه يتعارض مع تطبيق مثبت بالفعل بنفس اسم الحزمة</string>
+    <string name="installation_status_failed">Installation Failed</string>
+    <string name="installation_status_incompatible">التطبيق غير متوافق مع هذا الجهاز</string>
+    <string name="installation_status_storage">Not enough storage space to install the app</string>
+    <string name="installation_status_success">Installation Completed Successfully</string>
 
     <!--Permissions-->
+    <string name="permission_access_notification">يسمح لتطبيق النظام بالوصول إلى الإشعارات</string>
+    <string name="permission_accessibility_service">مطلوب من قبل خدمة إمكانية الوصول، لضمان أن النظام فقط هو الذي يمكن أن يرتبط به</string>
+    <string name="permission_audio_notification">تغيير حجم الإشعارات</string>
+    <string name="permission_body_sensors">الوصول إلى البيانات من أجهزة الاستشعار التي يستخدمها المستخدم لقياس ما يحدث داخل جسمه، مثل معدل ضربات القلب</string>
+    <string name="permission_boot_completed">تلقي بث يشير إلى أن النظام قد انتهى من التشغيل</string>
+    <string name="permission_call_phone">يسمح للتطبيق ببدء مكالمة هاتفية دون المرور عبر واجهة مستخدم Dialer للمستخدم لتأكيد المكالمة</string>
+    <string name="permission_camera">مطلوب لتكون قادرة على الوصول إلى جهاز الكاميرا</string>
+    <string name="permission_change_wifi">يسمح للتطبيقات بتغيير حالة اتصال Wi-Fi</string>
+    <string name="permission_coarse_location">يسمح للتطبيق بالوصول إلى الموقع التقريبي</string>
+    <string name="permission_delete_packages">يسمح للتطبيق بطلب حذف الحزم</string>
+    <string name="permission_fine_location">يسمح للتطبيق بالوصول إلى الموقع الدقيق</string>
+    <string name="permission_get_accounts">يسمح بالوصول إلى قائمة الحسابات في خدمة الحسابات</string>
+    <string name="permission_gps">يسمح للتطبيق بالوصول إلى نظام تحديد المواقع العالمي (GPS)</string>
+    <string name="permission_install_packages">يسمح للتطبيق بتثبيت الحزم</string>
+    <string name="permission_mute_microphone">يسمح للتطبيق بالوصول إلى كتم صوت الميكروفون</string>
+    <string name="permission_neighbouring_cells">يسمح للتطبيق بتلقي قوة الإشارة وموقع معرف الخلية</string>
+    <string name="permission_post_notification">يسمح للتطبيق بنشر الإشعارات</string>
+    <string name="permission_process_outgoing_calls">يسمح للتطبيق برؤية الرقم الذي يتم طلبه أثناء مكالمة صادرة مع خيار إعادة توجيه المكالمة إلى رقم مختلف أو إجهاض المكالمة تماما</string>
+    <string name="permission_read_calender">يسمح للتطبيق بقراءة بيانات تقويم المستخدم</string>
+    <string name="permission_read_call_log">يسمح للتطبيق بقراءة سجل مكالمات المستخدم</string>
+    <string name="permission_read_clipboard">قراءة محتويات خدمة الحافظة</string>
+    <string name="permission_read_contacts">يسمح للتطبيق بقراءة بيانات جهات اتصال المستخدم</string>
+    <string name="permission_read_phone_numbers">يسمح بالوصول للقراءة إلى رقم (أرقام) هاتف الجهاز. هذه مجموعة فرعية من القدرات التي يمنحها READ_PHONE_STATE ولكنها تتعرض للتطبيقات الفورية</string>
+    <string name="permission_read_phone_state">يسمح بالوصول للقراءة فقط إلى حالة الهاتف ، بما في ذلك رقم هاتف الجهاز ، ومعلومات الشبكة الخلوية الحالية ، وحالة أي مكالمات جارية ، وقائمة بأي حسابات هاتفية مسجلة على الجهاز</string>
+    <string name="permission_read_sms">يسمح للتطبيق بقراءة رسائل SMS</string>
+    <string name="permission_read_storage">يسمح للتطبيق بالقراءة من وحدة تخزين خارجية</string>
+    <string name="permission_receive_emergency_sms">يسمح للتطبيق بتلقي رسائل SMS في حالات الطوارئ</string>
+    <string name="permission_receive_mms">يسمح للتطبيق بمراقبة رسائل MMS الواردة</string>
+    <string name="permission_receive_sms">يسمح للتطبيق بتلقي رسائل SMS</string>
+    <string name="permission_receive_wap_push">يسمح للتطبيق بتلقي رسائل دفع WAP</string>
+    <string name="permission_record_audio">يسمح للتطبيق بتسجيل الصوت</string>
+    <string name="permission_ring_volume">تغيير مستوى صوت الحلقة</string>
+    <string name="permission_run_background">يسمح بتشغيل تطبيق في الخلفية</string>
+    <string name="permission_start_foreground">بدء الخدمات المقدمة. يتطلب FOREGROUND_SERVICE إذن</string>
+    <string name="permission_system_alert_window">إنشاء نوافذ وإظهارها أعلى جميع التطبيقات الأخرى</string>
+    <string name="permission_take_audio_focus">يسمح للتطبيق بأن يكون التطبيق الوحيد الذي يحمل التركيز البؤري الصوتي</string>
+    <string name="permission_toast_window">عرض رسائل قصيرة المدة على الشاشة</string>
+    <string name="permission_unavailable">"وصف ل '%s' غير متوفر"</string>
+    <string name="permission_usage_status">يسمح للتطبيق بجمع إحصائيات استخدام المكونات</string>
+    <string name="permission_use_biometric">استخدام الطرائق البيومترية المدعومة من الجهاز</string>
+    <string name="permission_use_fingerprint">يسمح للتطبيق باستخدام أجهزة بصمات الأصابع</string>
+    <string name="permission_vibrate">يسمح بالوصول إلى الهزاز</string>
+    <string name="permission_wake_lock">استخدام PowerManager WakeLocks لمنع المعالج من وضع السكون أو الشاشة من التعتيم</string>
+    <string name="permission_wifi_scan">يسمح للتطبيق بالوصول إلى مسح شبكات WiFi ضوئيا</string>
+    <string name="permission_write_calender">يسمح للتطبيق بكتابة بيانات تقويم المستخدم</string>
+    <string name="permission_write_call_log">يسمح للتطبيق بكتابة (ولكن ليس قراءة) بيانات سجل مكالمات المستخدم</string>
+    <string name="permission_write_clipboard">كتابة البيانات إلى الحافظة</string>
+    <string name="permission_write_contacts">يسمح للتطبيق بكتابة بيانات جهات اتصال المستخدم</string>
+    <string name="permission_write_settings">قراءة إعدادات النظام أو كتابتها (هناك قيود)</string>
+    <string name="permission_write_sms">يسمح للتطبيق بإرسال رسائل SMS</string>
+    <string name="permission_write_storage">يسمح للتطبيق بالكتابة إلى وحدة تخزين خارجية</string>
+    <string name="permission_write_wallpaper">يسمح للتطبيق بتعيين خلفية الشاشة</string>
 
     <!--Translations-->
-    <string name="translations">"الترجمات"</string>
+    <string name="translate">ترجمة %s</string>
+    <string name="translations">الترجمات</string>
     <string name="translations_message">هام: يستخدم هذا التطبيق الكثير من السلاسل من sCommon ، وهي مكتبة مفتوحة المصدر تشترك في قاعدة التعليمات البرمجية الشائعة لمعظم المشاريع التي قام بها هذا المطور. وبالتالي ، من أجل استخدام هذا التطبيق بالكامل بلغتك ، يرجى التفكير في ترجمة المكتبة أيضا.</string>
     <string name="translations_summary">"ساعدني في ترجمة هذا التطبيق. انقر هنا لزيارة مشروع الترجمة على POEditor."</string>
 </resources>
