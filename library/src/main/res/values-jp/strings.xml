@@ -1,0 +1,93 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    
+    <!--Theme-->
+    <string name="app_theme">"アプリのテーマ"</string>
+    <string name="app_theme_auto">"自動"</string>
+    <string name="app_theme_dark">"ダークテーマ"</string>
+    <string name="app_theme_light">"ライトテーマ"</string>
+
+    <!--General-->
+    <string name="cancel">"キャンセル"</string>
+    <string name="copyright">"著作権：© %s"</string>
+    <string name="crash_report">"クラッシュレポート"</string>
+    <string name="crash_report_message">"このアプリの最後の使用中にクラッシュが検出されました。開発者がこの問題を修正するのを助けるために、このクラッシュログを次のアドレスに報告することを検討してください。
+
+        電子メール： smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"クラッシュを再現する手順（任意）"</string>
+    <string name="credits">"クレジット"</string>
+    <string name="credits_summary">"このプロジェクトに貢献した人たちのリスト"</string>
+    <string name="dismiss">"Dismiss"</string>
+    <string name="report">"レポート"</string>
+    <string name="version">"バージョン: %s"</string>
+
+    <!--Installer-->
+    <string name="installation_cancel_message">"インストールを中止してよろしいですか？"</string>
+    <string name="installation_status_aborted">"ユーザーによってインストールがキャンセルされました"</string>
+    <string name="installation_status_bad_apks">"無効なAPKファイルが選択されました"</string>
+    <string name="installation_status_blocked">"インストールがブロックされました"</string>
+    <string name="installation_status_conflict">"既にインストールされているアプリと同パッケージ名で競合するため、アプリをインストールできません"</string>
+    <string name="installation_status_failed">"インストールに失敗しました"</string>
+    <string name="installation_status_incompatible">"このアプリケーションはお使いのデバイスと互換性がありません"</string>
+    <string name="installation_status_storage">"アプリをインストールするのに十分なストレージ容量がありません"</string>
+    <string name="installation_status_success">"インストールが正常に完了しました"</string>
+
+    <!--Permissions-->
+    <string name="permission_access_notification">"システムアプリによる通知へのアクセスを許可する"</string>
+    <string name="permission_accessibility_service">"システムのみがバインドできるようにするため、アクセシビリティサービスによって要求されます"</string>
+    <string name="permission_audio_notification">"通知音量を変更する"</string>
+    <string name="permission_boot_completed">"システムが起動を終了したことを示すブロードキャストを受信する"</string>
+    <string name="permission_body_sensors">"心拍数などの体内計測に使用するセンサーからのデータにアクセスする"</string>
+    <string name="permission_call_phone">"ユーザーが通話を確認するためにダイアラーユーザーインターフェースを経由せずに、アプリケーションが電話をかけることを可能にする"</string>
+    <string name="permission_camera">"カメラデバイスにアクセスするためにすることを許可する"</string>
+    <string name="permission_change_wifi">"アプリケーションがWi-Fi接続状態の変更することをを許可する"</string>
+    <string name="permission_coarse_location">"アプリによるおおよその位置情報の取得を許可する"</string>
+    <string name="permission_delete_packages">"アプリケーションがパッケージの削除を要求できるようにする"</string>
+    <string name="permission_fine_location">"アプリケーションによる正確な位置情報へのアクセスを可能にする"</string>
+    <string name="permission_get_accounts">"アカウントサービスへのアクセスを許可する"</string>
+    <string name="permission_gps">"アプリケーションがGPSにアクセスすることを許可する"</string>
+    <string name="permission_install_packages">"アプリケーションによるパッケージのインストールを許可する"</string>
+    <string name="permission_mute_microphone">"アプリケーションからマイクミュートへのアクセスを可能にする"</string>
+    <string name="permission_neighbouring_cells">"アプリケーションで信号強度とセルIDの位置情報を受信を可能にする"</string>
+    <string name="permission_post_notification">"アプリケーションによる通知を許可する"</string>
+    <string name="permission_process_outgoing_calls">"発信中にダイヤルされた番号をアプリケーションで確認することができ、別の番号にリダイレクトしたり、通話を完全に中断したりすることができます。"</string>
+    <string name="permission_read_calender">"アプリケーションがユーザーのカレンダーデータを読み取ることを可能にする"</string>
+    <string name="permission_read_call_log">"アプリケーションによるユーザーの通話履歴の読み取りを許可する"</string>
+    <string name="permission_read_clipboard">"クリップボードの内容を読み込む"</string>
+    <string name="permission_read_contacts">"アプリケーションによるユーザーの連絡先データの読み取りを許可する"</string>
+    <string name="permission_read_storage">"アプリケーションによる外部ストレージからの読み込みを許可する"</string>
+    <string name="permission_read_phone_numbers">"デバイスの電話番号への読み取りアクセスを許可します。これはREAD_PHONE_STATEによって付与される機能のサブセットですが、インスタントアプリケーションに公開されます。"</string>
+    <string name="permission_read_phone_state">"デバイスの電話番号、現在の携帯電話ネットワーク情報、通話のステータス、デバイスに登録されているアカウントのリストなど、電話の状態への読み取り専用アクセスを許可する"</string>
+    <string name="permission_read_sms">"アプリケーションによるSMSメッセージの読み取りを許可する"</string>
+    <string name="permission_receive_mms">"アプリケーションによるMMSメッセージの受信を監視を許可する"</string>
+    <string name="permission_receive_sms">"アプリケーションによるSMSメッセージの受信を許可する"</string>
+    <string name="permission_receive_emergency_sms">"アプリケーションによる緊急SMSメッセージの受信を許可する"</string>
+    <string name="permission_receive_wap_push">"アプリケーションによるWAPプッシュメッセージの受信を可能にする"</string>
+    <string name="permission_record_audio">"アプリケーションによる音声の録音を許可する"</string>
+    <string name="permission_ring_volume">"着信音量を変更する"</string>
+    <string name="permission_run_background">"バックグラウンドでのアプリケーションの実行を許可する"</string>
+    <string name="permission_start_foreground">"フォアグラウンドサービスを開始する。FOREGROUND_SERVICEパーミッションが必要です。"</string>
+    <string name="permission_system_alert_window">"ウィンドウを作成し、他のすべてのアプリの上に表示することができます"</string>
+    <string name="permission_take_audio_focus">"アプリケーションにのみオーディオフォーカスを与えることを許可する"</string>
+    <string name="permission_toast_window">"ショートメッセージを画面に表示する"</string>
+    <string name="permission_unavailable">"'%s'の記述がありません"</string>
+    <string name="permission_usage_status">"アプリケーションでコンポーネントの使用状況を収集できるようにする"</string>
+    <string name="permission_use_biometric">"デバイスがサポートする生体認証を使用する"</string>
+    <string name="permission_use_fingerprint">"アプリが指紋認証ハードウェアを使用することを許可する"</string>
+    <string name="permission_vibrate">"バイブレーターへのアクセスを許可する"</string>
+    <string name="permission_wake_lock">"PowerManagerのWakeLockを使用して、プロセッサをスリープさせない、または画面を暗くさせない"</string>
+    <string name="permission_wifi_scan">"アプリケーションによるWiFiネットワークのスキャンを許可する"</string>
+    <string name="permission_write_calender">"アプリケーションがユーザーのカレンダーデータを書き込むことを許可する"</string>
+    <string name="permission_write_call_log">"アプリケーションによるユーザーのコールログデータの書き込みを許可する（読み取りは不可)"</string>
+    <string name="permission_write_clipboard">"クリップボードにデータを書き込む"</string>
+    <string name="permission_write_contacts">"アプリケーションがユーザーの連絡先データを書き込むことを許可する"</string>
+    <string name="permission_write_settings">"システム設定の読み込み、書き込み（制限あり）"</string>
+    <string name="permission_write_sms">"アプリケーションによるSMSメッセージの送信を許可する"</string>
+    <string name="permission_write_storage">"アプリケーションによる外部ストレージへの書き込みを許可する"</string>
+    <string name="permission_write_wallpaper">"アプリケーションによる壁紙の設定を可能にする"</string>
+
+    <!--Translations-->
+    <string name="translate">"翻訳%s"</string>
+    <string name="translations">"翻訳"</string>
+    <string name="translations_message">"重要：このアプリケーションは、この開発者が作ったプロジェクトのほとんどに共通のコードベースを共有するオープンソースライブラリであるsCommonの文字列を多く使用しています。したがって、このアプリをあなたの言語で完全に使用するためには、ライブラリも翻訳することを検討してください。"</string>
+    <string name="translations_summary">"このアプリを翻訳するのを手伝ってください。POEditorのローカライズプロジェクトはこちらです。"</string>
+</resources>
