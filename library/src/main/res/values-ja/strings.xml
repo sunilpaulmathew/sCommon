@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    
+
     <!--Theme-->
     <string name="app_theme">"アプリのテーマ"</string>
     <string name="app_theme_auto">"自動"</string>
