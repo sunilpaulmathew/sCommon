@@ -11,7 +11,7 @@
     <string name="copyright">"Copyright: © %s"</string>
     <string name="credits">"Crédits"</string>
     <string name="credits_summary">"Liste des contributeurs au projet"</string>
-    <string name="dismiss">Fermer</string>
+    <string name="dismiss">"Abandonner"</string>
     <string name="version">"Version : %s"</string>
 
     <!-- Installer -->
