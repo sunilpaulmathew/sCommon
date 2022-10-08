@@ -9,6 +9,11 @@
     <!--General-->
     <string name="cancel">"Annuler"</string>
     <string name="copyright">"Copyright: © %s"</string>
+    <string name="crash_report">"Rapport de crash"</string>
+    <string name="crash_report_message">"Un crash a été détecté lors de la dernière utilisation de l'appli. Pour aider le développeur à corriger ce problème, rapportez ce journal de crash à
+
+        E-mail : smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Étapes pour reproduire le crash"</string>
     <string name="credits">"Crédits"</string>
     <string name="credits_summary">"Liste des contributeurs au projet"</string>
     <string name="dismiss">"Abandonner"</string>
