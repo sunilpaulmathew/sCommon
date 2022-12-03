@@ -1,20 +1,27 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <!--Theme-->
-    <string name="app_theme">"Tema do App"</string>
-    <string name="app_theme_auto">"Auto"</string>
+    <string name="app_theme">"Tema da aplicação"</string>
+    <string name="app_theme_auto">"Automático"</string>
     <string name="app_theme_dark">"Escuro"</string>
     <string name="app_theme_light">"Claro"</string>
 
     <!--General-->
-    <string name="cancel">Cancelar</string>
+    <string name="cancel">"Cancelar"</string>
     <string name="copyright">"Direitos de autor: © %s"</string>
+    <string name="crash_report">"Relatório de erro"</string>
+    <string name="crash_report_message">"A aplicação encravou na última utilização da aplicação. Por forma a ajudar o programador a corrigir este problema, por favor considere enviar este relatório de erro para o email:
+
+        smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Passos para reproduzir o erro (opcional)"</string>
     <string name="credits">"Créditos"</string>
     <string name="credits_summary">"Uma lista de pessoas que contribuíram para este projeto"</string>
-    <string name="dismiss">Dismiss</string>
+    <string name="dismiss">"Ignorar"</string>
+    <string name="report">"Reportar"</string>
     <string name="version">"Versão: %s"</string>
 
     <!--Installer-->
+    <string name="installation_cancel_message">"Quer cancelar a instalação?"</string>
     <string name="installation_status_aborted">"A instalação foi cancelada pelo utilizador"</string>
     <string name="installation_status_bad_apks">"Ficheiros APK selecionados inválidos"</string>
     <string name="installation_status_blocked">"A instalação foi bloqueada"</string>
@@ -22,10 +29,11 @@
     <string name="installation_status_failed">"Erro na instalação!"</string>
     <string name="installation_status_incompatible">"A aplicação é incompatível com este dispositivo"</string>
     <string name="installation_status_storage">"Erro ao instalar a aplicação porque o armazenamento está cheio"</string>
+    <string name="installation_status_success">"Instalação completada com sucesso"</string>
 
     <!--Permissions-->
     <string name="permission_access_notification">"Permite que uma aplicação de sistema aceda às notificações"</string>
-    <string name="permission_accessibility_service">"Exigido por um Serviço de Acessibilidade, para garantir que apenas o sistema se possa conectar "</string>
+    <string name="permission_accessibility_service">"Exigido por um Serviço de Acessibilidade, para garantir que apenas o sistema se possa conectar"</string>
     <string name="permission_audio_notification">"Alterar o volume das notificações"</string>
     <string name="permission_boot_completed">"Receber uma notificação assim que o sistema terminar a inicialização"</string>
     <string name="permission_body_sensors">"Aceder aos dados dos sensores que o utilizador usa para avaliar o estado do corpo do utilizador, tal como o batimento cardíaco"</string>
@@ -78,6 +86,8 @@
     <string name="permission_write_wallpaper">"Permitir que uma aplicação defina o papel de parede"</string>
 
     <!--Translations-->
+    <string name="translate">"Traduzir %s"</string>
     <string name="translations">"Traduções"</string>
+    <string name="translations_message">"Importante: Esta aplicação utiliza muitas cadeias de caracteres de sCommon, uma biblioteca de código aberto que partilha uma base de código comum para a maioria dos projetos realizados por este programador. Por isso, para utilizar esta aplicação completamente na sua língua, por favor considere traduzir também a biblioteca."</string>
     <string name="translations_summary">"Ajude-me a traduzir esta aplicação! Clique aqui para visitar o projeto de localização no POEditor"</string>
 </resources>

@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <!-- Theme -->
+    <string name="app_theme">"ਐਪ ਥੀਮ"</string>
+    <string name="app_theme_auto">"ਖ਼ੋਦ ਬਚੋਦ"</string>
+    <string name="app_theme_dark">"ਹਨੇਰਾ"</string>
+    <string name="app_theme_light">"ਰੋਸ਼ਨੀ"</string>
+
+    <!-- General -->
+    <string name="cancel">"ਰੱਦ ਕਰੋ"</string>
+    <string name="crash_report">"ਕ੍ਰੈਸ਼ ਰੀਪੋਰਟ"</string>
+    <string name="dismiss">"ਬੰਦ ਕਰੋ"</string>
+    <string name="report">"ਰੀਪੋਰਟ ਕਰੋ"</string>
+    <string name="version">"ਵਰਜ਼ਨ ⁦%s⁩"</string>
+
+    <!-- Installer -->
+
+    <!-- Permissions -->
+
+    <!-- Translations -->
+    <string name="translate">"⁦%s⁩ ਅਨੁਵਾਦ ਕਰੋ"</string>
+    <string name="translations">"ਅਨੁਵਾਦ"</string>
+</resources>

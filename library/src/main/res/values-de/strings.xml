@@ -1,18 +1,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <!--Theme-->
-    <string name="app_theme">"Theme"</string>
+    <string name="app_theme">"App-Thema"</string>
     <string name="app_theme_auto">"Automatisch"</string>
     <string name="app_theme_dark">"Dunkel"</string>
     <string name="app_theme_light">"Hell"</string>
 
     <!--General-->
-    <string name="cancel">Abbrechen</string>
+    <string name="cancel">"Abbrechen"</string>
     <string name="copyright">"Urheberrecht: © %s"</string>
     <string name="crash_report">"Unfallbericht"</string>
-    <string name="crash_report_message">"Während der letzten Verwendung dieser Anwendung wurde ein Absturz festgestellt. Um dem Entwickler zu helfen, dieses Problem zu beheben, melden Sie bitte dieses Absturzprotokoll an
+    <string name="crash_report_message">"Während der letzten Verwendung dieser Anwendung wurde ein Absturz festgestellt. Um dem Entwickler zu helfen, dieses Problem zu beheben, sende bitte dieses Absturzprotokoll an
 
-        E-Mail: smartpack.org@gmail.com"</string>
+        E-Mail-Adresse: smartpack.org@gmail.com"</string>
     <string name="crash_reproduce_steps">"Schritte zur Reproduktion des Absturzes (optional)"</string>
     <string name="credits">"Impressum"</string>
     <string name="credits_summary">"Eine Liste an Personen die zu diesem Projekt beigetragen haben"</string>
@@ -21,23 +21,23 @@
     <string name="version">"Version: %s"</string>
 
     <!--Installer-->
-    <string name="installation_cancel_message">"Sind Sie sicher, dass Sie die Installation abbrechen wollen?"</string>
+    <string name="installation_cancel_message">"Möchtest du die Installation wirklich abbrechen?"</string>
     <string name="installation_status_aborted">"Installation wurde vom Nutzer abgebrochen"</string>
     <string name="installation_status_bad_apks">"Ungültige APK-Dateien ausgewählt"</string>
     <string name="installation_status_blocked">"Installation wurde blockiert"</string>
     <string name="installation_status_conflict">"Die App kann nicht installiert werden, da sie in Konflikt mit einer bereits installierten App mit demselben Paketnamen steht"</string>
-    <string name="installation_status_failed">"Installation fehlgeschlagen!"</string>
+    <string name="installation_status_failed">"Installation fehlgeschlagen"</string>
     <string name="installation_status_incompatible">"Anwendung ist mit diesem Gerät nicht kompatibel"</string>
     <string name="installation_status_storage">"Nicht genügend Speicherplatz für die Installation der Anwendung"</string>
-    <string name="installation_status_success">"Installation erfolgreich abgeschlossen!"</string>
+    <string name="installation_status_success">"Installation erfolgreich abgeschlossen"</string>
 
     <!--Permissions-->
     <string name="permission_access_notification">"Ermöglicht einer Systemanwendung den Zugriff auf Benachrichtigungen"</string>
     <string name="permission_accessibility_service">"Erforderlich für einen Zugänglichkeitsdienst, um sicherzustellen, dass nur das System sich mit ihm verbinden kann"</string>
-    <string name="permission_audio_notification">"Lautstärke der Benachrichtigung ändern"</string>
+    <string name="permission_audio_notification">"Benachrichtigungslautstärke ändern"</string>
     <string name="permission_boot_completed">"Empfang eines Broadcasts, der anzeigt, dass das System fertig gebootet ist"</string>
-    <string name="permission_body_sensors">"Zugriff auf Daten von Sensoren, mit denen der Nutzer die Vorgänge in seinem Körper misst, z. B. die Herzfrequenz"</string>
-    <string name="permission_call_phone">"Ermöglicht es einer Anwendung, einen Telefonanruf zu initiieren, ohne dass der Benutzer den Anruf über die Dialer-Benutzeroberfläche bestätigen muss."</string>
+    <string name="permission_body_sensors">"Zugriff auf Daten von Sensoren, mit denen der Nutzer die Vorgänge in seinem Körper misst, beispielsweise die Herzfrequenz"</string>
+    <string name="permission_call_phone">"Ermöglicht es einer Anwendung, einen Telefonanruf zu initiieren, ohne dass der Benutzer den Anruf über die Wähloberfläche bestätigen muss"</string>
     <string name="permission_camera">"Erforderlich, um auf das Kameragerät zugreifen zu können"</string>
     <string name="permission_change_wifi">"Ermöglicht Anwendungen, den Status der Wi-Fi-Konnektivität zu ändern"</string>
     <string name="permission_coarse_location">"Ermöglicht einer App den Zugriff auf den ungefähren Standort"</string>
@@ -47,7 +47,7 @@
     <string name="permission_gps">"Ermöglicht einer Anwendung den Zugriff auf das GPS"</string>
     <string name="permission_install_packages">"Erlaubt einer Anwendung, Pakete zu installieren"</string>
     <string name="permission_mute_microphone">"Ermöglicht einer Anwendung den Zugriff auf die Stummschaltung des Mikrofons"</string>
-    <string name="permission_neighbouring_cells">"Ermöglicht einer Anwendung den Empfang von Signalstärke und Zell-ID."</string>
+    <string name="permission_neighbouring_cells">"Ermöglicht einer Anwendung den Empfang von Signalstärke und Zellstandort"</string>
     <string name="permission_post_notification">"Ermöglicht einer Anwendung, Benachrichtigungen zu veröffentlichen"</string>
     <string name="permission_process_outgoing_calls">"Ermöglicht einer Anwendung, die gewählte Nummer während eines ausgehenden Anrufs zu sehen, mit der Option, den Anruf an eine andere Nummer umzuleiten oder den Anruf ganz abzubrechen"</string>
     <string name="permission_read_calender">"Ermöglicht es einer Anwendung, die Kalenderdaten des Benutzers zu lesen"</string>
@@ -55,7 +55,7 @@
     <string name="permission_read_clipboard">"Inhalt des Zwischenablage-Dienstes lesen"</string>
     <string name="permission_read_contacts">"Ermöglicht es einer Anwendung, die Kontaktdaten des Benutzers zu lesen"</string>
     <string name="permission_read_storage">"Ermöglicht es einer Anwendung, von einem externen Speicher zu lesen"</string>
-    <string name="permission_read_phone_numbers">"Ermöglicht den Lesezugriff auf die Telefonnummer(n) des Geräts. Dies ist eine Teilmenge der durch READ_PHONE_STATE gewährten Fähigkeiten, die jedoch für Sofortanwendungen zugänglich sind."</string>
+    <string name="permission_read_phone_numbers">"Ermöglicht den Lesezugriff auf die Telefonnummer(n) des Geräts. Dies ist eine Teilmenge der durch READ_PHONE_STATE gewährten Fähigkeiten, die jedoch für Sofortanwendungen zugänglich sind"</string>
     <string name="permission_read_phone_state">"Ermöglicht den Nur-Lese-Zugriff auf den Telefonstatus, einschließlich der Telefonnummer des Geräts, der aktuellen Mobilfunknetzinformationen, des Status laufender Anrufe und einer Liste aller auf dem Gerät registrierten Telefonkonten"</string>
     <string name="permission_read_sms">"Ermöglicht einer Anwendung das Lesen von SMS-Nachrichten"</string>
     <string name="permission_receive_mms">"Ermöglicht einer Anwendung die Überwachung eingehender MMS-Nachrichten"</string>
@@ -66,7 +66,7 @@
     <string name="permission_ring_volume">"Klingellautstärke ändern"</string>
     <string name="permission_run_background">"Ermöglicht die Ausführung einer Anwendung im Hintergrund"</string>
     <string name="permission_start_foreground">"Start von Diensten im Vordergrund. Erfordert die Berechtigung FOREGROUND_SERVICE"</string>
-    <string name="permission_system_alert_window">"Erstellen Sie Fenster und zeigen Sie sie über allen anderen Anwendungen an"</string>
+    <string name="permission_system_alert_window">"Erstelle Fenster, die über allen anderen Anwendungen angezeigt werden"</string>
     <string name="permission_take_audio_focus">"Ermöglicht es einer Anwendung, als einzige den Audio-Fokus zu halten"</string>
     <string name="permission_toast_window">"Kurzfristige Meldungen auf dem Bildschirm anzeigen"</string>
     <string name="permission_unavailable">"Beschreibung für '%s' ist nicht verfügbar"</string>
@@ -88,6 +88,6 @@
     <!--Translations-->
     <string name="translate">"Übersetzen %s"</string>
     <string name="translations">"Übersetzungen"</string>
-    <string name="translations_message">"Wichtig: Diese Anwendung verwendet viele Strings aus sCommon, einer Open-Source-Bibliothek, die eine gemeinsame Code-Basis für die meisten Projekte dieses Entwicklers darstellt. Um diese Anwendung vollständig in Ihrer Sprache nutzen zu können, sollten Sie daher auch die Bibliothek übersetzen."</string>
-    <string name="translations_summary">"Helfen Sie mir, diese App zu übersetzen! Klicken Sie hier, um die Original-Sprachzeichenfolgen in Englisch zu erhalten"</string>
+    <string name="translations_message">"Wichtig: Diese Anwendung verwendet viele Strings aus sCommon, einer Open-Source-Bibliothek, die eine gemeinsame Code-Basis für die meisten Projekte dieses Entwicklers darstellt. Um diese Anwendung vollständig in deiner Sprache nutzen zu können, solltest du daher auch die Bibliothek übersetzen."</string>
+    <string name="translations_summary">"Hilf mir, diese App zu übersetzen. Klicke hier, um das POEditor-Projekt aufzurufen"</string>
 </resources>
