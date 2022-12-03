@@ -1,5 +1,6 @@
 package in.sunilpaulmathew.sCommon.Utils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
@@ -22,6 +23,7 @@ public class sTranslatorUtils {
         this.mDialogBuilder = new MaterialAlertDialogBuilder(activity);
     }
 
+    @SuppressLint("StringFormatInvalid")
     public void show() {
         mDialogBuilder.setIcon(R.drawable.ic_translate);
         mDialogBuilder.setTitle(R.string.translations);

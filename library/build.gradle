@@ -4,7 +4,8 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    namespace 'in.sunilpaulmathew.sCommon'
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
@@ -13,7 +14,7 @@ android {
 }
 
 dependencies {
-    implementation "com.google.android.material:material:1.5.0"
+    implementation "com.google.android.material:material:1.7.0"
 }
 
 project.afterEvaluate {

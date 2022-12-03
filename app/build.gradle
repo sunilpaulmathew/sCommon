@@ -3,13 +3,14 @@ plugins {
 }
 
 android {
-    compileSdkVersion 31
+    namespace 'in.sunilpaulmathew.common.demo'
+    compileSdkVersion 33
     buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "in.sunilpaulmathew.common.demo"
         minSdk 23
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "v0.1"
 
@@ -26,5 +27,5 @@ android {
 
 dependencies {
     implementation(project(":library"))
-    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.android.material:material:1.7.0'
 }
