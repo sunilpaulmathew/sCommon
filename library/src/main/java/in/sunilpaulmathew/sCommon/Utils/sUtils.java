@@ -95,18 +95,6 @@ public class sUtils {
                 Configuration.ORIENTATION_PORTRAIT : activity.getResources().getConfiguration().orientation;
     }
 
-    public static Intent filePickerIntent(boolean multipleFiles, int requestCode,
-                                          String fileType, Activity activity) {
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType(fileType != null ? fileType : "*/*");
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
-            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, multipleFiles);
-        }
-        activity.startActivityForResult(intent, requestCode);
-        return intent;
-    }
-
     public static long getLong(String name, long defaults, Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context).getLong(name, defaults);
     }
