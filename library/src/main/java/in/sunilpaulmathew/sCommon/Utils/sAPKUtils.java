@@ -8,7 +8,6 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import java.io.File;
 import java.util.Objects;
 
 import in.sunilpaulmathew.sCommon.R;
@@ -53,8 +52,8 @@ public class sAPKUtils {
         return context.getPackageManager();
     }
 
-    public static String getAPKSize(String path) {
-        long size = new File(path).length() / 1024;
+    public static String getAPKSize(long sizeInBytes) {
+        long size = sizeInBytes / 1024;
         long decimal = (size - 1024) / 1024;
         if (size > 1024) {
             return size / 1024 + "." + decimal + " MB";
