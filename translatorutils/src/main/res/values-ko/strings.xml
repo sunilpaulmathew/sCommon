@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translations">"번역"</string>
+    <string name="translations_summary">"이 앱을 번역하는 것을 도와주세요!"</string>
+</resources>

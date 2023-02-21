@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"रद्द करें"</string>
+    <string name="dismiss">"खारिज करें"</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"崩溃报告"</string>
+    <string name="crash_report_message">"检测到上次使用应用时发生了崩溃。为了帮助开发者修复此问题，请考虑将此次崩溃报告给
+
+        E-mail: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"重现崩溃的操作步骤（可选）"</string>
+    <string name="report">"报告"</string>
+</resources>

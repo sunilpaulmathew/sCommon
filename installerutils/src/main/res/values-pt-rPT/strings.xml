@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"Quer cancelar a instalação?"</string>
+    <string name="installation_status_aborted">"A instalação foi cancelada pelo utilizador"</string>
+    <string name="installation_status_bad_apks">"Ficheiros APK selecionados inválidos"</string>
+    <string name="installation_status_blocked">"A instalação foi bloqueada"</string>
+    <string name="installation_status_conflict">"Erro ao instalar a aplicação porque existe um conflito com uma aplicação já existente com o mesmo nome"</string>
+    <string name="installation_status_failed">"Erro na instalação!"</string>
+    <string name="installation_status_incompatible">"A aplicação é incompatível com este dispositivo"</string>
+    <string name="installation_status_storage">"Erro ao instalar a aplicação porque o armazenamento está cheio"</string>
+    <string name="installation_status_success">"Instalação completada com sucesso"</string>
+</resources>

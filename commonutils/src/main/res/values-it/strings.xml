@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"Annulla"</string>
+    <string name="dismiss">Ignora</string>
+</resources>

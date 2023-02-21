@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"取消"</string>
+    <string name="copyright">"版權所有：© %s"</string>
+    <string name="credits">"學分"</string>
+    <string name="credits_summary">"為本項目做出貢獻的人員列表"</string>
+    <string name="dismiss">"解雇"</string>
+    <string name="version">"版本：%s"</string>
+</resources>

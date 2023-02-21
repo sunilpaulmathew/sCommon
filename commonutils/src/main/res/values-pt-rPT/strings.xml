@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"Cancelar"</string>
+    <string name="copyright">"Direitos de autor: © %s"</string>
+    <string name="credits">"Créditos"</string>
+    <string name="credits_summary">"Uma lista de pessoas que contribuíram para este projeto"</string>
+    <string name="dismiss">"Ignorar"</string>
+    <string name="version">"Versão: %s"</string>
+</resources>

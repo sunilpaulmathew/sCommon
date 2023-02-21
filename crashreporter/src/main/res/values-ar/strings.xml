@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">تقرير الأعطال</string>
+    <string name="crash_report_message">"تم الكشف عن عطل أثناء الاستخدام الأخير لهذا التطبيق. لمساعدة المطور على إصلاح هذه المشكلة ، يرجى مراعاة الإبلاغ عن سجل الأعطال هذا إلى
+
+        البريد الإلكتروني: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">خطوات إعادة إنتاج التعطل (اختياري)</string>
+    <string name="report">تقرير</string>
+</resources>

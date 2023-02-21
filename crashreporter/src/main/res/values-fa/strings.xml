@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"گزارش مشکلات"</string>
+    <string name="crash_report_message">"یک مشکل در آخرین استفاده از این برنامه شناسایی شده است برای کمک به توسعه‌دهنده در برطرف کردن این مشکل لطفا گزارش مشکلات برنامه را از طریق ایمیل به ما ارسال کنید
+
+        ایمیل ما : smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"مشکل برنامه در چه مرحله ای اتفاق می افتد (اختیاری)"</string>
+    <string name="report">"گزارش"</string>
+</resources>

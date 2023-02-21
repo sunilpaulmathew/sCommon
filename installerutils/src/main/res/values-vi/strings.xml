@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"Bạn có chắc muốn huỷ cài đặt không?"</string>
+    <string name="installation_status_aborted">"Cài đặt bị người dùng huỷ"</string>
+    <string name="installation_status_bad_apks">"Đã chọn các tệp APK không hợp lệ"</string>
+    <string name="installation_status_blocked">"Cài đặt bị chặn"</string>
+    <string name="installation_status_conflict">"Không thể cài đặt ứng dụng vì nó xung đột với một ứng dụng đã cài đặt có tên gói như nhau"</string>
+    <string name="installation_status_failed">"Cài đặt thất bại!"</string>
+    <string name="installation_status_incompatible">"Ứng dụng không tương thích với thiết bị này"</string>
+    <string name="installation_status_storage">"Không đủ dung lượng bộ nhớ để cài đặt ứng dụng"</string>
+    <string name="installation_status_success">"Cài đặt hoàn thành thành công!"</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"%s çevir"</string>
+    <string name="translations">"Çeviriler"</string>
+    <string name="translations_summary">"Bu uygulamayı çevirmemde bana yardım edin! Buraya tıklayarak POEditor yerelleştirme projesine ulaşabilirsiniz"</string>
+</resources>

@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">ሰርዝ</string>
+    <string name="credits">ምስጋና</string>
+    <string name="dismiss">አሰናብት</string>
+</resources>

@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">റദ്ദാക്കുക</string>
+    <string name="credits">"ക്രെഡിറ്റുകൾ"</string>
+    <string name="dismiss">"നിരസിക്കുക"</string>
+    <string name="version">"പതിപ്പ്: %s"</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"Avbryt"</string>
+    <string name="credits">"Krediteringer"</string>
+    <string name="credits_summary">"En liste over bidragsytere til dette prosjektet"</string>
+    <string name="dismiss">"Avvis"</string>
+    <string name="version">"Versjon: %s"</string>
+</resources>

@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+group = "com.github.sunilpaulmathew.sCommon"
+
+android {
+    namespace 'in.sunilpaulmathew.sCommon.TranslatorUtils'
+    compileSdkVersion 33
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        consumerProguardFiles("proguard-rules.pro")
+    }
+}
+
+dependencies {
+    api(project(":commonutils"))
+    implementation "com.google.android.material:material:${materialLibVersion}"
+}
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+            }
+        }
+    }
+}

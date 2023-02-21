@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"%s Fordítása"</string>
+    <string name="translations">"Fordítások"</string>
+    <string name="translations_message">"Fontos: Ez az alkalmazás sok karakterláncot használ az sCommontól, egy nyílt forráskódú könyvtártól, amely közös kódbázist oszt meg a fejlesztő által készített legtöbb projekthez.  Ezért, ha az alkalmazást teljesen az Ön nyelvén szeretné használni, fontolja meg a könyvtár lefordítását is."</string>
+    <string name="translations_summary">"Segítsen lefordítani ezt az alkalmazást!  Kattintson ide a POEditor lokalizációs projekt meglátogatásához."</string>
+</resources>

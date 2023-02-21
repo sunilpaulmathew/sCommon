@@ -9,4 +9,18 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "sCommon Demo"
-include(":app", ":library")
+include(
+        ":app",
+        ":apkutils",
+        ":commonutils",
+        ":credits",
+        ":dialogs",
+        ":fileutils",
+        ":installerutils",
+        ":jsonutils",
+        ":packageutils",
+        ":permissionutils",
+        ":crashreporter",
+        ":themeutils",
+        ":translatorutils"
+)

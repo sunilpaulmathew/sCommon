@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"⁦%s⁩ ਅਨੁਵਾਦ ਕਰੋ"</string>
+    <string name="translations">"ਅਨੁਵਾਦ"</string>
+</resources>

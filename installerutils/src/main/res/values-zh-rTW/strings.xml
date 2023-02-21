@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"您確定要取消安裝嗎？"</string>
+    <string name="installation_status_aborted">"安裝已被用戶取消"</string>
+    <string name="installation_status_bad_apks">"選擇了無效的apk文件"</string>
+    <string name="installation_status_blocked">"安裝被阻止"</string>
+    <string name="installation_status_conflict">"無法安裝該應用程序，因為它與已安裝的具有相同包名的應用程序衝突"</string>
+    <string name="installation_status_failed">"安裝失敗"</string>
+    <string name="installation_status_incompatible">"應用程序與此設備不兼容"</string>
+    <string name="installation_status_storage">"沒有足夠的存儲空間來安裝應用程序"</string>
+    <string name="installation_status_success">"安裝成功完成"</string>
+</resources>

@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"Перевести %s"</string>
+    <string name="translations">"Переводы"</string>
+    <string name="translations_message">"Важно: это приложение использует много строк из библиотеки (Common) с открытым исходным кодом, использующей общую кодовую базу для большинства проектов, созданных этим разработчиком. Следовательно, чтобы использовать это приложение полностью на вашем языке, подумайте также о переводе библиотеки."</string>
+    <string name="translations_summary">"Помогите мне перевести это приложение! Нажмите здесь, чтобы получить исходные языковые строки на английском"</string>
+</resources>

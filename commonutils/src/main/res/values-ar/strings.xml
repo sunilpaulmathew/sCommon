@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"إلغاء"</string>
+    <string name="copyright">"حقوق النشر: © %s"</string>
+    <string name="credits">"ثناء"</string>
+    <string name="credits_summary">قائمة بالأشخاص الذين ساهموا في هذا المشروع</string>
+    <string name="dismiss">"رفض"</string>
+    <string name="version">"الإصدار: %s"</string>
+</resources>

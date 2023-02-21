@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"ਕ੍ਰੈਸ਼ ਰੀਪੋਰਟ"</string>
+    <string name="report">"ਰੀਪੋਰਟ ਕਰੋ"</string>
+</resources>

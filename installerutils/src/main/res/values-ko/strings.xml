@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"설치를 취소하시겠습니까?"</string>
+    <string name="installation_status_aborted">"사용자가 설치를 취소했습니다."</string>
+    <string name="installation_status_bad_apks">"잘못된 APK 파일이 선택되었습니다."</string>
+    <string name="installation_status_blocked">"설치가 차단되었습니다"</string>
+    <string name="installation_status_conflict">"동일한 패키지 이름으로 이미 설치된 앱과 충돌하기 때문에 앱을 설치할 수 없습니다."</string>
+    <string name="installation_status_failed">"설치 실패"</string>
+    <string name="installation_status_incompatible">"애플리케이션이 이 기기와 호환되지 않습니다."</string>
+    <string name="installation_status_storage">"앱을 설치할 저장 공간이 충분하지 않습니다."</string>
+    <string name="installation_status_success">"설치가 성공적으로 완료되었습니다"</string>
+</resources>

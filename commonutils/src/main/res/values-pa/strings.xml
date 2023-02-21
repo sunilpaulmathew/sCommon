@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"ਰੱਦ ਕਰੋ"</string>
+    <string name="dismiss">"ਬੰਦ ਕਰੋ"</string>
+    <string name="version">"ਵਰਜ਼ਨ ⁦%s⁩"</string>
+</resources>

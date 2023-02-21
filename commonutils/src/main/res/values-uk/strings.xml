@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"Скасувати"</string>
+    <string name="credits">"Подяки"</string>
+    <string name="credits_summary">"Перелік "</string>
+    <string name="dismiss">"Закрити"</string>
+    <string name="version">"Версія: %s"</string>
+</resources>

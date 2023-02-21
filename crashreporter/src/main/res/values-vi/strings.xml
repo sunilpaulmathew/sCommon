@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Báo cáo sự cố"</string>
+    <string name="crash_report_message">"Sự cố được phát hiện trong lần sử dụng cuối cùng của ứng dụng này. Để giúp nhà phát triển khắc phục sự cố này, vui lòng xem xét báo cáo nhật ký sự cố này cho
+
+        Email: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Các bước để tái tạo sự cố (Tùy chọn)"</string>
+    <string name="report">"Báo cáo"</string>
+</resources>

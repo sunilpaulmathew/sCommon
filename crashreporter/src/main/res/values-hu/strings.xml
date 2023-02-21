@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Összeomlási jelentés"</string>
+    <string name="crash_report_message">"Összeomlást észlelt az alkalmazás az utolsó használata során. Segítse a fejlesztőt a probléma megoldásában, fontolja meg ennek az összeomlási naplónak a jelentését.
+
+        E-mail: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Az összeomlás reprodukálásának lépései (Opcionális)"</string>
+    <string name="report">"Jelentés"</string>
+</resources>

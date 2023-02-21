@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Çökme Raporu"</string>
+    <string name="crash_reproduce_steps">"Sorunu tekrarlamak için adımlar (isteğe bağlı)"</string>
+    <string name="report">"Raporla"</string>
+</resources>

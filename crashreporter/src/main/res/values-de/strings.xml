@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Unfallbericht"</string>
+    <string name="crash_report_message">"Während der letzten Verwendung dieser Anwendung wurde ein Absturz festgestellt. Um dem Entwickler zu helfen, dieses Problem zu beheben, sende bitte dieses Absturzprotokoll an
+
+        E-Mail-Adresse: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Schritte zur Reproduktion des Absturzes (optional)"</string>
+    <string name="report">"Bericht"</string>
+</resources>

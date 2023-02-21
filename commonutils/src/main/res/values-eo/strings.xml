@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">Nuligi</string>
+    <string name="credits">Dankoj</string>
+    <string name="dismiss">Kaŝi</string>
+</resources>

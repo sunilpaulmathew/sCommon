@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"آیا می خواهید نصب را لغو کنید؟"</string>
+    <string name="installation_status_aborted">"نصب توسط کاربر لغو شد"</string>
+    <string name="installation_status_bad_apks">"فایل‌های APK انتخاب شده نامعتبر است"</string>
+    <string name="installation_status_blocked">"نصب مسدود شد"</string>
+    <string name="installation_status_conflict">"نصب برنامه امکان پذیر نیست زیرا یک برنامه با همان نام بسته از قبل نصب شده است"</string>
+    <string name="installation_status_failed">"نصب انجام نشد"</string>
+    <string name="installation_status_incompatible">"برنامه با این دستگاه ناسازگار است"</string>
+    <string name="installation_status_storage">"فضای ذخیره سازی کافی برای نصب برنامه وجود ندارد"</string>
+    <string name="installation_status_success">"نصب با موفقیت انجام شد"</string>
+</resources>

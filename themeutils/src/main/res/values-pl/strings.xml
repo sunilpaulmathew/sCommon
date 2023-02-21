@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_theme">"Motyw aplikacji"</string>
+    <string name="app_theme_auto">"Automatyczny"</string>
+    <string name="app_theme_dark">"Ciemny"</string>
+    <string name="app_theme_light">"Jasny"</string>
+</resources>

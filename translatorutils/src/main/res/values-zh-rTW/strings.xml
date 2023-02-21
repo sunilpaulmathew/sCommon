@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"翻譯 %s"</string>
+    <string name="translations">"翻譯"</string>
+    <string name="translations_message">"重要提示：此應用程序使用了來自 sCommon 的大量字符串，這是一個開源庫，為該開發人員創建的大多數項目共享通用代碼庫。 因此，為了完全以您的語言使用此應用程序，請考慮翻譯該庫。"</string>
+    <string name="translations_summary">"幫我翻譯這個應用程序。點此訪問POEditor本地化項目"</string>
+</resources>

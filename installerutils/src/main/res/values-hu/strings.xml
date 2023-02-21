@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"Biztosan megszakítja a telepítést?"</string>
+    <string name="installation_status_aborted">"A telepítést a felhasználó törölte"</string>
+    <string name="installation_status_bad_apks">"Érvénytelen APK fájlokat választott"</string>
+    <string name="installation_status_blocked">"A telepítés blokkolt"</string>
+    <string name="installation_status_conflict">"Az alkalmazást nem lehet telepíteni, mert ütközik egy már telepített, azonos csomagnevű alkalmazással"</string>
+    <string name="installation_status_failed">"Sikertelen telepítés"</string>
+    <string name="installation_status_incompatible">"Az alkalmazás nem kompatibilis ezzel az eszközzel"</string>
+    <string name="installation_status_storage">"Nincs elég tárhely az alkalmazás telepítéséhez"</string>
+    <string name="installation_status_success">"A telepítés sikeresen befejeződött"</string>
+</resources>

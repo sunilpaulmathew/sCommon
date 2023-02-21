@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"Apakah Anda yakin akan membatalkan penginstalan?"</string>
+    <string name="installation_status_aborted">"Instalasi dibatalkan oleh pengguna"</string>
+    <string name="installation_status_bad_apks">"File APK yang dipilih tidak valid"</string>
+    <string name="installation_status_blocked">"Instalasi diblokir"</string>
+    <string name="installation_status_conflict">"Tidak dapat menginstal aplikasi karena bertentangan dengan aplikasi yang sudah diinstal dengan nama paket yang sama"</string>
+    <string name="installation_status_failed">"Pemasangan Gagal!"</string>
+    <string name="installation_status_incompatible">"Aplikasi tidak kompatibel dengan perangkat ini"</string>
+    <string name="installation_status_storage">"Tidak cukup ruang penyimpanan untuk menginstal aplikasi"</string>
+    <string name="installation_status_success">"Instalasi Berhasil!"</string>
+</resources>

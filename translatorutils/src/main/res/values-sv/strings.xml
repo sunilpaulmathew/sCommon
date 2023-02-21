@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translations">"Översättningar"</string>
+    <string name="translations_summary">"Hjälp mig att översätta denna apo.  Klicka här för att gå till POEditor lokaliseringsprojekt."</string>
+</resources>

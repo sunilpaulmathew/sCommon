@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translations">"Переклади"</string>
+    <string name="translations_summary">"Допоможіть мені перекласти цю програму! Клацніть тут, щоб відвідати проект локалізації POEditor"</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="permission_access_notification">"시스템 앱이 알림에 액세스할 수 있도록 허용"</string>
+    <string name="permission_accessibility_service">"시스템만 바인딩할 수 있도록 접근성 서비스에서 필요합니다."</string>
+    <string name="permission_audio_notification">"알림 볼륨 변경"</string>
+    <string name="permission_boot_completed">"시스템 부팅이 완료되었음을 알리는 브로드캐스트 수신"</string>
+    <string name="permission_body_sensors">"사용자가 심박수와 같이 신체 내부에서 일어나는 일을 측정하는 데 사용하는 센서의 데이터에 액세스"</string>
+    <string name="permission_call_phone">"사용자가 통화를 확인할 수 있도록 애플리케이션이 다이얼러 사용자 인터페이스를 거치지 않고 전화 통화를 시작할 수 있도록 합니다."</string>
+    <string name="permission_camera">"카메라 장치에 액세스하기 위해 필요"</string>
+    <string name="permission_change_wifi">"애플리케이션이 Wi-Fi 연결 상태를 변경할 수 있도록 허용"</string>
+    <string name="permission_coarse_location">"앱이 대략적인 위치에 액세스할 수 있도록 허용합니다."</string>
+    <string name="permission_delete_packages">"애플리케이션이 패키지 삭제를 요청할 수 있도록 허용"</string>
+    <string name="permission_fine_location">"애플리케이션이 정확한 위치에 액세스할 수 있도록 허용"</string>
+</resources>

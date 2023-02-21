@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="cancel">"لغو "</string>
+    <string name="copyright">"کپی رایت : © %s"</string>
+    <string name="credits">"اعتبارات"</string>
+    <string name="credits_summary">"لیستی از افرادی که در این پروژه مشارکت داشته اند"</string>
+    <string name="dismiss">"رد"</string>
+    <string name="version">"نسخه : %s"</string>
+</resources>

@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Informe del accidente"</string>
+    <string name="crash_report_message">"Se detectó un bloqueo durante el último uso de esta aplicación. Para ayudar al desarrollador a solucionar este problema, considere informar este registro de fallas a
+
+        Correo electrónico: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Pasos para reproducir el bloqueo (Opcional)"</string>
+    <string name="report">"Reporte"</string>
+</resources>

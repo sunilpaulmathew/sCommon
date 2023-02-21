@@ -6,8 +6,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.card.MaterialCardView;
 
-import in.sunilpaulmathew.sCommon.Utils.sSingleItemDialog;
-import in.sunilpaulmathew.sCommon.Utils.sUtils;
+import in.sunilpaulmathew.sCommon.CommonUtils.sCommonUtils;
+import in.sunilpaulmathew.sCommon.Dialog.sSingleItemDialog;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
                     @Override
                     public void onItemSelected(int position) {
-                        sUtils.toast(getMenu()[position] + " Selected", MainActivity.this).show();
+                        sCommonUtils.toast(getMenu()[position] + " Selected", MainActivity.this).show();
                     }
                 }.show()
         );

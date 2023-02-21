@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"崩潰報告"</string>
+    <string name="crash_report_message">"在上次使用此應用程序期間檢測到崩潰。 為了幫助開發者解決這個問題，請考慮將此崩潰日誌報告給
+
+        電子郵件：smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"重現崩潰的步驟（可選）"</string>
+    <string name="report">"報告"</string>
+</resources>

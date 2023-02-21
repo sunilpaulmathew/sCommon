@@ -1,0 +1,4 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translations">"വിവർത്തനങ്ങൾ"</string>
+    <string name="translations_summary">"ഈ അപ്ലിക്കേഷൻ വിവർത്തനം ചെയ്യാൻ എന്നെ സഹായിക്കൂ"</string>
+</resources>

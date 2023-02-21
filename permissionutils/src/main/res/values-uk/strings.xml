@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="permission_access_notification">"До"</string>
+    <string name="permission_accessibility_service">" "</string>
+    <string name="permission_audio_notification">"Змінити гучнісь сповіщення"</string>
+    <string name="permission_boot_completed">"Отримайти сигнал про завантаження системи"</string>
+    <string name="permission_body_sensors">"Дозвід на доступ до даних із датчиків, які користувач використовує для вимірювання того, що відбувається всередині його тіла, наприклад, частоти серцевих скорочень"</string>
+</resources>

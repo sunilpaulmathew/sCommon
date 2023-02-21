@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">Translate %s</string>
+    <string name="translations">Translations</string>
+    <string name="translations_message">Important: This application uses a lot of strings from sCommon, an open-source library sharing common code-base for most of the projects made by this developer. Hence, in-order to use this app completely in your language, please consider translating the library as well.</string>
+    <string name="translations_summary">Help me to translate this app. Click here to visit POEditor localization project</string>
+</resources>

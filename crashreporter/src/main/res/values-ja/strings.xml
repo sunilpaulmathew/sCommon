@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"クラッシュレポート"</string>
+    <string name="crash_report_message">"このアプリの最後の使用中にクラッシュが検出されました。開発者がこの問題を修正するのを助けるために、このクラッシュログを次のアドレスに報告することを検討してください。
+
+        電子メール： smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"クラッシュを再現する手順（任意）"</string>
+    <string name="report">"レポート"</string>
+</resources>

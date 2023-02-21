@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_theme">"アプリのテーマ"</string>
+    <string name="app_theme_auto">"自動"</string>
+    <string name="app_theme_dark">"ダークテーマ"</string>
+    <string name="app_theme_light">"ライトテーマ"</string>
+</resources>

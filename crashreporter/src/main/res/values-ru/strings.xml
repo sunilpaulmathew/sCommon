@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Отчет о сбое"</string>
+    <string name="crash_report_message">"Во время последнего использования данного приложения был обнаружен сбой. Чтобы помочь разработчику исправить эту проблему, пожалуйста, рассмотрите возможность отправки этого журнала сбоев на
+
+        электронную почту : smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Действия по воспроизведению сбоя (необязательно)"</string>
+    <string name="report">"Отчет"</string>
+</resources>

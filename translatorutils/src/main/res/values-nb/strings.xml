@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"Oversett %s"</string>
+    <string name="translations">"Oversettelser"</string>
+    <string name="translations_message">"Viktig: Denne appen bruker mange tekststrenger fra sCommon, et åpen-kildekodebibliotek som deler felles kodebase med de fleste prosjekter av denne utvikleren. Så for å kunne ha denne appen helt på ditt eget språk, vurder å oversette biblioteket også."</string>
+    <string name="translations_summary">"Hjelp med å oversette appen. Trykk her for å gå til oversettelsesprosjektet på POEditor-nettsiden"</string>
+</resources>
