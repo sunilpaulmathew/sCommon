@@ -10,6 +10,7 @@ dependencyResolutionManagement {
 }
 rootProject.name = "sCommon Demo"
 include(
+        ":adapters",
         ":app",
         ":apkutils",
         ":commonutils",
