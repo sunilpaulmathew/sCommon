@@ -1,5 +1,6 @@
 package in.sunilpaulmathew.sCommon.ThemeUtils;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
@@ -73,29 +74,39 @@ public class sThemeUtils {
         }
     }
 
-    public static void setAppTheme(Context context) {
-        new sSingleChoiceDialog(R.drawable.ic_theme, context.getString(R.string.app_theme),
-                getAppThemeMenu(context), getAppThemePosition(context), context) {
+    public static void setAppTheme(boolean exit, Activity activity) {
+        new sSingleChoiceDialog(R.drawable.ic_theme, activity.getString(R.string.app_theme),
+                getAppThemeMenu(activity), getAppThemePosition(activity), activity) {
 
             @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
             @Override
             public void onItemSelected(int position) {
+                if (position == sCommonUtils.getInt("appTheme", 0, activity)) {
+                    return;
+                }
                 switch (position) {
                     case 2:
-                        sCommonUtils.saveInt("appTheme", 2, context);
+                        sCommonUtils.saveInt("appTheme", 2, activity);
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
                         break;
                     case 1:
-                        sCommonUtils.saveInt("appTheme", 1, context);
+                        sCommonUtils.saveInt("appTheme", 1, activity);
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
                         break;
                     default:
-                        sCommonUtils.saveInt("appTheme", 0, context);
+                        sCommonUtils.saveInt("appTheme", 0, activity);
                         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
                         break;
                 }
+                if (exit) {
+                    activity.finish();
+                }
             }
         }.show();
+    }
+
+    public static void setAppTheme(Activity activity) {
+        setAppTheme(false, activity);
     }
 
     /*
