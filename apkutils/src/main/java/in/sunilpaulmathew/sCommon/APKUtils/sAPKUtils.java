@@ -29,13 +29,11 @@ public class sAPKUtils {
      * The input color should be app theme based
      */
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public static Drawable getAPKIcon(String apkPath, int color, Context context) {
+    public static Drawable getAPKIcon(String apkPath, Context context) {
         if (getPackageInfo(apkPath, context) != null) {
             return Objects.requireNonNull(getPackageInfo(apkPath, context)).applicationInfo.loadIcon(getPackageManager(context));
         } else {
-            Drawable drawable = sCommonUtils.getDrawable(R.drawable.ic_android, context);
-            drawable.setTint(sCommonUtils.getColor(color, context));
-            return drawable;
+            return sCommonUtils.getDrawable(R.drawable.ic_android, context);
         }
     }
 
