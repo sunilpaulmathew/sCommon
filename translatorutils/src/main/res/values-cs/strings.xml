@@ -1,4 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="translate">"Přeloženo %s"</string>
     <string name="translations">"Překlady"</string>
+    <string name="translations_message">"Důležité: Tato aplikace používá mnoho řetězců z open-source knihovny sCommon, která sdílí společnou kódovou základnu pro většinu projektů tohoto vývojáře. Chcete-li tedy tuto aplikaci používat kompletně ve svém jazyce, zvažte prosím překlad i této knihovny."</string>
     <string name="translations_summary">"Pomozte mi přeložit tuto aplikaci! Klikněte zde pro navštívení POEditor lokalizační projekt."</string>
 </resources>

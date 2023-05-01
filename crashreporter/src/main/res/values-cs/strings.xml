@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Hlášení o nehodě"</string>
+    <string name="crash_report_message">"Při posledním použití této aplikace byl zjištěn pád. Abyste pomohli vývojáři tento problém opravit, zvažte prosím nahlášení tohoto záznamu o pádu na adresu
+
+        E-mail: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Kroky k reprodukci pádu (volitelně)"</string>
+    <string name="report">"Hlášení"</string>
+</resources>

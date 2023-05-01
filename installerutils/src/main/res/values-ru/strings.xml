@@ -6,6 +6,6 @@
     <string name="installation_status_conflict">"Не удается установить приложение, так как оно конфликтует с уже установленным приложением с тем же именем пакета"</string>
     <string name="installation_status_failed">"Установка завершилась неудачно!"</string>
     <string name="installation_status_incompatible">"Приложение несовместимо с этим устройством"</string>
-    <string name="installation_status_storage">"Не достаточно памяти для установки приложения "</string>
+    <string name="installation_status_storage">"Не достаточно памяти для установки приложения"</string>
     <string name="installation_status_success">"Установка успешно завершена!"</string>
 </resources>

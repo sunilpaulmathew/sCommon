@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"รายงานข้อขัดข้อง"</string>
+    <string name="crash_report_message">"ตรวจพบข้อขัดข้องระหว่างการใช้งานแอพนี้ครั้งล่าสุด เพื่อช่วยนักพัฒนาในการแก้ไขปัญหานี้ โปรดพิจารณารายงานบันทึกข้อขัดข้องนี้ไปที่
+
+        อีเมล์: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"ขั้นตอนในการทำซ้ำข้อขัดข้อง (ไม่บังคับ)"</string>
+    <string name="report">"รายงาน"</string>
+</resources>

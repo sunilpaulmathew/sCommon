@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="crash_report">"Raport o awarii"</string>
+    <string name="crash_report_message">"Wykryto awarię podczas ostatniego użycia tej aplikacji. Aby pomóc programiście w rozwiązaniu tego problemu, rozważ zgłoszenie tego dziennika awarii do
+
+        E-mail: smartpack.org@gmail.com"</string>
+    <string name="crash_reproduce_steps">"Kroki do odtworzenia awarii (opcjonalnie)"</string>
+    <string name="report">"Zgłoś"</string>
+</resources>

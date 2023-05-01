@@ -2,6 +2,7 @@
     <string name="cancel">"Storno"</string>
     <string name="copyright">"Autorské právo: ©%s"</string>
     <string name="credits">"Kredity"</string>
+    <string name="credits_summary">"Seznam lidí, kteří se podíleli na tomto projektu"</string>
     <string name="dismiss">"Zavrhnout"</string>
     <string name="version">"Verze: %s"</string>
 </resources>

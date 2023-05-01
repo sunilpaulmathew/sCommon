@@ -1,7 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
-    <string name="cancel">Membatalkan</string>
+    <string name="cancel">"Membatalkan"</string>
     <string name="copyright">"Hak Cipta: © %s"</string>
-    <string name="credits">Kredit</string>
-    <string name="dismiss">Memberhentikan</string>
+    <string name="credits">"Kredit"</string>
+    <string name="credits_summary">"Daftar orang-orang yang berkontribusi pada proyek ini"</string>
+    <string name="dismiss">"Memberhentikan"</string>
     <string name="version">"Versi: %s"</string>
 </resources>

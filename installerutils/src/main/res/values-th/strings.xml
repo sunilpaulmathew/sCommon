@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="installation_cancel_message">"คุณแน่ใจหรือที่จะยกเลิกการติดตั้ง?"</string>
+    <string name="installation_status_aborted">"การติดตั้งถูกยกเลิกโดยผู้ใช้"</string>
+    <string name="installation_status_bad_apks">"ไฟล์ APK ที่เลือกไม่ถูกต้อง"</string>
+    <string name="installation_status_blocked">"การติดตั้งถูกบล็อก"</string>
+    <string name="installation_status_conflict">"ไม่สามารถติดตั้งแอปได้เนื่องจากขัดแย้งกับแอปที่ติดตั้งแล้วซึ่งมีชื่อแพ็กเกจเดียวกัน"</string>
+    <string name="installation_status_failed">"การติดตั้งล้มเหลว"</string>
+    <string name="installation_status_incompatible">"แอปพลิเคชันเข้ากันไม่ได้กับอุปกรณ์นี้"</string>
+    <string name="installation_status_storage">"พื้นที่เก็บข้อมูลไม่เพียงพอในการติดตั้งแอป"</string>
+    <string name="installation_status_success">"การติดตั้งเสร็จสมบูรณ์"</string>
+</resources>
