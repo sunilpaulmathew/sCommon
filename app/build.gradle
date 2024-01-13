@@ -4,13 +4,12 @@ plugins {
 
 android {
     namespace 'in.sunilpaulmathew.common.demo'
-    compileSdkVersion 33
-    buildToolsVersion "30.0.3"
+    compileSdk 34
 
     defaultConfig {
         applicationId "in.sunilpaulmathew.common.demo"
         minSdk 23
-        targetSdk 33
+        targetSdk 34
         versionCode 1
         versionName "v0.1"
 
