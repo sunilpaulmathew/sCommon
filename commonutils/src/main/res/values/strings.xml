@@ -17,13 +17,14 @@
     <string name="language_en" translatable="false">English</string>
     <string name="language_es" translatable="false">Español</string>
     <string name="language_fr" translatable="false">français</string>
-    <string name="language_hu" translatable="false">Magyar</string>
+    <string name="language_he" translatable="false">עִברִית</string>
+    <string name="language_hi" translatable="false">हिंदी</string>
     <string name="language_hr" translatable="false">Hrvatski</string>
+    <string name="language_hu" translatable="false">Magyar</string>
     <string name="language_in" translatable="false">bahasa Indonesia</string>
     <string name="language_it" translatable="false">Italiano</string>
     <string name="language_ja" translatable="false">日本</string>
     <string name="language_ko" translatable="false">한국어</string>
-    <string name="language_hi" translatable="false">हिंदी</string>
     <string name="language_lt" translatable="false">lietuvis</string>
     <string name="language_ml" translatable="false">മലയാളം</string>
     <string name="language_my" translatable="false">ဗမာ</string>
