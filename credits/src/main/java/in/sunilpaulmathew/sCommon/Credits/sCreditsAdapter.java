@@ -41,7 +41,9 @@ public class sCreditsAdapter extends RecyclerView.Adapter<sCreditsAdapter.ViewHo
         holder.Title.setText(mData.get(position).getTextOne());
         holder.Description.setText(mData.get(position).getTextTwo());
         holder.Description.setPaintFlags(holder.Description.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
-        holder.Description.setTextColor(mAccentColor);
+        if (mAccentColor != Integer.MIN_VALUE) {
+            holder.Description.setTextColor(mAccentColor);
+        }
         holder.Description.setOnClickListener(v -> {
             if (mData.get(position).getTextThree() != null) {
                 sCommonUtils.launchUrl(mData.get(position).getTextThree(), (Activity) v.getContext());

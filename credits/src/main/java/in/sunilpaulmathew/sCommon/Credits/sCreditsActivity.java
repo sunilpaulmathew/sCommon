@@ -38,14 +38,16 @@ public class sCreditsActivity extends AppCompatActivity {
         mRecyclerView.setAdapter(mRecycleViewAdapter);
 
         mTitle.setTextSize(TypedValue.COMPLEX_UNIT_SP, sCreditsUtils.getTextSize());
-        mTitle.setTextColor(sCreditsUtils.getAccentColor());
+        if (sCreditsUtils.getAccentColor() != Integer.MIN_VALUE) {
+            mTitle.setTextColor(sCreditsUtils.getAccentColor());
+            mAppName.setTextColor(sCreditsUtils.getAccentColor());
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
+                mBackButton.setColorFilter(sCreditsUtils.getAccentColor());
+            }
+        }
         mAppName.setText(sCreditsUtils.getAppname());
-        mAppName.setTextColor(sCreditsUtils.getAccentColor());
         mAppIcon.setImageDrawable(sCreditsUtils.getIcon());
         mBackButton.setImageDrawable(sCreditsUtils.getBackButton());
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
-            mBackButton.setColorFilter(sCreditsUtils.getAccentColor());
-        }
         mVersion.setText(getString(R.string.version, sCreditsUtils.geVersionName()));
         mCopyright.setText(getString(R.string.copyright, sCreditsUtils.getCopyRight()));
 
