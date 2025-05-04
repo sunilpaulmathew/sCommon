@@ -5,6 +5,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.TypedValue;
 
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.Nullable;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -57,8 +58,8 @@ public class sCrashReporterActivity extends AppCompatActivity {
             mCrashLog.setText(getIntent().getStringExtra("crashLog"));
         }
 
-        mBackButton.setOnClickListener(v -> onBackPressed());
-        mCancelButton.setOnClickListener(v -> onBackPressed());
+        mBackButton.setOnClickListener(v -> exit());
+        mCancelButton.setOnClickListener(v -> exit());
 
         mReportButton.setOnClickListener(v -> {
             String mSteps = "";
@@ -79,11 +80,17 @@ public class sCrashReporterActivity extends AppCompatActivity {
             Intent shareIntent = Intent.createChooser(share_log, "Share");
             startActivity(shareIntent);
         });
+
+        getOnBackPressedDispatcher().addCallback(new OnBackPressedCallback(true) {
+            @Override
+            public void handleOnBackPressed() {
+                exit();
+            }
+        });
     }
 
     @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
-    @Override
-    public void onBackPressed() {
+    private void exit() {
         if (sCommonUtils.getString("crashLog", null, this) != null) {
             sCommonUtils.saveString("crashLog", null, this);
         }

@@ -11,11 +11,13 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+        minSdk 14
         consumerProguardFiles("proguard-rules.pro")
     }
 }
 
 dependencies {
+    implementation "androidx.preference:preference:1.2.1"
     implementation "com.google.android.material:material:${materialLibVersion}"
 }
 

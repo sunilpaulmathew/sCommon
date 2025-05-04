@@ -112,13 +112,14 @@ public class sThemeUtils {
     /*
      * Should be called before setContentView of launcher activity
      */
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
     public static void setLanguage(Context context) {
         Locale myLocale = new Locale(sCommonUtils.getString("appLanguage", java.util.Locale.getDefault()
                 .getLanguage(), context));
         Resources res = context.getResources();
         DisplayMetrics dm = res.getDisplayMetrics();
         Configuration conf = res.getConfiguration();
-        conf.locale = myLocale;
+        conf.setLocale(myLocale);
         res.updateConfiguration(conf, dm);
     }
 

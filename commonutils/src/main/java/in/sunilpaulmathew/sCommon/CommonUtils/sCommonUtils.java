@@ -9,12 +9,12 @@ import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Build;
-import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
+import androidx.preference.PreferenceManager;
 
 import com.google.android.material.snackbar.Snackbar;
 
@@ -79,8 +79,20 @@ public class sCommonUtils {
         return new SimpleDateFormat("yyyyMMdd_HH-mm").format(new Date());
     }
 
+    public static Toast toast(int res, int duration, Context context) {
+        return Toast.makeText(context, context.getString(res), duration);
+    }
+
+    public static Toast toast(int res, Context context) {
+        return toast(res, Toast.LENGTH_SHORT, context);
+    }
+
+    public static Toast toast(String message, int duration, Context context) {
+        return Toast.makeText(context, message, duration);
+    }
+
     public static Toast toast(String message, Context context) {
-        return Toast.makeText(context, message, Toast.LENGTH_LONG);
+        return toast(message, Toast.LENGTH_SHORT, context);
     }
 
     public static void launchUrl(String url, Activity activity) {

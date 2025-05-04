@@ -8,6 +8,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
+import java.util.Locale;
 import java.util.Objects;
 
 import in.sunilpaulmathew.sCommon.CommonUtils.sCommonUtils;
@@ -54,12 +55,14 @@ public class sAPKUtils {
     }
 
     public static String getAPKSize(long sizeInBytes) {
-        long size = sizeInBytes / 1024;
-        long decimal = (size - 1024) / 1024;
-        if (size > 1024) {
-            return size / 1024 + "." + decimal + " MB";
+        if (sizeInBytes > (1000 * 1000 * 1000)) {
+            return String.format(Locale.getDefault(), "%.02f", (float) sizeInBytes / (1000 * 1000 * 1000)) + " GB";
+        } else if (sizeInBytes > (1000 * 1000)) {
+            return String.format(Locale.getDefault(), "%.02f", (float) sizeInBytes / (1000 * 1000)) + " MB";
+        } else if (sizeInBytes > 1000) {
+            return String.format(Locale.getDefault(), "%.02f", (float) sizeInBytes / 1000) + " KB";
         } else {
-            return size  + " KB";
+            return sizeInBytes + " Bytes";
         }
     }
 
