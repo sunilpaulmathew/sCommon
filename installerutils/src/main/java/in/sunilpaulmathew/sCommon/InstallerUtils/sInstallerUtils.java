@@ -13,6 +13,7 @@ import androidx.annotation.RequiresApi;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.util.Objects;
 
 import in.sunilpaulmathew.sCommon.CommonUtils.sCommonUtils;
 
@@ -28,6 +29,15 @@ public class sInstallerUtils {
         return !context.getPackageManager().canRequestPackageInstalls();
     }
 
+    public static Intent filePickerIntent(boolean returnResult, int requestCode,
+                                          String packageName, Activity activity) {
+        Intent intent = new Intent(Intent.ACTION_DELETE);
+        intent.putExtra(Intent.EXTRA_RETURN_RESULT, returnResult);
+        intent.setData(Uri.parse("package:" + packageName));
+        activity.startActivityForResult(intent, requestCode);
+        return intent;
+    }
+
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private static int doCreateSession(PackageInstaller.SessionParams params, Context context) {
         int sessionId = 0 ;
@@ -39,34 +49,16 @@ public class sInstallerUtils {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public static int runInstallCreate(sInstallerParams installParams, Context context) {
-        return doCreateSession(installParams.mSessionParams, context);
-    }
-
-    // Requires android.permission.REQUEST_DELETE_PACKAGES
-    @RequiresApi(api = Build.VERSION_CODES.ICE_CREAM_SANDWICH)
-    public static Intent filePickerIntent(boolean returnResult, int requestCode,
-                                          String packageName, Activity activity) {
-        Intent intent = new Intent(Intent.ACTION_DELETE);
-        intent.putExtra(Intent.EXTRA_RETURN_RESULT, returnResult);
-        intent.setData(Uri.parse("package:" + packageName));
-        activity.startActivityForResult(intent, requestCode);
-        return intent;
+    public static int runInstallCreate(long totalSize, Context context) {
+        PackageInstaller.SessionParams mSessionParams = new PackageInstaller.SessionParams(
+                PackageInstaller.SessionParams.MODE_FULL_INSTALL);
+        mSessionParams.setSize(totalSize);
+        return doCreateSession(mSessionParams, context);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private static PackageInstaller getPackageInstaller(Context context) {
         return context.getPackageManager().getPackageInstaller();
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    public static sInstallerParams makeInstallParams(long totalSize) {
-        final PackageInstaller.SessionParams sessionParams = new PackageInstaller.SessionParams(
-                PackageInstaller.SessionParams.MODE_FULL_INSTALL);
-        final sInstallerParams params = new sInstallerParams();
-        params.mSessionParams = sessionParams;
-        sessionParams.setSize(totalSize);
-        return params;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
@@ -79,12 +71,10 @@ public class sInstallerUtils {
             }
             PendingIntent pendingIntent = PendingIntent.getService(context, 0, callbackIntent, android.os.Build.VERSION.SDK_INT >=
                     android.os.Build.VERSION_CODES.S ? PendingIntent.FLAG_MUTABLE : 0);
-            assert session != null;
-            session.commit(pendingIntent.getIntentSender());
+            Objects.requireNonNull(session).commit(pendingIntent.getIntentSender());
             session.close();
         } finally {
-            assert session != null;
-            session.close();
+            Objects.requireNonNull(session).close();
         }
     }
 
@@ -101,18 +91,15 @@ public class sInstallerUtils {
             out = session.openWrite(splitName, 0, sizeBytes);
             byte[] buffer = new byte[65536];
             int c;
-            assert in != null;
-            while ((c = in.read(buffer)) != -1) {
+            while ((c = Objects.requireNonNull(in).read(buffer)) != -1) {
                 out.write(buffer, 0, c);
             }
             session.fsync(out);
         } catch (IOException ignored) {
         } finally {
             try {
-                assert out != null;
-                out.close();
-                assert in != null;
-                in.close();
+                Objects.requireNonNull(out).close();
+                Objects.requireNonNull(in).close();
                 session.close();
             } catch (IOException ignored) {
             }
@@ -121,12 +108,9 @@ public class sInstallerUtils {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static void runInstallWrite(long size, int sessionId, String splitName, String path, Context context) {
-        long sizeBytes;
-        sizeBytes = size;
-        doWriteSession(sessionId, path, sizeBytes, splitName, context);
+        doWriteSession(sessionId, path, size, splitName, context);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static void setStatus(int status, Intent intent, Context context) {
         switch (status) {
             case PackageInstaller.STATUS_PENDING_USER_ACTION:
