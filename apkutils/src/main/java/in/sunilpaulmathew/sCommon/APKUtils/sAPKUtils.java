@@ -1,6 +1,7 @@
 package in.sunilpaulmathew.sCommon.APKUtils;
 
 import android.content.Context;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
@@ -8,6 +9,7 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
+import java.io.File;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -44,7 +46,14 @@ public class sAPKUtils {
 
     private static PackageInfo getPackageInfo(String apkPath, Context context) {
         try {
-            return getPackageManager(context).getPackageArchiveInfo(apkPath, 0);
+            PackageInfo pi = getPackageManager(context).getPackageArchiveInfo(apkPath, 0);
+
+            if (pi != null) {
+                ApplicationInfo ai = pi.applicationInfo;
+                Objects.requireNonNull(ai).sourceDir = apkPath;
+                ai.publicSourceDir = apkPath;
+                return pi;
+            }
         } catch (Exception ignored) {
         }
         return null;
@@ -55,15 +64,19 @@ public class sAPKUtils {
     }
 
     public static String getAPKSize(long sizeInBytes) {
-        if (sizeInBytes > (1000 * 1000 * 1000)) {
-            return String.format(Locale.getDefault(), "%.02f", (float) sizeInBytes / (1000 * 1000 * 1000)) + " GB";
-        } else if (sizeInBytes > (1000 * 1000)) {
-            return String.format(Locale.getDefault(), "%.02f", (float) sizeInBytes / (1000 * 1000)) + " MB";
-        } else if (sizeInBytes > 1000) {
-            return String.format(Locale.getDefault(), "%.02f", (float) sizeInBytes / 1000) + " KB";
-        } else {
-            return sizeInBytes + " Bytes";
+        if (sizeInBytes < 0) return "0 B";
+
+        final String[] units = {"B", "KB", "MB", "GB", "TB"};
+        double size = sizeInBytes;
+        int unitIndex = 0;
+
+        while (size >= 1024 && unitIndex < units.length - 1) {
+            size /= 1024;
+            unitIndex++;
         }
+
+        return String.format(Locale.getDefault(), "%.2f %s", size, units[unitIndex])
+                .replaceAll("\\.?0+\\s", " ");
     }
 
     public static String getPackageName(String apkPath, Context context) {

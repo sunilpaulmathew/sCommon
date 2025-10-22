@@ -20,7 +20,7 @@ public class sPackageUtils {
 
     private static ApplicationInfo getApplicationInfo(String packageName, Context context) {
         try {
-            return getPackageManager(context).getApplicationInfo(packageName, PackageManager.GET_META_DATA);
+            return getPackageManager(context).getApplicationInfo(packageName, 0);
         } catch (Exception ignored) {
         }
         return null;
