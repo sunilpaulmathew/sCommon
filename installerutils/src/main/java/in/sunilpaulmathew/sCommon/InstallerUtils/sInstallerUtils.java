@@ -1,5 +1,6 @@
 package in.sunilpaulmathew.sCommon.InstallerUtils;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.Context;
@@ -29,15 +30,6 @@ public class sInstallerUtils {
         return !context.getPackageManager().canRequestPackageInstalls();
     }
 
-    public static Intent filePickerIntent(boolean returnResult, int requestCode,
-                                          String packageName, Activity activity) {
-        Intent intent = new Intent(Intent.ACTION_DELETE);
-        intent.putExtra(Intent.EXTRA_RETURN_RESULT, returnResult);
-        intent.setData(Uri.parse("package:" + packageName));
-        activity.startActivityForResult(intent, requestCode);
-        return intent;
-    }
-
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     private static int doCreateSession(PackageInstaller.SessionParams params, Context context) {
         int sessionId = 0 ;
@@ -61,20 +53,33 @@ public class sInstallerUtils {
         return context.getPackageManager().getPackageInstaller();
     }
 
+    @SuppressLint("RequestInstallPackagesPolicy")
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static void doCommitSession(int sessionId, Intent callbackIntent, Context context) {
         PackageInstaller.Session session = null;
         try {
             try {
                 session = getPackageInstaller(context).openSession(sessionId);
-            } catch (IOException ignored) {
+            } catch (IOException e) {
+                return;
             }
-            PendingIntent pendingIntent = PendingIntent.getService(context, 0, callbackIntent, android.os.Build.VERSION.SDK_INT >=
-                    android.os.Build.VERSION_CODES.S ? PendingIntent.FLAG_MUTABLE : 0);
-            Objects.requireNonNull(session).commit(pendingIntent.getIntentSender());
+            PendingIntent pendingIntent = PendingIntent.getService(
+                    context, 0, callbackIntent,
+                    Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ? PendingIntent.FLAG_MUTABLE : 0
+            );
+            try {
+                Objects.requireNonNull(session).commit(pendingIntent.getIntentSender());
+            } catch (SecurityException e) {
+                sCommonUtils.saveString("installationStatus", "Installation is blocked by secure FRP", context);
+                return;
+            } catch (Exception e) {
+                return;
+            }
             session.close();
         } finally {
-            Objects.requireNonNull(session).close();
+            if (session != null) {
+                session.close();
+            }
         }
     }
 
