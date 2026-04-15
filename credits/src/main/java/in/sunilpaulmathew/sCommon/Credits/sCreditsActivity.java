@@ -1,14 +1,17 @@
 package in.sunilpaulmathew.sCommon.Credits;
 
 import android.annotation.SuppressLint;
-import android.os.Build;
 import android.os.Bundle;
 import android.util.TypedValue;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.AppCompatImageView;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -33,6 +36,21 @@ public class sCreditsActivity extends AppCompatActivity {
         MaterialTextView mCopyright = findViewById(R.id.copyright);
         RecyclerView mRecyclerView = findViewById(R.id.recycler_view);
 
+        View root = findViewById(R.id.layout_root);
+
+        ViewCompat.setOnApplyWindowInsetsListener(root, (view, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+
+            view.setPadding(
+                    systemBars.left,
+                    systemBars.top,
+                    systemBars.right,
+                    systemBars.bottom
+            );
+
+            return insets;
+        });
+
         mRecyclerView.setLayoutManager(new GridLayoutManager(this, 1));
         sCreditsAdapter mRecycleViewAdapter = new sCreditsAdapter(sCreditsUtils.getData(), sCreditsUtils.getAccentColor());
         mRecyclerView.setAdapter(mRecycleViewAdapter);
@@ -41,9 +59,7 @@ public class sCreditsActivity extends AppCompatActivity {
         if (sCreditsUtils.getAccentColor() != Integer.MIN_VALUE) {
             mTitle.setTextColor(sCreditsUtils.getAccentColor());
             mAppName.setTextColor(sCreditsUtils.getAccentColor());
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
-                mBackButton.setColorFilter(sCreditsUtils.getAccentColor());
-            }
+            mBackButton.setColorFilter(sCreditsUtils.getAccentColor());
         }
         mAppName.setText(sCreditsUtils.getAppname());
         mAppIcon.setImageDrawable(sCreditsUtils.getIcon());

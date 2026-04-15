@@ -2,8 +2,8 @@ package in.sunilpaulmathew.sCommon.Adapters;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.fragment.app.FragmentActivity;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,38 +11,41 @@ import java.util.List;
 /*
  * Created by sunilpaulmathew <sunil.kde@gmail.com> on November 13, 2021
  */
-public class sPagerAdapter extends FragmentPagerAdapter {
+public class sPagerAdapter extends FragmentStateAdapter {
 
-    private final List<Fragment> fragmentList = new ArrayList<>();
-    private final List<String> fragmentListTitles = new ArrayList<>();
+    private final List<PageItem> pages = new ArrayList<>();
 
-    public sPagerAdapter(FragmentManager manager) {
-        super(manager, BEHAVIOR_RESUME_ONLY_CURRENT_FRAGMENT);
+    public sPagerAdapter(@NonNull FragmentActivity fa) {
+        super(fa);
     }
 
     @NonNull
     @Override
-    public Fragment getItem(int position) {
-        return fragmentList.get(position);
+    public Fragment createFragment(int position) {
+        return pages.get(position).fragment;
     }
 
     @Override
-    public int getCount() {
-        return fragmentListTitles.size();
+    public int getItemCount() {
+        return pages.size();
     }
 
-    @Override
-    public int getItemPosition(@NonNull Object object) {
-        return POSITION_NONE;
+    public void addFragment(@NonNull Fragment fragment, @NonNull String title) {
+        pages.add(new PageItem(fragment, title));
     }
 
-    @Override
     public CharSequence getPageTitle(int position) {
-        return fragmentListTitles.get(position);
+        return pages.get(position).title;
     }
-    public void AddFragment(Fragment fragment, String title) {
-        fragmentList.add(fragment);
-        fragmentListTitles.add(title);
+
+    private static class PageItem {
+        final Fragment fragment;
+        final String title;
+
+        PageItem(Fragment fragment, String title) {
+            this.fragment = fragment;
+            this.title = title;
+        }
     }
 
 }

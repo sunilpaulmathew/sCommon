@@ -7,12 +7,17 @@ group = "com.github.sunilpaulmathew.sCommon"
 
 android {
     namespace 'in.sunilpaulmathew.sCommon.CrashReporter'
-    compileSdkVersion 33
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 36
 
     defaultConfig {
         minSdk 14
         consumerProguardFiles("proguard-rules.pro")
+    }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
     }
 }
 
@@ -21,14 +26,15 @@ dependencies {
     api(project(":commonutils"))
     api(project(":fileutils"))
     api(project(":packageutils"))
-    implementation "com.google.android.material:material:${materialLibVersion}"
+    implementation libs.material
 }
 
 project.afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
+                from components.findByName('release')
+                artifactId = 'crashreporter'
             }
         }
     }

@@ -57,7 +57,7 @@ public class sFileUtils {
 
     public static String read(String filePath) {
         try (FileInputStream fis = new FileInputStream(filePath)) {
-            return read(filePath);
+            return read(fis);
         } catch (IOException ignored) {
             return null;
         }

@@ -2,10 +2,8 @@ package in.sunilpaulmathew.sCommon.CrashReporter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
 
 import java.io.File;
 import java.io.PrintWriter;
@@ -30,7 +28,6 @@ public class sCrashReporter implements Thread.UncaughtExceptionHandler {
         mDefaultUEH = Thread.getDefaultUncaughtExceptionHandler();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public void uncaughtException(@NonNull Thread t, Throwable e) {
         final Writer result = new StringWriter();
         final PrintWriter printWriter = new PrintWriter(result);
@@ -53,7 +50,6 @@ public class sCrashReporter implements Thread.UncaughtExceptionHandler {
         mDefaultUEH.uncaughtException(t, e);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public void initialize() {
         String timeStamp = sCommonUtils.getString("crashLog", null, mContext);
         if (timeStamp != null) {

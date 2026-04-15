@@ -20,7 +20,6 @@ import in.sunilpaulmathew.sCommon.Dialog.sSingleChoiceDialog;
  */
 public class sThemeUtils {
 
-    @RequiresApi(api = Build.VERSION_CODES.FROYO)
     public static boolean isDarkTheme(Context context) {
         int currentNightMode = context.getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
         return currentNightMode == Configuration.UI_MODE_NIGHT_YES;
@@ -78,7 +77,6 @@ public class sThemeUtils {
         new sSingleChoiceDialog(R.drawable.ic_theme, activity.getString(R.string.app_theme),
                 getAppThemeMenu(activity), getAppThemePosition(activity), activity) {
 
-            @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
             @Override
             public void onItemSelected(int position) {
                 if (position == sCommonUtils.getInt("appTheme", 0, activity)) {

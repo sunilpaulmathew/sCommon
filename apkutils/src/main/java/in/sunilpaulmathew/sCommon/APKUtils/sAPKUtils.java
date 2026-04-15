@@ -9,7 +9,6 @@ import android.os.Build;
 
 import androidx.annotation.RequiresApi;
 
-import java.io.File;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -22,7 +21,7 @@ public class sAPKUtils {
 
     public static CharSequence getAPKName(String apkPath, Context context) {
         if (getPackageInfo(apkPath, context) != null) {
-            return Objects.requireNonNull(getPackageInfo(apkPath, context)).applicationInfo.loadLabel(getPackageManager(context));
+            return Objects.requireNonNull(Objects.requireNonNull(getPackageInfo(apkPath, context)).applicationInfo).loadLabel(getPackageManager(context));
         } else {
             return null;
         }
@@ -34,7 +33,7 @@ public class sAPKUtils {
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static Drawable getAPKIcon(String apkPath, Context context) {
         if (getPackageInfo(apkPath, context) != null) {
-            return Objects.requireNonNull(getPackageInfo(apkPath, context)).applicationInfo.loadIcon(getPackageManager(context));
+            return Objects.requireNonNull(Objects.requireNonNull(getPackageInfo(apkPath, context)).applicationInfo).loadIcon(getPackageManager(context));
         } else {
             return sCommonUtils.getDrawable(R.drawable.ic_android, context);
         }

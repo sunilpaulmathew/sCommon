@@ -7,24 +7,30 @@ group = "com.github.sunilpaulmathew.sCommon"
 
 android {
     namespace 'in.sunilpaulmathew.sCommon.PermissionUtils'
-    compileSdkVersion 33
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 36
 
     defaultConfig {
         minSdk 14
         consumerProguardFiles("proguard-rules.pro")
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
-    implementation "androidx.core:core:${coreLibVersion}"
+    implementation libs.core
 }
 
 project.afterEvaluate {
     publishing {
         publications {
             release(MavenPublication) {
-                from components.release
+                from components.findByName('release')
+                artifactId = 'permissionutils'
             }
         }
     }

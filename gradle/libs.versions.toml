@@ -1,0 +1,13 @@
+[versions]
+agpVersion = "9.1.1"
+annotationVersion = "1.10.0"
+coreVersion = "1.18.0"
+materialVersion = "1.13.0"
+preferenceVersion = "1.2.1"
+
+[libraries]
+annotation = { module = "androidx.annotation:annotation", version.ref = "annotationVersion" }
+core = { module = "androidx.core:core", version.ref = "coreVersion" }
+gradle = { module = "com.android.tools.build:gradle", version.ref = "agpVersion" }
+material = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+preference = { module = "androidx.preference:preference", version.ref = "preferenceVersion" }

@@ -12,7 +12,6 @@ import android.os.Build;
 import android.view.View;
 import android.widget.Toast;
 
-import androidx.annotation.RequiresApi;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
 
@@ -36,7 +35,6 @@ public class sCommonUtils {
         return ContextCompat.getDrawable(context, drawable);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.DONUT)
     public static boolean isTablet(Context context) {
         return (context.getResources().getConfiguration().screenLayout & Configuration.SCREENLAYOUT_SIZE_MASK)
                 >= Configuration.SCREENLAYOUT_SIZE_LARGE;
@@ -59,7 +57,6 @@ public class sCommonUtils {
         return PreferenceManager.getDefaultSharedPreferences(context).getLong(name, defaults);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static Set<String> getStringSet(String name, Set<String> defaults, Context context) {
         return PreferenceManager.getDefaultSharedPreferences(context).getStringSet(name, defaults);
     }
@@ -104,32 +101,26 @@ public class sCommonUtils {
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void remove(String name, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().remove(name).apply();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void saveBoolean(String name, boolean value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putBoolean(name, value).apply();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void saveInt(String name, int value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putInt(name, value).apply();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void saveLong(String name, long value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putLong(name,value).apply();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     public static void saveString(String name, String value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putString(name, value).apply();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static void saveStringSet(String name, Set<String> value, Context context) {
         PreferenceManager.getDefaultSharedPreferences(context).edit().putStringSet(name, value).apply();
     }
