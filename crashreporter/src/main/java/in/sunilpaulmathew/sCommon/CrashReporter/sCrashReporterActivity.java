@@ -15,7 +15,7 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-import com.google.android.material.card.MaterialCardView;
+import com.google.android.material.button.MaterialButton;
 import com.google.android.material.textview.MaterialTextView;
 
 import in.sunilpaulmathew.sCommon.APKUtils.sAPKUtils;
@@ -34,8 +34,8 @@ public class sCrashReporterActivity extends AppCompatActivity {
 
         AppCompatEditText mCrashSteps = findViewById(R.id.crash_steps);
         AppCompatImageButton mBackButton = findViewById(R.id.back);
-        MaterialCardView mCancelButton = findViewById(R.id.cancel_button);
-        MaterialCardView mReportButton = findViewById(R.id.report_button);
+        MaterialButton mCancelButton = findViewById(R.id.cancel_button);
+        MaterialButton mReportButton = findViewById(R.id.report_button);
         MaterialTextView mTitle = findViewById(R.id.title);
         MaterialTextView mCrashLog = findViewById(R.id.crash_log);
 
@@ -61,11 +61,11 @@ public class sCrashReporterActivity extends AppCompatActivity {
 
         if (mAccentColor != Integer.MIN_VALUE) {
             mTitle.setTextColor(mAccentColor);
-            mCancelButton.setCardBackgroundColor(mAccentColor);
+            mCancelButton.setBackgroundColor(mAccentColor);
             mCrashLog.setTextColor(mAccentColor);
             mCrashSteps.setTextColor(mAccentColor);
             mCrashSteps.requestFocus();
-            mReportButton.setCardBackgroundColor(mAccentColor);
+            mReportButton.setBackgroundColor(mAccentColor);
             mBackButton.setColorFilter(mAccentColor);
         }
 
